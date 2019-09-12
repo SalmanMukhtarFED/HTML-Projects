@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+        <link rel="stylesheet" media="all" type="text/css" href="css/fonts.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="js/jquery.nicescroll.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#mobile-menu-icon').on('click', function () {
+                    $('.sidebar-nav').toggle();
+                });
+                $('#messages-filter-icon').on('click', function () {
+                    $('.messages-filter').toggle();
+                });
+                $('.message-window .overflow').niceScroll({
+                    cursorcolor: "#01669a",
+                    cursorwidth: "8px",
+                    background: "rgba(230,230,230,0.95)"
+                });
+            });
+
+            $(window).on('load', function () {
+                $('#areaCodeModal').modal('show');
+            });
+        </script>
+        <style>
+            #areaCodeModal{
+
+            }
+            #areaCodeModal input[type="text"]{
+                border: none;
+                border-bottom: 1px solid #ccc;
+                background: none;
+                border-radius: 0;
+                height: 100px;
+                line-height: 100px;
+                font-size: 42px;
+                text-align: center;
+            }
+            #areaCodeModal input[type="text"]:focus{
+                border: 2px solid #01669a;
+                border-radius: 3px;
+                box-shadow: none;
+            }
+            #areaCodeModal h5{
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }
+            #areaCodeModal .area-code{
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+            #areaCodeModal .area-code .code{
+                margin: 0 10px;
+                width: 100px;
+
+            }
+            .btn-primary{
+                min-width: 175px;
+            }
+            .custom-radio{
+                margin-bottom: 10px;
+                max-width: 140px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            
+            .modal-footer{
+                background: #f5f6f8;
+                justify-content: center !important;
+                align-items: center !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="modal fade" id="areaCodeModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <h5 class="text-d-blue text-center">Please select one of the numbers below:</h5>
+                        <div class="area-code">
+                            <div class="text-center m-bottom m-top">
+                                <img src="images/check-icon.png"/>
+                            </div>
+                              <h4 class="text-d-blue text-center">Congratulations!</h4>
+                              
+                              <h5 class="text-d-blue text-center  m-bottom p-bottom medium" style="margin: 0; font-size: 24px;">Your custom phone number is</h5>
+                               <h1 class="text-d-blue text-center">435-123-4567</h1>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="text-center">
+                            <a href="#" class="btn btn-primary no-bg btn-sm">Next</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="logo">
+                    <a id="logo" href="#"><img src="images/logo.svg" alt="Local Reviews"/></a>
+                    <a href="javascript:void(0);" id="mobile-menu-icon"><i class="fa fa-bars"></i></a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="back">
+                        <a href="" class=""><i class="icon-back"></i> Back to Reviews</a>
+                    </li>
+                    <li class="messages active">
+                        <a href="#"><i class="icon-chat"></i> Messages</a>
+                    </li>
+
+                    <li class="templates">
+                        <a href="#"><i class="icon-file"></i> Canned Responses</a>
+                    </li>
+                    <li class="contacts">
+                        <a href="#"><i class="icon-dummy"></i> Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon-speaker"></i> Autoresponders</a>
+                    </li>
+                </ul>
+                <div class="help">
+                    <a href="#" data-toggle="tooltip" title="Help"><img src="images/icon-question.svg"/></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="header">
+                    <h3>Company Name</h3>
+                    <ul class="right-nav">
+                        <li class="notification">
+                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-notify"></i><span class="count">2</span></a>
+                            <div class="dropdown-menu notification-dropdown" aria-labelledby="dropdownMenuButton">
+
+                                <div class="notifications">
+                                    <div class="dropdown-header">
+                                        Today
+                                    </div>
+                                    <div class="note flex danger">
+                                        <div class="left note-text">
+                                            AgentName Just received a
+                                            <span>1 Star Review</span>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="note flex warning">
+                                        <div class="left note-text">
+                                            LocationName Just received a
+                                            <span>2 Star Review</span>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-header">
+                                        Yesterday
+                                    </div>
+                                    <div class="note flex danger">
+                                        <div class="left note-text">
+                                            AgentName Just received a
+                                            <span>1 Star Review</span>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="note flex warning">
+                                        <div class="left note-text">
+                                            LocationName Just received a
+                                            <span>2 Star Review</span>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="note flex unresolved">
+                                        <div class="left note-text">
+                                            You have <strong>1 Unresolved</strong>
+                                            Customer Experience
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="note flex">
+                                        <div class="left note-text">
+                                            <strong>We’re all in this together!</strong>
+                                            -Your friends at Local Reviews
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="clearall">
+                                    <a href="#">Clear All</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="user-dropdown">
+                            <div class="dropdown dropleft account-dropdown">
+
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-user-f"></i>
+
+                                </button>
+                                <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">User Settings</a>
+                                    <a class="dropdown-item" href="#">Billing</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="page-content messages-page">
+                    <div class="message-sidebar">
+                        <div class="search">
+                            <input type="text" class="form-control">
+                            <button type="search"><i class="icon-magnify"></i></button>
+                        </div>
+                        <div class="flex align-center message-filter p-top-s p-bottom-s">
+                            <div class="left">
+                                <div class="btn-group">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Recent Message <i class="icon-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right">
+                                        <button class="dropdown-item" type="button">Action</button>
+                                        <button class="dropdown-item" type="button">Another action</button>
+                                        <button class="dropdown-item" type="button">Something else here</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="btn btn-border new-message" data-toggle="modal" data-target="#newMessageModal"><span>&plus;</span> Message</a>
+                            </div>
+                        </div>
+                        <div class="messages">
+                            <a href="#" class="message active">
+                                <div class="user-icon"><i class="icon-user-o"></i></div>
+                                <div class="user-number">
+                                    <span class="number">(801) 690-4030</span>
+                                    <span class="name">testing</span>
+                                </div>
+                                <div class="time">
+                                    1:45 PM
+                                </div>
+                            </a>
+                            <a href="#" class="message">
+                                <div class="user-icon"><i class="icon-user-o"></i></div>
+                                <div class="user-number">
+                                    <span class="number">(801) 690-4030</span>
+                                    <span class="name">testing</span>
+                                </div>
+                                <div class="time">
+                                    1:45 PM
+                                </div>
+                            </a>
+                            <a href="#" class="message">
+                                <div class="user-icon"><i class="icon-user-o"></i></div>
+                                <div class="user-number">
+                                    <span class="number">(801) 690-4030</span>
+                                    <span class="name">testing</span>
+                                </div>
+                                <div class="time">
+                                    1:45 PM
+                                </div>
+                            </a>
+                            <a href="#" class="message">
+                                <div class="user-icon"><img src="images/multiusers.png"/></div>
+                                <div class="user-number">
+                                    <span class="number">GL Optin</span>
+                                    <span class="name">testing</span>
+                                </div>
+                                <div class="time">
+                                    1:45 PM
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="message-content">
+                        <div class="flex align-center mobile-filter">
+                            <div class="left">
+                                <h1>Messages</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0)" class="d-none-desktop" id="messages-filter-icon"><i class="icon-filter"></i></a>
+                            </div>
+                        </div>
+                        <div class="messages-filter flex">
+                            <div class="name-filter">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="javascript:void(0);" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Assigned to Garret
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Assigned to Garret</a>
+                                        <a class="dropdown-item" href="#">Assigned to Garret</a>
+                                        <a class="dropdown-item" href="#">Assigned to Garret</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="number-filter">
+                                <div class="dropdown">
+                                    <a class="dropdown-toggle" href="javascript:void(0);" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        (801) 690-4030
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#"> (801) 690-4030</a>
+                                        <a class="dropdown-item" href="#"> (801) 690-4030</a>
+                                        <a class="dropdown-item" href="#"> (801) 690-4030</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-icons">
+                                <a href="#"><img src="images/icon-new-message.png"/></a>
+                                <a href="#"><img src="images/icon-time.png"/></a>
+                                <a href="#"><img src="images/icon-file.png"/></a>
+                                <a href="#"><img src="images/icon-embed.png"/></a>
+                            </div>
+                        </div>
+                        <div class="message-window">
+                            <div class="overflow">
+                                <div class="message">
+                                    <div class="usericon">
+                                        <i class="icon-user-o"></i>
+                                    </div>
+                                    <div class="speech-bubble">
+                                        This is Garret testing. Ignore
+                                        <span class="message-time">1:26 pm</span>
+                                    </div>
+                                </div>
+                                <div class="message align-right">
+                                    <div class="speech-bubble">
+                                        Testing. Ignore
+                                        <span class="message-time">1:26 pm</span>
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="usericon">
+                                        <i class="icon-user-o"></i>
+                                    </div>
+                                    <div class="speech-bubble">
+                                        This is testing of a long message to check the layout whether it breaks down the text or not. This is testing of a long message to check the layout whether it breaks down the text or not. This is testing of a long message to check the layout whether it breaks down the text or not.
+                                        <span class="message-time">1:26 pm</span>
+                                    </div>
+                                </div>
+                                <div class="message align-right">
+                                    <div class="speech-bubble">
+                                        This is testing of a long message to check the layout whether it breaks down the text or not. This is testing of a long message to check the layout whether it breaks down the text or not. This is testing of a long message to check the layout whether it breaks down the text or not.
+                                        <span class="message-time">1:26 pm</span>
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="usericon">
+                                        <i class="icon-user-o"></i>
+                                    </div>
+                                    <div class="speech-bubble">
+                                        This is Garret testing. Ignore
+                                        <span class="message-time">1:26 pm</span>
+                                    </div>
+                                </div>
+                                <div class="message align-right">
+                                    <div class="speech-bubble">
+                                        Testing. Ignore
+                                        <span class="message-time">1:26 pm</span>
+                                    </div>
+                                </div>
+                                <div class="message">
+                                    <div class="usericon">
+                                        <i class="icon-user-o"></i>
+                                    </div>
+                                    <div class="speech-bubble">
+                                        This is testing of a long message to check the layout whether it breaks down the text or not. This is testing of a long message to check the layout whether it breaks down the text or not. This is testing of a long message to check the layout whether it breaks down the text or not.
+                                        <span class="message-time">1:26 pm</span>
+                                    </div>
+                                </div>
+                                <div class="message align-right">
+                                    <div class="speech-bubble">
+                                        This is testing of a long message to check the layout whether it breaks down the text or not. This is testing of a long message to check the layout whether it breaks down the text or not. This is testing of a long message to check the layout whether it breaks down the text or not.
+                                        <span class="message-time">1:26 pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="message-type-box">
+                            <div class="flex align-center">
+                                <div class="left message-box">
+                                    <textarea class="form-control" placeholder="Type Message"></textarea>
+                                </div>
+                                <div class="right message-icons">
+                                    <a href="#"><img src="images/digits.png"/></a>
+                                    <a href="#"><img src="images/smile.png"/></a>
+                                    <a href="#"><img src="images/file-spreadsheet.png"/></a>
+                                    <a href="#"><img src="images/file.png"/></a>
+                                    <a href="#"><img src="images/brackets.png"/></a>
+                                    <a href="#"><img src="images/at.png"/></a>
+                                    <a href="#" class="btn btn-primary no-bg send-message">Send Now <i class="icon-send"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

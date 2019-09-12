@@ -1,0 +1,158 @@
+@font-face {
+  font-family: 'local-icons';
+  src:  url('../fonts/local-icons.eot?kg6e4f');
+  src:  url('../fonts/local-icons.eot?kg6e4f#iefix') format('embedded-opentype'),
+    url('../fonts/local-icons.ttf?kg6e4f') format('truetype'),
+    url('../fonts/local-icons.woff?kg6e4f') format('woff'),
+    url('../fonts/local-icons.svg?kg6e4f#local-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+i {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'local-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-check-green:before {
+  content: "\e920";
+  color: #39b54a;
+}
+.icon-trash:before {
+  content: "\e91e";
+}
+.icon-check-circle:before {
+  content: "\e91f";
+}
+.icon-yelp:before {
+  content: "\e912";
+  color: #dc0000;
+}
+.icon-yello-pages .path1:before {
+  content: "\e913";
+  color: rgb(255, 230, 0);
+}
+.icon-yello-pages .path2:before {
+  content: "\e914";
+  margin-left: -1.337890625em;
+  color: rgb(0, 0, 0);
+}
+.icon-cirtysearch:before {
+  content: "\e915";
+  color: #57c2f7;
+}
+.icon-sa:before {
+  content: "\e916";
+}
+.icon-fb .path1:before {
+  content: "\e917";
+  color: rgb(57, 83, 152);
+}
+.icon-fb .path2:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-google .path1:before {
+  content: "\e919";
+  color: rgb(251, 187, 0);
+}
+.icon-google .path2:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(81, 142, 248);
+}
+.icon-google .path3:before {
+  content: "\e91b";
+  margin-left: -1em;
+  color: rgb(40, 180, 70);
+}
+.icon-google .path4:before {
+  content: "\e91c";
+  margin-left: -1em;
+  color: rgb(241, 67, 54);
+}
+.icon-drag:before {
+  content: "\e91d";
+  color: #a0afbd;
+}
+.icon-alerts:before {
+  content: "\e900";
+  color: #0e253a;
+}
+.icon-arrow-down:before {
+  content: "\e901";
+  color: #7d7d7d;
+}
+.icon-arrow-right:before {
+  content: "\e902";
+  color: #18619d;
+}
+.icon-customercare:before {
+  content: "\e903";
+  color: #a0afbd;
+}
+.icon-download:before {
+  content: "\e904";
+  color: #18619d;
+}
+.icon-edit:before {
+  content: "\e905";
+  color: #18619d;
+}
+.icon-home:before {
+  content: "\e906";
+  color: #a0afbd;
+}
+.icon-location:before {
+  content: "\e907";
+  color: #a0afbd;
+}
+.icon-mail:before {
+  content: "\e908";
+  color: #18619d;
+}
+.icon-manage:before {
+  content: "\e909";
+  color: #18619d;
+}
+.icon-plane:before {
+  content: "\e90a";
+}
+.icon-preview:before {
+  content: "\e90b";
+  color: #18619d;
+}
+.icons_Tools:before {
+  content: "\e90c";
+  color: #a0afbd;
+}
+.icon-schedule:before {
+  content: "\e90d";
+  color: #18619d;
+}
+.icon-settings:before {
+  content: "\e90e";
+  color: #a0afbd;
+}
+.icon-star:before {
+  content: "\e90f";
+  color: #a0afbd;
+}
+.icon-star-filled:before {
+  content: "\e910";
+  color: #a0afbd;
+}
+.icon-user:before {
+  content: "\e911";
+  color: #a0afbd;
+}

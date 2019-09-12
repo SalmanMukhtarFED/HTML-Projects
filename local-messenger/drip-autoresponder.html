@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+        <link rel="stylesheet" media="all" type="text/css" href="css/fonts.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function(){
+                $('#mobile-menu-icon').on('click', function(){
+                    $('.sidebar-nav').toggle();
+                });
+                $('#messages-filter-icon').on('click', function(){
+                    $('.messages-filter').toggle();
+                });
+                
+            });
+        </script>
+        <script type="text/javascript">
+            $(window).on('load',function(){
+                $('#dripAutoResponder').modal('show');
+            });
+        </script>
+    </head>
+    <body>
+            <div class="modal" id="dripAutoResponder" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"> <i class="icon-back m-right" style="font-size: 16px;"></i>Drip Autoresponder</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                <div class="clearfix"></div>
+                                <h3>Autoresponder 1</h3>
+                            </div>
+                            <div class="modal-body">
+                                    <div class="autoresponders">
+                                        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link active" data-toggle="pill" href="#v-pills-message-1" role="tab" aria-controls="v-pills-message-1" aria-selected="true">
+                                                <div class="flex">
+                                                    <div class="left">
+                                                        Message 1
+                                                    </div>
+                                                    <div class="right">
+                                                        <img src="images/icon-delete.png">
+                                                    </div>
+                                                </div>
+                                                
+                                            </a>
+                                            <a class="nav-link" data-toggle="pill" href="#v-pills-message-2" role="tab" aria-controls="v-pills-message-2" aria-selected="false">
+                                                <div class="flex">
+                                                        <div class="left">
+                                                            Message 2
+                                                        </div>
+                                                        <div class="right">
+                                                            <img src="images/icon-delete.png">
+                                                        </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="btn btn-primary no-bg add-new-message"><span>+</span> Add New Message</a>
+                                        </div>
+                                        <div class="tab-content" id="v-pills-tabContent">
+                                            <div class="tab-pane fade show active" id="v-pills-message-1" role="tabpanel" aria-labelledby="v-pills-message-1">
+                                                <h4>Date and Time</h4>
+                                                <div class="custom-control custom-radio m-bottom-s">
+                                                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                    <label class="custom-control-label" for="customRadio1">Send immediately</label>
+                                                </div>
+                                                <div class="custom-control custom-radio m-bottom-s">
+                                                    <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input" checked="checked">
+                                                    <label class="custom-control-label" for="customRadio3">In a specified number of days after contact is added to autoresponder</label>
+                                                    <div class="flex schedule">
+                                                        <div class="days-input">
+                                                            <input class="form-control" type="text" placeholder="0"/>
+                                                        </div>
+                                                        <div class="days-at">day(s) at</div>
+                                                        <select class="custom-select">
+                                                            <option>9</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                        </select>
+                                                        <select class="custom-select">
+                                                            <option>00</option>
+                                                            <option>10</option>
+                                                            <option>11</option>
+                                                        </select>
+                                                        <select class="custom-select">
+                                                            <option>AM</option>
+                                                            <option>PM</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <h4>Message</h4>
+                                                <div class="form-group">
+                                                    <textarea class="form-control">
+                                                          
+                                                    </textarea>
+                                                </div>
+                                                <div class="flex m-top">
+                                                    <div class="left">
+                                                        <a href="#" class="btn btn-primary no-bg">Create Autoresponder</a>
+                                                        <a class="m-left" href="#">Back</a>
+                                                    </div>
+                                                    <div class="right">
+                                                        <a href="#" class="m-right"><img src="images/icon-clip.png"/></a>
+                                                        <a href="#" class=""><img src="images/icon-calc.png"/></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-message-2" role="tabpanel" aria-labelledby="v-pills-message-2">
+                                                    <h4>Date and Time</h4>
+                                                    <div class="custom-control custom-radio m-bottom-s">
+                                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                                                        <label class="custom-control-label" for="customRadio1">Send immediately</label>
+                                                    </div>
+                                                    <div class="custom-control custom-radio m-bottom-s">
+                                                        <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input" >
+                                                        <label class="custom-control-label" for="customRadio4">In a specified number of days after contact is added to autoresponder</label>
+                                                        <div class="flex schedule">
+                                                            <div class="days-input">
+                                                                <input class="form-control" type="text" placeholder="0"/>
+                                                            </div>
+                                                            <div class="days-at">day(s) at</div>
+                                                            <select class="custom-select">
+                                                                <option>9</option>
+                                                                <option>10</option>
+                                                                <option>11</option>
+                                                            </select>
+                                                            <select class="custom-select">
+                                                                <option>00</option>
+                                                                <option>10</option>
+                                                                <option>11</option>
+                                                            </select>
+                                                            <select class="custom-select">
+                                                                <option>AM</option>
+                                                                <option>PM</option>
+                                                                
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <h4>Message</h4>
+                                                    <div class="form-group">
+                                                        <textarea class="form-control">
+                                                              
+                                                        </textarea>
+                                                    </div>
+                                                    <div class="flex m-top">
+                                                        <div class="left">
+                                                            <a href="#" class="btn btn-primary no-bg">Create Autoresponder</a>
+                                                            <a class="m-left" href="#">Back</a>
+                                                        </div>
+                                                        <div class="right">
+                                                            <a href="#" class="m-right"><img src="images/icon-clip.png"/></a>
+                                                            <a href="#" class=""><img src="images/icon-calc.png"/></a>
+                                                        </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+        <div class="wrapper">
+            <div class="sidebar">
+                <div class="logo">
+                    <a id="logo" href="#"><img src="images/logo.svg" alt="Local Reviews"/></a>
+                    <a href="javascript:void(0);" id="mobile-menu-icon"><i class="fa fa-bars"></i></a>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="back">
+                        <a href="" class=""><i class="icon-back"></i> Back to Reviews</a>
+                    </li>
+                    <li class="messages ">
+                        <a href="#"><i class="icon-chat"></i> Messages</a>
+                    </li>
+                    <li class="templates ">
+                        <a href="#"><i class="icon-file"></i> Canned Responses</a>
+                    </li>
+                    <li class="contacts">
+                        <a href="#"><i class="icon-dummy"></i> Contacts</a>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="icon-speaker"></i> Autoresponders</a>
+                    </li>
+                </ul>
+                <div class="help">
+                    <a href="#" data-toggle="tooltip" title="Help"><img src="images/icon-question.svg"/></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="header">
+                    <h3>Company Name</h3>
+                    <ul class="right-nav">
+                        <li class="notification">
+                            <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon-notify"></i><span class="count">2</span></a>
+                            <div class="dropdown-menu notification-dropdown" aria-labelledby="dropdownMenuButton">
+
+                                <div class="notifications">
+                                    <div class="dropdown-header">
+                                        Today
+                                    </div>
+                                    <div class="note flex danger">
+                                        <div class="left note-text">
+                                            AgentName Just received a
+                                            <span>1 Star Review</span>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="note flex warning">
+                                        <div class="left note-text">
+                                            LocationName Just received a
+                                            <span>2 Star Review</span>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-header">
+                                        Yesterday
+                                    </div>
+                                    <div class="note flex danger">
+                                        <div class="left note-text">
+                                            AgentName Just received a
+                                            <span>1 Star Review</span>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="note flex warning">
+                                        <div class="left note-text">
+                                            LocationName Just received a
+                                            <span>2 Star Review</span>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="note flex unresolved">
+                                        <div class="left note-text">
+                                            You have <strong>1 Unresolved</strong>
+                                            Customer Experience
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+                                    <div class="note flex">
+                                        <div class="left note-text">
+                                            <strong>We’re all in this together!</strong>
+                                            -Your friends at Local Reviews
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" class="dismiss">&times;</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="clearall">
+                                    <a href="#">Clear All</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="user-dropdown">
+                            <div class="dropdown dropleft account-dropdown">
+
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="icon-user-f"></i>
+
+                                </button>
+                                <div class="dropdown-menu " aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">User Settings</a>
+                                    <a class="dropdown-item" href="#">Billing</a>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="page-content create-templates-page">
+                    <div class="flex content-header">
+                        <div class="left">
+                            <h2 class="page-title">Manage Autoresponders</h2>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="btn btn-border" data-toggle="modal" data-target="#newAutoResponder">Create Autoresponder</a>
+                        </div>
+                    </div>
+                    <div class="whitebox">
+                        <div class="p-top">
+                            <img src="images/icon-autoresponder.png"/>
+                        </div>
+                        <div class="p-top">
+                            <h3 class="medium">Create your first Autoresponder</h3>
+                            <p class="short-width">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse.
+                            </p>
+                            <p>
+                                <a href="" class="btn btn-primary">Create Autoresponders</a>
+                            </p>
+                            <p class="p-top m-top">
+                                Not sure where to start? <a href="#" class="text-blue">Watch this video</a> or visit our <a href="#" class="text-blue">Help Center</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
