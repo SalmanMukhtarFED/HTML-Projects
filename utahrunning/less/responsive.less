@@ -1,0 +1,288 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 29, 2018, 10:56:41 AM
+    Author     : Salman Mukhtar
+*/
+
+@media screen and (min-width: 320px) and (max-width:767px){
+    .go-to-sections {
+        .icons-menu {
+            top: 30%;
+            .col{
+                font-size: 14px;
+                img {
+                    width: 12px !important;
+                }
+            }
+        }
+    }
+    .top-trainers {
+        .trainer {
+            .trainer-detail{
+                .trainer-name{
+                    font-size: 12px;
+                }
+                .trainer-speciality{
+                    font-size: 10px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .upcoming-races{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    section {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        .section-title{
+            font-size: 30px;
+        }
+    }
+    .cd-timeline__container{
+        padding: 0;
+        &::before{
+            display: none;
+        }
+    }
+    .cd-timeline{
+        margin: 0;
+    }
+    .upcoming-races {
+        .events-timeline {
+            .cd-timeline__content{
+                padding: 20px;
+                margin: 0;
+                background: #f0f0f1;
+            }
+            .map{
+                margin: 0;
+                border: 2px solid @secondary;
+            }
+            .cd-time-line-dot{
+                display: none;
+            }
+            .cd-timeline__content {
+                h2{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+    .btn_primary{
+        display: block;
+        margin: 0 0 10px;
+        font-size: 14px;
+        span.icon{
+            float: right;
+            width: 65px;
+        }
+    }
+    .tools {
+        .nav-pills{
+            display: block;
+            margin-bottom: 30px;
+            &::before{
+                display: none;
+            }
+            li{
+                a{
+                    padding: 10px;
+                    display: block;
+                    border-radius: 0;
+                    &.active{
+                        border-right: 5px solid @primary;
+                        &:before{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .form-inline{
+            display: block;
+        }
+        .time-calulator,.distance-calulator,.pace-calulator{
+            label{
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .form-field{
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                .form-control,.custom-select{
+                    border-bottom: 1px solid #fff !important;
+                    display: block;
+                    width: 100%;
+                    border-left: none !important;
+                }
+                .custom-selct-box{
+                    display: block;
+                    width: 100% !important;
+                }
+            }
+            .btn-primary{
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .mission-vission{
+        .row-eq-height{
+            display: block;
+
+        }
+        .box{
+            width: 100%;
+        }
+    }
+    .utah-club{
+        .video-wrapper{
+            margin-bottom: 30px;
+        }
+        .club-detail{
+            .btn_primary{
+                span.icon{
+                    line-height: 30px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .cta-section {
+        .ask-expert{
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+    }
+    #mainslider {
+        .owl-nav{
+            display: none;
+        }
+        .owl-dots{
+            display: block;
+        }
+        .slide-content{
+            .search-button {
+                a{
+                    font-size: 14px;
+                    margin-top: 8px;
+                    padding: 8px 15px;
+                }
+            }
+            .icon{
+                font-size: 16px;
+                line-height: 30px;
+                margin: 0;
+            }
+        }
+    }
+    .shop {
+        #shopcarousel {
+            .product-item {
+                .detail-btn{
+                    top: 40%;
+                }
+            }
+        }
+    }
+    .blog-section{
+        .blog-posts{
+            .post {
+                .published-date{
+                    top: 15px;
+                    bottom: auto;
+                }
+            }
+        }
+    }
+    .newsletter {
+        .newsletter-form {
+            input[type="email"]{
+                width: 60%;
+            }
+            input[type="submit"]{
+                width: 40%;
+            }
+        }
+    }
+    .empty{
+        display: none;
+    }
+    .dropdown-menu{
+        display: none;
+        transform:none;
+    }
+
+    #search {
+        .search-field {
+            input[type="text"]{
+                &::placeholder{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    header{
+        #map-locator{
+            .map{
+                .custom-selct-box {
+                    .custom-select{
+                        padding: 5px 10px;
+                    }
+                    &::before{
+                        top: 6px;
+                    }
+                }
+            }
+        }
+    }
+
+    .leaf-banner-item .h1{
+        font-size: 12px;
+    }
+    .leaf-banner-item .h2{
+        font-size: 10px;
+    }
+    .add-a-race {
+        .nav-tabs {
+            .nav-item{
+
+                width: 50%;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width:@mobile_start) and (max-width: 640px){
+    header.toggled .navbar {
+        top: -90px; 
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+    .mission-vission{
+        .row-eq-height{
+            flex-wrap: wrap;
+        }
+        .box{
+            width: 50%;
+        }
+    }
+    .dropdown-menu{
+        display: none;
+        transform:none;
+    }
+    header.toggled .navbar {
+        top: -45px;
+    }
+}

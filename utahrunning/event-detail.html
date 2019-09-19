@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Utah Running</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Russo+One" rel="stylesheet">
+
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/select2.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/owl.carousel.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/owl.theme.default.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="js/owl.carousel.min.js"></script>
+
+        <!-- select picker files -->
+        <script src="js/select2.min.js"></script>
+
+        <!-- detail picker files -->
+        <script src="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/js/gijgo.min.js" type="text/javascript"></script>
+        <link href="https://cdn.jsdelivr.net/npm/gijgo@1.9.6/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+
+
+        <script>
+            $(document).ready(function () {
+                $(window).scroll(function () {
+
+                    var scrollValue = $(document).scrollTop();
+
+                    if (scrollValue >= 100) {
+                        $('header').addClass('toggled');
+                    }
+                    else {
+                        $('header').removeClass('toggled');
+                    }
+
+                });
+
+                $('#maps').click(function () {
+                    $('#map-locator').slideToggle();
+                });
+
+                $('#search-site').click(function () {
+                    $('#search').fadeToggle();
+                });
+
+                $('.close-search').click(function () {
+                    $('#search').fadeOut();
+                });
+
+                $('body').on('mouseenter mouseleave', '.dropdown', function (e) {
+                    var _d = $(e.target).closest('.dropdown');
+                    _d.addClass('show');
+                    setTimeout(function () {
+                        _d[_d.is(':hover') ? 'addClass' : 'removeClass']('show');
+                        $('[data-toggle="dropdown"]', _d).attr('aria-expanded', _d.is(':hover'));
+                    }, 300);
+                });
+
+                $('.select2').select2({
+                    width: '100%'
+                });
+
+                $('#detailpicker').detailpicker({
+                    footer: true,
+                    modal: true,
+                    header: true
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div id="search" class="animated slideInUp" style="display: none;">
+
+            <div class="search-field">
+                <input type="text" placeholder="Type and hit enter..."/>
+                <a href="javascript:void(0);" class="close-search"><i class="fa fa-close"></i></a>
+            </div>
+        </div>
+        <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <div>
+                            <iframe width="100%" height="500" src=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Modal -->
+        <div class="modal styled-modal animated bounceIn " id="contactModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Contact Us</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-large bold">Use the form below to contact us:</p>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Your Name</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Phone Number</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="form-group">
+                                    <label>Department</label>
+                                    <select class="custom-select">
+                                        <option>Advertising</option>
+                                        <option>Billing</option>
+                                        <option>General Questions</option>
+                                        <option>Technical Issues</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <label>Subject</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <label>Message</label>
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="custom-file">
+                            <div class="form-group">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">Add Attachment</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer text-center">
+                        <a href="javascript:void(0);" class="btn btn_primary">
+                            <span class="btn-text">Send</span>
+                            <span class="icon"><i class="fa fa-paper-plane"></i></span>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal styled-modal animated bounceIn " id="signInModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Login to UtahRunning</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <p class="text-center text-large bold">Enter your information below to login to your account</p>
+                        <div class="row">
+
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <label>Email Address</label>
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <label>Password</label>
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="form-group">
+                                    <label>Sign in As:</label>
+                                    <select class="custom-select">
+                                        <option>Race Director</option>
+                                        <option>Shop User</option>
+                                        <option>Club User</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                    <label class="custom-control-label" for="customCheck1">Rember Me</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 text-right">
+                                <a href="#" class="text-red">Forgot Password?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer text-center">
+                        <a href="javascript:void(0);" class="btn btn_primary">
+                            <span class="btn-text">Login</span>
+                            <span class="icon"><i class="fa fa-lock"></i></span>
+                        </a>
+                        <p class="m-top-s">Don't have an account?  <a href="#" class="text-red">Click Here</a></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <header class="inner">
+
+            <div id="topbar">
+                <ul class="top-left pull-left">
+                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#contactModal"><i class="fa fa-address-card"></i>Contact Form</a></li>
+                    <li><a href="javascript:void(0);" data-toggle="modal" data-target="#signInModal"><i class="fa fa-user-circle-o"></i>Sign In</a></li>
+                </ul>
+                <ul class="top-right pull-right">
+                    <li><a id="search-site" href="javascript:void(0);"><i class="fa fa-search"></i></a></li>
+                    <li><a id="maps" href="javascript:void(0);"><i class="fa fa-map-marker"></i></a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-shopping-cart"></i></a>
+                        <div class="dropdown-menu shop-dropdown" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="javascript:void(0);">View Cart (0)</a>
+                            <a class="dropdown-item" href="javascript:void(0);">Checkout</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clearfix"></div>
+            </div>
+            <div id="map-locator" style="display: none;">
+                <div class="map">
+                    <img src="images/map-big.png"/>
+                    <div class="custom-selct-box">
+                        <select class="custom-select">
+                            <option>Club Hubs Locator</option>
+                            <option>Running Stores Locator</option>
+                            <option>Events Locator</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="javascript:void(0);">
+                    <img src="images/logo.png" alt="Utah Running"/>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><i class="fa fa-bars"></i></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active dropdown">
+                            <a class="nav-link dropdown-toggle" href="javscript:void(0)"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>About </span></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="javascript:void(0);">Who we Are</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Utah Shop</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Utah Club</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Our Story</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javscript:void(0)"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Events</span></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="javascript:void(0);">Add Race</a>
+                                <div class="dropdown">
+                                    <a class="dropdown-item " href="javscript:void(0)"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Upcoming Events</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a href="javascript:void(0);">Utah Races</a></li>
+                                        <li><a href="javascript:void(0);">Club Workouts</a></li>
+                                        <li><a href="javascript:void(0);">Daily Run</a></li>
+                                    </ul>
+                                </div>
+                                <a class="dropdown-item" href="javascript:void(0);">Event Calendar</a>
+                                
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javscript:void(0)"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Join The Club</span></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="javascript:void(0);">Join</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Testimonials</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Club Discounts</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Club Captains</a>
+                                <div class="dropdown">
+                                    <a class="dropdown-item " href="javscript:void(0)"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Club Info</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a href="javascript:void(0);">Club Hubs</a></li>
+                                        <li><a href="javascript:void(0);">Club Workouts</a></li>
+                                        <li><a href="javascript:void(0);">Daily Run</a></li>
+                                    </ul>
+                                </div>
+                                <a class="dropdown-item" href="javascript:void(0);">Youth Club</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Racing Team</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Training</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown">
+                                    <a class="dropdown-item " href="javscript:void(0)"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Coaching</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a href="javascript:void(0);">Coaches</a></li>
+                                        <li><a href="javascript:void(0);">Training Plans</a></li>
+                                        <li><a href="javascript:void(0);">Custom Plans</a></li>
+                                        <li><a href="javascript:void(0);">Strength Plans</a></li>
+                                    </ul>
+                                </div>
+                                <div class="dropdown">
+                                    <a class="dropdown-item " href="javscript:void(0)"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tools</a>
+                                    <ul class="dropdown-menu dropdown-submenu">
+                                        <li><a href="javascript:void(0);">Pace Calculator</a></li>
+                                        <li><a href="javascript:void(0);">Marathon Elevation Tool</a></li>
+                                        <li><a href="javascript:void(0);">Calculators</a></li>
+                                        <li><a href="javascript:void(0);">Map your run</a></li>
+                                        <li><a href="javascript:void(0);">Course Comparison Tool</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Education</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="javascript:void(0);">Ask an Expert</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Clinics</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Ebooks</a>
+                                <a class="dropdown-item" href="javascript:void(0);">Photos & Videos</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span>Shop</span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="dropdown">
+                                    <a class="dropdown-item " href="javscript:void(0)"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Products</a>
+                                    <ul class="dropdown-menu dropdown-submenu right-menu">
+                                        <li><a href="javascript:void(0);">Most Popular</a></li>
+                                        <li><a href="javascript:void(0);">New</a></li>
+                                        <li><a href="javascript:void(0);">Women</a></li>
+                                        <li><a href="javascript:void(0);">Men</a></li>
+                                        <li><a href="javascript:void(0);">Apparel</a></li>
+                                        <li><a href="javascript:void(0);">Accessories</a></li>
+                                    </ul>
+                                </div>
+                                <a class="dropdown-item " href="javscript:void(0)">Search Product</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span>Blog</span></a>
+                            <div class="dropdown-menu right-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item " href="javscript:void(0)">Training</a>
+                                <a class="dropdown-item " href="javscript:void(0)">Injuries & Pain</a>
+                                <a class="dropdown-item " href="javscript:void(0)">Nutrition</a>
+                                <a class="dropdown-item " href="javscript:void(0)">Racing</a>
+                                <a class="dropdown-item " href="javscript:void(0)">Trail Running</a>
+                                <a class="dropdown-item " href="javscript:void(0)">Running Shoes</a>
+                                <a class="dropdown-item " href="javscript:void(0)">Interviews</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-page event-detail-page">
+            <section class="event-detail-banner">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6929717315306!2d-111.8766714352791!3d40.74678094342517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f545ffcef15d%3A0x94c75faff2979010!2s600+900+S%2C+Salt+Lake+City%2C+UT+84105!5e0!3m2!1sen!2s!4v1527761089080" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+            </section>
+            <div class="event-detail">
+                <div class="container" >
+                    <div class="event-title">
+                        <h3>Utah's Go Grey in May 5k to End Brain Cancer</h3>
+                    </div>
+                    <div class="event-description">
+                        <h4>Description of Race Event</h4>
+
+                        <p>Join us for Memorial Hill Matters 5k and Fun Run to support the Wasatch Community Foundation and Memorial Hill. The festivities will be held on the grounds of High Valley Arts outdoor theater, just south of Main Street and 400 E in Midway (2 blocks south of Tarahumara restaurant). </p>
+
+                        <p>Bib pick up will start at 8:30 AM with the 5K run starting at 10 AM and the Fun Run at 10:15 AM. Age group awards for the 5k will be presented at 11:00AM. </p>
+
+                        <p>We will have local food vendors on site selling lunch and other treats. At 1:00 there will be a FREE concert featuring One Voice Children's Choir. Bring the family to support you, and plan to stay for lunch and the concert. This event will be a great way to spend Memorial Day with your family remembering those who have given so much. </p>
+
+                        <p>We welcome you bring a photo, letter, or memory to contribute to our memory display, where we will be posting photos and memories of our veterans and dear ones we have lost. </p>
+
+                        <p>Please visit our website memorialhillmatters.org for more information. This event is sanctioned by USA Track & Field.</p>
+                    </div>
+
+                    <div class="event-metas">
+                        <div class="flex-grid">
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-clock-o"></i>
+                                    Race Date
+                                </div>
+                                <div class="detail">
+                                    <p>5/28/2018</p>
+                                    <p>Time: 10: 00 AM</p>
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-cubes"></i>
+                                    Race Type
+                                </div>
+                                <div class="detail">
+                                    <ul class="styled-list">
+                                        <li>5k</li>
+                                        <li>10k</li>
+                                        <li>1 Mile</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-location-arrow"></i>
+                                    Race Event Address
+                                </div>
+                                <div class="detail">
+                                    <p>200 S 400 E, Midway, UT, 84049, Wasatch County</p>
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-list"></i>
+                                    Event Features
+                                </div>
+                                <div class="detail">
+                                    <ul class="styled-list">
+                                        <li>Online event registration available</li>
+                                        <li>Awards, Other Events</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-internet-explorer"></i>
+                                    Event Website
+                                </div>
+                                <div class="detail">
+                                    <p><a href="#">http://www.memorialhillmatters.org</a></p>
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-link"></i>
+                                    Registration Link
+                                </div>
+                                <div class="detail">
+                                    <p><a href="#">http://www.runnercard.com/roadrace/public/raceGroup/976246</a></p>
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-facebook-square"></i>
+                                    Event Facebook Page
+                                </div>
+                                <div class="detail">
+                                    <p><a href="#">www.facebook.com</a></p>
+                                    
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-user"></i>
+                                    Contact Person
+                                </div>
+                                <div class="detail">
+                                    <p>Jill Dorrough</p>
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-envelope-o"></i>
+                                    Contact Email Address:
+                                </div>
+                                <div class="detail">
+                                    <p>jdorrough@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex-col">
+                                <div class="meta-title">
+                                    <i class="fa fa-money"></i>
+                                    Event Fee:
+                                </div>
+                                <div class="detail">
+                                    <p>Pre-Registration Fee:  $15</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <div class="text-center m-top p-top">
+                        <a href="events-list.html" class="btn btn_primary">
+                            <span>View All Events</span>
+                            <span class="icon"><i class="fa fa-list-alt"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+       
+        
+        <footer>
+            <section class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="contact">
+                                <h3 class="footer-heading">Contact</h3>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae. In ac dui quis mi consectetuer lacinia.</p>
+                                <p><i class="fa fa-phone"></i>Toll Free: 877-298-0635</p>
+                                <p>Local: 801-528-3264</p>
+                                <p><i class="fa fa-envelope"></i>Online: Contact Form</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="blog-categories">
+                                <h3 class="footer-heading">Blog Categories</h3>
+                                <ul class="footer-links">
+                                    <li><a href="javascript:void(0);">Training</a></li>
+                                    <li><a href="javascript:void(0);">Injuries & Pain</a></li>
+                                    <li><a href="javascript:void(0);">Nutrition</a></li>
+                                    <li><a href="javascript:void(0);">Racing</a></li>
+                                    <li><a href="javascript:void(0);">Trail Running</a></li>
+                                    <li><a href="javascript:void(0);">Running Shoes</a></li>
+                                    <li><a href="javascript:void(0);">Running Clubs</a></li>
+                                    <li><a href="javascript:void(0);">Interviewa</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="quick-links">
+                                <h3 class="footer-heading">Quick Links</h3>
+                                <ul class="footer-links">
+                                    <li><a href="javascript:void(0);">Advertising</a></li>
+                                    <li><a href="javascript:void(0);">Race</a></li>
+                                    <li><a href="javascript:void(0);">Utah Running Stores</a></li>
+                                    <li><a href="javascript:void(0);">Sitemap</a></li>
+                                    <li><a href="javascript:void(0);">Privacy</a></li>
+                                    <li><a href="javascript:void(0);">Terms</a></li>
+                                    <li><a href="javascript:void(0);">Run Utah</a></li>
+                                    <li><a href="javascript:void(0);">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="events">
+                                <h3 class="footer-heading">Events</h3>
+                                <div class="media event">
+                                    <div class="event-day">
+                                        <div class="day">MON</div>
+                                        <div class="detail">21</div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Bicycle for MOM</h5>
+                                        <p>December 6, 2015 @ 1:30 PM -</p>
+                                        <p>December 8, 2015 @ 1:30 PM -</p>
+                                    </div>
+                                </div>
+                                <div class="media event">
+                                    <div class="event-day">
+                                        <div class="day">MON</div>
+                                        <div class="detail">21</div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Bicycle for MOM</h5>
+                                        <p>December 6, 2015 @ 1:30 PM -</p>
+                                        <p>December 8, 2015 @ 1:30 PM -</p>
+                                    </div>
+                                </div>
+                                <div class="media event">
+                                    <div class="event-day">
+                                        <div class="day">MON</div>
+                                        <div class="detail">21</div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Bicycle for MOM</h5>
+                                        <p>December 6, 2015 @ 1:30 PM -</p>
+                                        <p>December 8, 2015 @ 1:30 PM -</p>
+                                    </div>
+                                </div>
+                                <div class="media event">
+                                    <div class="event-day">
+                                        <div class="day">MON</div>
+                                        <div class="detail">21</div>
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="mt-0">Bicycle for MOM</h5>
+                                        <p>December 6, 2015 @ 1:30 PM -</p>
+                                        <p>December 8, 2015 @ 1:30 PM -</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="footer-bottom">
+                <div class="container">
+                    <ul class="social-media">
+                        <li><a href="javascript:void(0);"><i class="fa fa-facebook-f"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="javascript:void(0);"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <p class="text-center copyright">Copyright &COPY; UtahRunning.com 2018. All rights reserved.</p>
+                </div>
+            </section>
+        </footer>
+    </body>
+</html>
