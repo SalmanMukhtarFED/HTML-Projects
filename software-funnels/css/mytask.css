@@ -1,0 +1,227 @@
+#myTasksDropDownModal .modal-dialog {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+}
+#myTasksDropDownModal .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  opacity: 1;
+}
+#myTasksDropDownModal .modal-header,
+#myTasksDropDownModal .modal-footer {
+  padding: 30px;
+}
+#myTasksDropDownModal .modal-footer {
+  border: none;
+}
+#myTasksDropDownModal .modal-header {
+  background: #fff;
+  border-color: #ccc;
+}
+#myTasksDropDownModal .modal-content {
+  border-radius: 0;
+  background: #f5f6f7;
+}
+#myTasksDropDownModal .flex-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+#myTasksDropDownModal .bootstrap-select .dropdown-toggle {
+  color: #3a4d60;
+  font-size: 16px;
+}
+#myTasksDropDownModal .bootstrap-select .dropdown-menu {
+  background: #f5f6f7;
+}
+#myTasksDropDownModal .bootstrap-select .dropdown-menu li {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+#myTasksDropDownModal .bootstrap-select .dropdown-menu li:last-child {
+  border: none;
+}
+#myTasksDropDownModal .bootstrap-select .dropdown-menu li.selected a {
+  background: #c4cbd0;
+}
+#myTasksDropDownModal .bootstrap-select .dropdown-menu li a {
+  color: #3a4d60;
+  font-size: 16px;
+  padding: 8px 10px;
+}
+#myTasksDropDownModal .bootstrap-select .dropdown-menu li a:hover {
+  background: #c4cbd0;
+}
+#myTasksDropDownModal .bootstrap-select .dropdown-menu li:hover {
+  background: #c4cbd0;
+}
+#myTasksDropDownModal .modal-body {
+  padding: 0;
+}
+#myTasksDropDownModal .modal-body .advanced_settings {
+  padding: 10px 30px;
+  border-bottom: 1px solid #ccc;
+}
+#myTasksDropDownModal .modal-body .advanced_settings .input-small input[type="text"] {
+  width: 75px;
+  padding: 10px;
+  height: auto;
+  background: none;
+  border-color: #c3ccd6;
+  box-shadow: none;
+}
+#myTasksDropDownModal .modal-body .advanced_settings .select-small .bootstrap-select {
+  width: 160px;
+}
+#myTasksDropDownModal .modal-body .advanced_settings .select-small .bootstrap-select .dropdown-toggle {
+  padding: 0 25px 0 15px;
+}
+#myTasksDropDownModal .modal-body .advanced_settings .select-small .bootstrap-select .dropdown-toggle .bs-caret .caret {
+  right: -5px;
+}
+#myTasksDropDownModal .modal-body .advanced_settings .select-x-small .bootstrap-select {
+  width: 90px;
+}
+#myTasksDropDownModal .modal-body .advanced_settings .select-x-small .bootstrap-select .dropdown-toggle {
+  padding: 0 25px 0 15px;
+}
+#myTasksDropDownModal .modal-body .advanced_settings .select-x-small .bootstrap-select .dropdown-toggle .bs-caret .caret {
+  right: -5px;
+}
+#myTasksDropDownModal .modal-footer .days_of_week {
+  text-align: left;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox {
+  padding-left: 20px;
+  margin: 0;
+  line-height: 16px;
+  margin-right: 10px;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 5px;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 0;
+  margin-left: -20px;
+  border: 1px solid #3a4d60;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  -o-transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+  transition: border 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox label::after {
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  margin-left: -20px;
+  padding-left: 3px;
+  padding-top: 1px;
+  font-size: 11px;
+  color: #555555;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox input[type="checkbox"]:focus + label::before {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox input[type="checkbox"]:checked + label::after {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox input[type="checkbox"]:disabled + label {
+  opacity: 0.65;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox input[type="checkbox"]:disabled + label::before {
+  background-color: #3a4d60;
+  cursor: not-allowed;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox-primary input[type="checkbox"]:checked + label::before {
+  background-color: #3a4d60;
+  border-color: #3a4d60;
+}
+#myTasksDropDownModal .modal-footer .days_of_week .checkbox-primary input[type="checkbox"]:checked + label::after {
+  color: #fff;
+}
+.radiolist label {
+  /*min-width: 400px;*/
+  width: 100%;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+  font-weight: normal;
+}
+.radiolist input[type="radio"]:empty,
+.radiolist input[type="checkbox"]:empty {
+  display: none;
+}
+.radiolist input[type="radio"]:empty ~ label,
+.radiolist input[type="checkbox"]:empty ~ label {
+  position: relative;
+  line-height: 2.5em;
+  text-indent: 0;
+  margin-top: 0;
+  padding: 10px 30px;
+  margin-bottom: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.radiolist input[type="radio"]:empty ~ label:before,
+.radiolist input[type="checkbox"]:empty ~ label:before {
+  position: absolute;
+  display: block;
+  top: 10px;
+  bottom: 0;
+  right: 10px;
+  content: '';
+  width: 2.5em;
+  background: none;
+  border-radius: 3px 0 0 3px;
+}
+.radiolist input[type="radio"]:hover:not(:checked) ~ label:before,
+.radiolist input[type="checkbox"]:hover:not(:checked) ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #3a4d60;
+}
+.radiolist input[type="radio"]:hover:not(:checked) ~ label,
+.radiolist input[type="checkbox"]:hover:not(:checked) ~ label {
+  color: #3a4d60;
+}
+.radiolist input[type="radio"]:checked ~ label:before,
+.radiolist input[type="checkbox"]:checked ~ label:before {
+  content: '\2714';
+  text-indent: .9em;
+  color: #3a4d60;
+  background-color: #ccc;
+}
+.radiolist input[type="radio"]:checked ~ label,
+.radiolist input[type="checkbox"]:checked ~ label {
+  color: #3a4d60;
+  font-weight: 700;
+}
+.radiolist input[type="radio"]:focus ~ label:before,
+.radiolist input[type="checkbox"]:focus ~ label:before {
+  box-shadow: 0 0 0 3px #999;
+}
+.radiolist-default input[type="radio"]:checked ~ label:before,
+.radiolist-default input[type="checkbox"]:checked ~ label:before {
+  color: #3a4d60;
+  background-color: transparent;
+}

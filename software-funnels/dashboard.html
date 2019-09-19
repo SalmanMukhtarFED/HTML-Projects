@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- font awesome -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- tool tips -->
+        <link href="css/tooltipster.bundle.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div id="wrapper">
+            <div class="overlay">
+
+            </div>
+            <!-- Sidebar desktop -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#" class="logo-expanded">
+                            <span >
+                                <img src="images/logo.png"/>
+                            </span>
+                        </a>
+                        <a href="#" class="logo-collapsed">
+                            <span >
+                                <img src="images/logo-small.png"/>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dashboard">
+                        <a href="#" class="tooltip-menu" title="Dashboard">
+                            <span class="hide-collapsed">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="whiteboard" >
+                        <a href="#" class="tooltip-menu" title="Whiteboard"><span class="hide-collapsed">Whiteboard</span></a>
+                    </li>
+                    <li class="wireframes">
+                        <a href="#" class="tooltip-menu" title="Wireframes"><span class="hide-collapsed">Wireframes</span></a>
+                    </li>
+                    <li class="projects">
+                        <a href="#" class="tooltip-menu" title="Projects"><span class="hide-collapsed">Projects</span></a>
+                    </li>
+                    <li class="team">
+                        <a href="#" class="tooltip-menu" title="Team Chat"><span class="hide-collapsed">Team Chat</span></a>
+                    </li>
+                    <li class="helpdesk">
+                        <a href="#" class="tooltip-menu" title="Help Desk"><span class="hide-collapsed">Help Desk</span></a>
+                    </li>
+                    <li class="analytics active">
+                        <a href="#" class="tooltip-menu" title="Analytics"><span class="hide-collapsed">Analytics</span></a>
+                    </li>
+                    <li class="reports">
+                        <a href="#" class="tooltip-menu" title="Reports"><span class="hide-collapsed">Reports</span></a>
+                    </li>
+                    <li class="services">
+                        <a href="#" class="tooltip-menu" title="Services"><span class="hide-collapsed">Services</span></a>
+                    </li>
+                    <li class="menu-toggle">
+                        <a href="#menu-toggle" class="" id="menu-toggle"></a>
+                    </li>
+                </ul>
+                <div class="info-link hidden-xs">
+                    <a href="#"><span class="hide-collapsed">Information</span></a>
+                </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+            <div class="mobile-header visible-xs">
+                <a href="#" class="pull-left">
+                    <img src="images/logo.png"/>
+                </a>
+                <a class="pull-right hamburger" id="mobile-menu" href="#">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+            <!-- Sidebar desktop -->
+            <div id="sidebar-wrapper" class="visible-xs sidebar-mobile">
+                <div class="user-subnav">
+                    <ul>
+                        <li class="my-account-link">
+                            <a href="#" class="dropdown-toggle user-icon" data-toggle="dropdown">
+                                <img src="images/img-icon-user.png" class="inline-block v-middle">
+                                <img src="images/icon-carrot-down.png" class="inline-block v-middle">
+                            </a>
+                        </li>
+                        <li class="my-profile">
+                            <a href="#">My Profile</a>
+                        </li>
+                        <li class="users-teams active">
+                            <a href="#">Users & Teams</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="billing">
+                            <a href="#">Billing</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="dashboard active">
+                        <a href="#"><span class="hide-collapsed">Dashboard</span></a>
+                    </li>
+                    <li class="whiteboard">
+                        <a href="#"><span class="hide-collapsed">Whiteboard</span></a>
+                    </li>
+                    <li class="wireframes">
+                        <a href="#"><span class="hide-collapsed">Wireframes</span></a>
+                    </li>
+                    <li class="projects">
+                        <a href="#"><span class="hide-collapsed">Projects</span></a>
+                    </li>
+                    <li class="team">
+                        <a href="#"><span class="hide-collapsed">Team Chat</span></a>
+                    </li>
+                    <li class="helpdesk">
+                        <a href="#"><span class="hide-collapsed">Help Desk</span></a>
+                    </li>
+                    <li class="analytics">
+                        <a href="#"><span class="hide-collapsed">Analytics</span></a>
+                    </li>
+                    <li class="reports">
+                        <a href="#"><span class="hide-collapsed">Reports</span></a>
+                    </li>
+                    <li class="services">
+                        <a href="#"><span class="hide-collapsed">Services</span></a>
+                    </li>
+                </ul>
+                <div class="info-link">
+                    <a href="#"><span class="hide-collapsed">Information</span></a>
+                </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="top-header">
+                    <div class="sidebar-distance">
+                        <div class="col-lg-12">
+                            <h1 class="page-header-title pull-left">Dashboard</h1>
+                            <ul class="nav navbar-nav navbar-right hidden-xs">
+                                <li class="bell-icon">
+                                    <a href="#"><i class="fa fa-bell "></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="dropdown-toggle user-icon" data-toggle="dropdown">
+                                        <img src="images/img-icon-user.png" class="inline-block v-middle"/>
+                                        <img src="images/icon-carrot-down.png" class="inline-block v-middle">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="analytics-page dashboard-page">
+                        <div class="row m-bottom-s row-eq-height">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="analytics-box">
+                                    <div class="box-header">
+                                        <h4>Whiteboards <a href="#" class="pull-right"><i class="fa fa-caret-up"></i></a></h4>
+                                    </div>
+                                    <div class="box-content border-bottom">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                You created the new whiteboard, <a href="#" class="text-blue">Whiteboard Name</a>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                May 1, 2017
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                <a href="#" class="text-blue">Whiteboard Name</a> has been share with you
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                April 1, 2017
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-footer padder-s">
+                                        <div class="col-md-4">
+                                            You own <a href="#" class="text-blue">13</a> Whiteboards
+                                        </div>
+                                        <div class="col-md-4">
+                                            You own <a href="#" class="text-blue">13</a> Whiteboards
+                                        </div>
+                                        <div class="col-md-4">
+                                            You own <a href="#" class="text-blue">13</a> Whiteboards
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="analytics-box">
+                                    <div class="box-header">
+                                        <h4>Wireframes <a href="#" class="pull-right"><i class="fa fa-caret-up"></i></a></h4>
+                                    </div>
+                                    <div class="box-content border-bottom">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                You created the new whiteboard, <a href="#" class="text-blue">Whiteboard Name</a>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                May 1, 2017
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                <a href="#" class="text-blue">Whiteboard Name</a> has been share with you
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                April 1, 2017
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="box-footer padder-s">
+                                        <div class="col-md-4">
+                                            You own <a href="#" class="text-blue">13</a> Whiteboards
+                                        </div>
+                                        <div class="col-md-4">
+                                            You own <a href="#" class="text-blue">13</a> Whiteboards
+                                        </div>
+                                        <div class="col-md-4">
+                                            You own <a href="#" class="text-blue">13</a> Whiteboards
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-bottom-s row-eq-height">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="analytics-box">
+                                    <div class="box-header">
+                                        <h4>Projects <a href="#" class="pull-right"><i class="fa fa-caret-up"></i></a></h4>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                You created the new whiteboard, <a href="#" class="text-blue">Whiteboard Name</a>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                May 1, 2017
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                <a href="#" class="text-blue">Whiteboard Name</a> has been share with you
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                April 1, 2017
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="analytics-box">
+                                    <div class="box-header">
+                                        <h4>Team Chat <a href="#" class="pull-right"><i class="fa fa-caret-up"></i></a></h4>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                You created the new whiteboard, <a href="#" class="text-blue">Whiteboard Name</a>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                May 1, 2017
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                <a href="#" class="text-blue">Whiteboard Name</a> has been share with you
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                April 1, 2017
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-bottom-s row-eq-height">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="analytics-box">
+                                    <div class="box-header">
+                                        <h4>Help Desk <a href="#" class="pull-right"><i class="fa fa-caret-up"></i></a></h4>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                You created the new whiteboard, <a href="#" class="text-blue">Whiteboard Name</a>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                May 1, 2017
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                <a href="#" class="text-blue">Whiteboard Name</a> has been share with you
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                April 1, 2017
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="analytics-box">
+                                    <div class="box-header">
+                                        <h4>Analytics <a href="#" class="pull-right"><i class="fa fa-caret-up"></i></a></h4>
+                                    </div>
+                                    <div class="box-content">
+                                        <p><strong>Current Analytics:</strong></p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="m-bottom-s">
+                                                    <span class="pull-left">Total MRR:</span>
+                                                    <a class="pull-right text-blue" href="#">$10,000</a>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="m-bottom-s">
+                                                    <span class="pull-left">Churn Rate:</span>
+                                                    <a class="pull-right text-blue" href="#">2.86 %</a>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="m-bottom-s">
+                                                    <span class="pull-left">ARPA:</span>
+                                                    <a class="pull-right text-blue" href="#">$10,000</a>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="m-bottom-s">
+                                                    <span class="pull-left">Customer LTV:</span>
+                                                    <a class="pull-right text-blue" href="#">$10,000</a>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="m-bottom-s">
+                                                    <span class="pull-left">ARR:</span>
+                                                    <a class="pull-right text-blue" href="#">2.86 %</a>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-bottom-s row-eq-height">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="analytics-box">
+                                    <div class="box-header">
+                                        <h4>Reports<a href="#" class="pull-right"><i class="fa fa-caret-up"></i></a></h4>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                You created the new whiteboard, <a href="#" class="text-blue">Whiteboard Name</a>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                May 1, 2017
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-8 col-sm-8 col-xs-8">
+                                                <a href="#" class="text-blue">Whiteboard Name</a> has been share with you
+                                            </div>
+                                            <div class="col-md-4 col-sm-4 col-xs-4 text-right">
+                                                April 1, 2017
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+        <!-- /#wrapper -->
+
+        <!-- jQuery -->
+        <script src="js/jquery.js" type="text/javascript"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+        <script src="js/bootstrap-select.min.js" type="text/javascript"></script>
+
+        <script src="js/tooltipster.bundle.min.js" type="text/javascript"></script>
+
+        <!-- Menu Toggle Script -->
+        <script type="text/javascript">
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+            $("#mobile-menu").on('click', function () {
+                var menu_status = $(this).attr('rel');
+                if (!menu_status || menu_status == 'close') {
+                    $('.overlay').fadeIn();
+                    $('.sidebar-mobile').animate({
+                        right: 0
+                    }, 300);
+                    $(this).attr('rel', 'open');
+                }
+                else {
+
+                    $('.sidebar-mobile').animate({
+                        right: -180
+                    }, 300);
+                    $('.overlay').fadeOut();
+                    $(this).attr('rel', 'close');
+
+                }
+            });
+            $('.overlay').on('click', function () {
+                $('.sidebar-mobile').animate({
+                    right: -180
+                }, 300);
+                $('.overlay').fadeOut();
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $('#menu-toggle').click(function () {
+                    if ($('#wrapper').hasClass('toggled')) {
+                        $('.tooltip-menu').tooltipster({
+                            animation: 'fade',
+                            delay: 200,
+                            side: 'left',
+                            trigger: 'hover'
+                        });
+                        $('.tooltip-menu').tooltipster('enable');
+                    }
+                    else {
+                        $('.tooltip-menu').tooltipster('disable');
+                    }
+                });
+            });
+        </script>
+
+    </body>
+
+</html>

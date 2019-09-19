@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, shrink-to-fit=no, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- font awesome -->
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/simple-sidebar.css" rel="stylesheet">
+
+        <link href="css/style.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <style>
+            .analytics-page .analytics-box .box-header{
+                border-radius: 3px;
+            }
+            .user-management .user-profiles .listing{
+                border-radius: 3px;
+            }
+            .user-management .user-profiles .listing .listing-header{
+                border-radius: 3px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="modal modal-custom fade billing_modals" id="cancelAccountQuestionModal" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Wait! Are you sure?</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="padder">
+                            <p>Instead of the unlimited user plan you’re currently subscribed to. </p>
+                            <p class="large bold green">Would you be interested in playing $20/user instead?</p>
+                        </div>
+                        <div class="green_bar">
+                            You have <span class="users">4</span> users. Your monthly subscription would be lower to <sup>$</sup><span class="users">80</span> <span class="inline-block" style="vertical-align: bottom;">/month</span>
+                        </div>
+                        <div class="two-col">
+                            <div class="col">
+                                <p>
+                                    <a href="#" class="btn btn-danger">No Thanks</a>
+                                </p>
+                                <p>I would still like to cancel my account</p>
+                            </div>
+                            <div class="col">
+                                <p>
+                                    <a href="#" class="btn btn-success">Yes!</a>
+                                </p>
+                                <p>
+                                    Please keep my account and lower my subscribtion</p>
+                            </div>
+                        </div>
+                        <div class="disclaimer">
+                            <i class="fa fa-warning"></i>
+                            By terminating your account, all account data and information will be deleted. This action cannot be undone.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal modal-custom fade billing_modals" id="cancelAccountBeforeYouGoModal" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Wait! Are you sure?</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="yes_no two-col">
+                            <div class="col danger">
+                                <img src="images/icon_deleteaccount.png"/>
+                            </div>
+                            <div class="col success">
+                                <img src="images/icon_refresh.png"/>
+                            </div>
+                        </div>
+                        <div class="two-col">
+                            <div class="col">
+                                <h2>Yes</h2>
+                                <p class="m-top m-bottom">I would still like to cancel my account</p>
+                                <a href="#" class="btn btn-danger">Delete Account</a>
+                            </div>
+                            <div class="col">
+                                <h2>No</h2>
+                                <p class="m-top m-bottom">Please keep my account active</p>
+                                <a href="#" class="btn btn-success">Never Mind</a>
+                            </div>
+                        </div>
+                        <div class="disclaimer">
+                            <i class="fa fa-warning"></i>
+                            By terminating your account, all account data and information will be deleted. This action cannot be undone.
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="modal modal-custom fade" id="invoiceModal" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Invoice</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <h3 class="text-center">$50 at SoftwareFunnels.com</h3>
+                        <p class="text-center">StartedTestingHere@softwaresecrets.com - <img src="images/visa.png"/> 4242</p>
+                        <div class="reference">
+                            <div class="date pull-left">
+                                September 4, 2017
+                            </div>
+                            <div class="referece-number pull-right">
+                                #2748-0510
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="invoice-details">
+                            <div class="description-head">
+                                <div class="description pull-left">
+                                    Description
+                                </div>
+                                <div class="description pull-right">
+                                    Amount
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="plan-name plan-row">
+                                <div class="name pull-left">
+                                    Subscription to $50/month
+                                </div>
+                                <div class="amount pull-right">
+                                    $50
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="total plan-row">
+                                <div class="pull-left">
+                                    Total
+                                </div>
+                                <div class="amount pull-right">
+                                    $50
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="total plan-row bold">
+                                <div class="pull-left">
+                                    Paid
+                                </div>
+                                <div class="amount pull-right">
+                                    $50
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <p class="m-top text-center">Have a question or need help? <a href="#" class="text-blue bold">Send us an email</a> or <a href="#" class="text-blue bold">give us a call.</a> </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="wrapper">
+
+            <!-- Sidebar desktop -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#" class="logo-expanded">
+                            <span >
+                                <img src="images/logo.png"/>
+                            </span>
+                        </a>
+                        <a href="#" class="logo-collapsed">
+                            <span >
+                                <img src="images/logo-small.png"/>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dashboard active">
+                        <a href="#"><span class="hide-collapsed">Dashboard</span></a>
+                    </li>
+                    <li class="whiteboard">
+                        <a href="#"><span class="hide-collapsed">Whiteboard</span></a>
+                    </li>
+                    <li class="wireframes">
+                        <a href="#"><span class="hide-collapsed">Wireframes</span></a>
+                    </li>
+                    <li class="projects">
+                        <a href="#"><span class="hide-collapsed">Projects</span></a>
+                    </li>
+                    <li class="team">
+                        <a href="#"><span class="hide-collapsed">Team Chat</span></a>
+                    </li>
+                    <li class="helpdesk">
+                        <a href="#"><span class="hide-collapsed">Help Desk</span></a>
+                    </li>
+                    <li class="analytics">
+                        <a href="#"><span class="hide-collapsed">Analytics</span></a>
+                    </li>
+                    <li class="reports">
+                        <a href="#"><span class="hide-collapsed">Reports</span></a>
+                    </li>
+                    <li class="services">
+                        <a href="#"><span class="hide-collapsed">Services</span></a>
+                    </li>
+                    <li class="menu-toggle">
+                        <a href="#menu-toggle" class="" id="menu-toggle"></a>
+                    </li>
+                </ul>
+                <div class="info-link hidden-xs">
+                    <a href="#"><span class="hide-collapsed">Information</span></a>
+                </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+            <div class="mobile-header visible-xs">
+                <a href="#" class="pull-left">
+                    <img src="images/logo.png"/>
+                </a>
+                <a class="pull-right hamburger" id="mobile-menu" href="#">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+            <!-- Sidebar desktop -->
+            <div id="sidebar-wrapper" class="visible-xs sidebar-mobile">
+                <div class="user-subnav">
+                    <ul>
+                        <li class="my-account-link">
+                            <a href="#" class="dropdown-toggle user-icon" data-toggle="dropdown">
+                                <img src="images/img-icon-user.png" class="inline-block v-middle">
+                                <img src="images/icon-carrot-down.png" class="inline-block v-middle">
+                            </a>
+                        </li>
+                        <li class="my-profile">
+                            <a href="#">My Profile</a>
+                        </li>
+                        <li class="users-teams ">
+                            <a href="#">Users & Teams</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li class="billing active">
+                            <a href="#">Billing</a> 
+                        </li>
+                    </ul>
+                </div>
+                <ul class="sidebar-nav">
+                    <li class="dashboard active">
+                        <a href="#"><span class="hide-collapsed">Dashboard</span></a>
+                    </li>
+                    <li class="whiteboard">
+                        <a href="#"><span class="hide-collapsed">Whiteboard</span></a>
+                    </li>
+                    <li class="wireframes">
+                        <a href="#"><span class="hide-collapsed">Wireframes</span></a>
+                    </li>
+                    <li class="projects">
+                        <a href="#"><span class="hide-collapsed">Projects</span></a>
+                    </li>
+                    <li class="team">
+                        <a href="#"><span class="hide-collapsed">Team Chat</span></a>
+                    </li>
+                    <li class="helpdesk">
+                        <a href="#"><span class="hide-collapsed">Help Desk</span></a>
+                    </li>
+                    <li class="analytics">
+                        <a href="#"><span class="hide-collapsed">Analytics</span></a>
+                    </li>
+                    <li class="reports">
+                        <a href="#"><span class="hide-collapsed">Reports</span></a>
+                    </li>
+                    <li class="services">
+                        <a href="#"><span class="hide-collapsed">Services</span></a>
+                    </li>
+                </ul>
+                <div class="info-link">
+                    <a href="#"><span class="hide-collapsed">Information</span></a>
+                </div>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="top-header">
+                    <div class="sidebar-distance">
+                        <div class="col-lg-12">
+                            <h1 class="page-header-title pull-left">Settings</h1>
+                            <ul class="nav navbar-nav navbar-right hidden-xs">
+                                <li class="bell-icon">
+                                    <a href="#"><i class="fa fa-bell"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="dropdown-toggle user-icon" data-toggle="dropdown">
+                                        <img src="images/img-icon-user.png" class="inline-block v-middle"/>
+                                        <img src="images/icon-carrot-down.png" class="inline-block v-middle">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="user-management">
+                            <div class="user-subnav hidden-xs">
+                                <ul>
+                                    <li class="my-profile">
+                                        <a href="#">My Profile</a>
+                                    </li>
+                                    <li class="users-teams ">
+                                        <a href="#">Users & Teams</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="billing active">
+                                        <a href="#">Billing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="user-profiles analytics-page padder-s">
+                                <h1 class="page-title  border-bottom m-bottom-s p-bottom-s">Billing</h1>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="analytics-box">
+                                            <div class="box-header">
+                                                <h4 style="font-size: 24px; font-weight: normal;">Payment Information</h4>
+                                            </div>
+                                            <div class="box-content">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <img style="max-width: none;" src="images/icon_visa.jpg"/>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 style="margin-top: 0;">Billy Joel</h4>
+                                                        <p>Visa ending in 1234</p>
+                                                        <p>Expires 10/18</p>
+                                                        <a class="pull-right m-top-s text-underline" data-toggle="modal" data-target="#cancelAccountQuestionModal" href="#">Edit</a>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="analytics-box">
+                                            <div class="box-header" >
+                                                <h4 style="font-size: 24px; font-weight: normal;">Billing Address</h4>
+                                            </div>
+                                            <div class="box-content">
+                                                <h4 style="margin-top: 0;">Company Name Here</h4>
+                                                <p>5678 Awesomeness Way</p>
+                                                <p>Riverwalk, MN 54321</p>
+                                                <a class="pull-right m-top-s text-underline" data-target="#cancelAccountBeforeYouGoModal" data-toggle="modal" href="#">Edit</a>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 0;"/>
+                                <h3 class="p-top-s">Invoices</h3>
+
+                                <div class="listing team m-top-s m-bottom">
+                                    <div class="listing-header hidden-xs hidden-sm">
+                                        <div class="row">
+                                            <div class="col-lg-3 col-md-3">
+                                                <span>Billing Date</span>
+                                            </div>
+                                            <div class="col-lg-7 col-md-7">
+                                                <span>Subscription Plan</span>
+                                            </div>
+                                            <div class="col-lg-2 col-md-2 text-center">
+                                                <span>Actions</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="listing-wrap">
+                                        <div class="listing-row">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                    <div class="name border-right hidden-xs hidden-sm">
+                                                        <span class="inline-block v-middle hidden-xs hidden-sm">
+                                                            20th, Sep. 2017
+                                                        </span>
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="name">
+                                                            <div class="col-xs-4 col-sm-4">
+                                                                Billing Date: 
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8">
+                                                                20th, Sep. 2017
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 border-right">
+                                                    <div class="email  hidden-xs hidden-sm">
+                                                        Unlimited Users ($297/Month)
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="email">
+                                                            <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+                                                                Subscription Plan
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8 visible-xs visible-sm">
+                                                                Unlimited Users ($297/Month)
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12">
+                                                    <div class="edit-delete hidden-sm hidden-xs">
+                                                        <a class="inline-block" href="#">Pending</a>
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="edit-delete">
+                                                            <div class="col-xs-4 col-sm-4">
+                                                                Actions
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8">
+                                                                <a class="inline-block" href="#">Pending</a>
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing-row">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                    <div class="name border-right hidden-xs hidden-sm">
+                                                        <span class="inline-block v-middle hidden-xs hidden-sm">
+                                                            20th, Sep. 2017
+                                                        </span>
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="name">
+                                                            <div class="col-xs-4 col-sm-4">
+                                                                Billing Date: 
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8">
+                                                                20th, Sep. 2017
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 border-right">
+                                                    <div class="email  hidden-xs hidden-sm">
+                                                        Unlimited Users ($297/Month)
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="email">
+                                                            <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+                                                                Subscription Plan
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8 visible-xs visible-sm">
+                                                                Unlimited Users ($297/Month)
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12">
+                                                    <div class="edit-delete hidden-sm hidden-xs">
+                                                        <a class="inline-block" href="#">Pending</a>
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="edit-delete">
+                                                            <div class="col-xs-4 col-sm-4">
+                                                                Actions
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8">
+                                                                <a class="inline-block" href="#">Pending</a>
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing-row">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                    <div class="name border-right hidden-xs hidden-sm">
+                                                        <span class="inline-block v-middle hidden-xs hidden-sm">
+                                                            20th, Sep. 2017
+                                                        </span>
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="name">
+                                                            <div class="col-xs-4 col-sm-4">
+                                                                Billing Date: 
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8">
+                                                                20th, Sep. 2017
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 border-right">
+                                                    <div class="email  hidden-xs hidden-sm">
+                                                        Unlimited Users ($297/Month)
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="email">
+                                                            <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+                                                                Subscription Plan
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8 visible-xs visible-sm">
+                                                                Unlimited Users ($297/Month)
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12">
+                                                    <div class="edit-delete hidden-sm hidden-xs">
+                                                        <a class="inline-block" href="#">Pending</a>
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="edit-delete">
+                                                            <div class="col-xs-4 col-sm-4">
+                                                                Actions
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8">
+                                                                <a class="inline-block" href="#">Pending</a>
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing-row">
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
+                                                    <div class="name border-right hidden-xs hidden-sm">
+                                                        <span class="inline-block v-middle hidden-xs hidden-sm">
+                                                            20th, Sep. 2017
+                                                        </span>
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="name">
+                                                            <div class="col-xs-4 col-sm-4">
+                                                                Billing Date: 
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8">
+                                                                20th, Sep. 2017
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 border-right">
+                                                    <div class="email  hidden-xs hidden-sm">
+                                                        Unlimited Users ($297/Month)
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="email">
+                                                            <div class="col-xs-4 col-sm-4 visible-xs visible-sm">
+                                                                Subscription Plan
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8 visible-xs visible-sm">
+                                                                Unlimited Users ($297/Month)
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-lg-2 col-sm-12 col-xs-12">
+                                                    <div class="edit-delete hidden-sm hidden-xs">
+                                                        <a class="inline-block" href="#" data-toggle="modal" data-target="#invoiceModal">View</a>
+                                                        <span>/</span>
+                                                        <a href="#" class="inline-block">Download</a>
+                                                    </div>
+                                                    <div class="row visible-xs visible-sm">
+                                                        <div class="edit-delete">
+                                                            <div class="col-xs-4 col-sm-4">
+                                                                Actions
+                                                            </div>
+                                                            <div class="col-xs-8 col-sm-8">
+                                                                <a class="inline-block" href="#" data-toggle="modal" data-target="#invoiceModal">View</a>
+                                                                <span>/</span>
+                                                                <a href="#" class="inline-block">Download</a>
+                                                            </div>
+                                                            <div class="clearfix visible-xs visible-sm"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <p><a href="#" class="text-blue">View Older Invoices</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+        <div class="overlay">
+
+        </div>
+        <!-- jQuery -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+            });
+            $("#mobile-menu").on('click', function () {
+                var menu_status = $(this).attr('rel');
+                if (!menu_status || menu_status == 'close') {
+                    $('.overlay').fadeIn();
+                    $('.sidebar-mobile').animate({
+                        right: 0
+                    }, 300);
+                    $(this).attr('rel', 'open');
+                }
+                else {
+
+                    $('.sidebar-mobile').animate({
+                        right: -180
+                    }, 300);
+                    $('.overlay').fadeOut();
+                    $(this).attr('rel', 'close');
+
+                }
+            });
+
+            $('.overlay').on('click', function () {
+                $('.sidebar-mobile').animate({
+                    right: -180
+                }, 300);
+                $('.overlay').fadeOut();
+            });
+
+            $(window).scroll(function () {
+                $('.user-subnav').addClass('top');
+
+                var scroll = $(window).scrollTop();
+
+                if (scroll <= 10) {
+                    $('.user-subnav').removeClass('top');
+                }
+            });
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="popover"]').popover();
+
+                var maxHeight = 0;
+
+                $(".equalize-height").each(function () {
+                    if ($(this).height() > maxHeight) {
+                        maxHeight = $(this).height();
+                    }
+                });
+
+                $(".equalize-height").height(maxHeight);
+            });
+        </script>
+    </body>
+
+</html>
