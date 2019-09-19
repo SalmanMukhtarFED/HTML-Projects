@@ -1,0 +1,149 @@
+#sidebar {
+  .logo {
+    background: #061523;
+    a {
+      display: block;
+      padding: 20px 40px;
+      img{
+        max-width: 210px;
+      }
+    }
+  }
+  .sidebar_nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      a {
+        color: #888888;
+        font-size: 1.2vw;
+        display: block;
+        display: flex;
+        align-items: center;
+        padding: 20px 25px;
+        &::before {
+          display: inline-block;
+          content: "";
+          width: 28px;
+          height: 28px;
+          background-size: cover !important;
+          margin-right: 10px;
+        }
+      }
+      &.active {
+        a {
+          color: #fff;
+          position: relative;
+          &::after {
+            border-left: 8px solid transparent;
+            content: "";
+            border-right: 8px solid transparent;
+            border-top: 8px solid #fff;
+            transform: rotate(90deg);
+            display: inline-block;
+            position: absolute;
+            right: -4px;
+          }
+        }
+        &.completed{
+            a{
+                &::after{
+                    display: none;
+                }
+            }
+        }
+      }
+      &.close-menu{
+        display: none;
+      }
+      &.visibility {
+        a {
+          &::before {
+            background: url(../images/visibility-inactive.svg) no-repeat;
+          }
+        }
+        &.active {
+          a {
+            &::before {
+              background: url(../images/visibility.svg) no-repeat;
+            }
+          }
+        }
+      }
+      &.reputation {
+        a {
+          &::before {
+            background: url(../images/reputation-inactive.svg) no-repeat;
+          }
+        }
+        &.active {
+          a {
+            &::before {
+              background: url(../images/reputation.svg) no-repeat;
+            }
+          }
+        }
+      }
+      &.experience {
+        a {
+          &::before {
+            background: url(../images/experience-inactive.svg) no-repeat;
+          }
+        }
+        &.active {
+          a {
+            &::before {
+              background: url(../images/experience.svg) no-repeat;
+            }
+          }
+        }
+      }
+      &.security {
+        a {
+          &::before {
+            background: url(../images/security-inactive.svg) no-repeat;
+          }
+        }
+        &.active {
+          a {
+            &::before {
+              background: url(../images/security.svg) no-repeat;
+            }
+          }
+        }
+      }
+      &.engagement {
+        a {
+          &::before {
+            background: url(../images/engagement-inactive.svg) no-repeat;
+          }
+        }
+        &.active {
+          a {
+            &::before {
+              background: url(../images/engagement.svg) no-repeat;
+            }
+          }
+        }
+      }
+      &.score {
+          border-top: 2px solid #636363;
+          margin: 15px 20px;
+        a {
+            padding-left: 0;
+            padding-right: 0;
+          &::before {
+            background: url(../images/logo-short-inactive.svg) no-repeat;
+          }
+        }
+        &.active {
+          a {
+            &::before {
+              background: url(../images/logo-short.svg) no-repeat;
+            }
+          }
+        }
+      }
+    }
+  }
+}

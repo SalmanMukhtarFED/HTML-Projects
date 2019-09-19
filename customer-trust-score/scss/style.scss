@@ -1,0 +1,143 @@
+@import "generic";
+
+html,
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: row;
+  width: 100%;
+}
+#wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  #sidebar {
+    flex-basis: 15%;
+    background: $b_dark;
+  }
+  #content {
+    flex-basis: 85%;
+  }
+}
+@import "sidebar";
+@import "progress_header";
+
+.content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 85px);
+  .page_content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    h3 {
+      color: $b_dark;
+      font-family: psr;
+      font-size: 32px;
+      line-height: 35px;
+      margin-bottom: 0;
+      &.small-width {
+        max-width: 1090px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.btn {
+  &.small_text {
+    max-width: 450px;
+    font-size: 24px;
+    font-family: psr;
+    padding: 15px 30px;
+    min-height: 200px;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.ratings {
+  .rating-text {
+    font-size: 32px;
+  }
+  .stars {
+    img {
+      max-width: 60px;
+      margin: 0 5px;
+    }
+  }
+}
+.select-options {
+  .custom-checkbox {
+    background: #b7b7b7;
+    text-align: left;
+    padding: 60px 50px;
+    border-radius: 5px;
+    label {
+      font-size: 24px;
+      color: #fff;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      padding: 20px 70px;
+      line-height: 30px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s linear;
+    }
+    .custom-control-label::before {
+      position: absolute;
+      top: 1.25rem;
+      left: 1.5rem;
+      display: block;
+      width: 1.75rem;
+      height: 1.75rem;
+      pointer-events: none;
+      content: "";
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      background-color: transparent;
+      border: 2px solid #fff;
+      border-radius: 0;
+    }
+    .custom-control-label::after {
+      position: absolute;
+      top: 1.25rem;
+      left: 1.5rem;
+      display: block;
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+    .custom-control-input:checked ~ .custom-control-label::after {
+      background-color: $visibility;
+    }
+    .custom-control-input:checked ~ .custom-control-label {
+      background-color: $b_dark;
+    }
+  }
+}
+
+.ranges {
+  width: 70%;
+  margin: 0 auto;
+  .range-text {
+    width: 20%;
+    color: #cccccc;
+  }
+  .range {
+    width: 80%;
+  }
+}
+.bottom-logo {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+@import "responsive";

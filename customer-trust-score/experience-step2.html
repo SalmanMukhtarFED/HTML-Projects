@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css"
+            href="css/style.css" />
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+
+        <script>
+                    $(document).ready(function(){
+                        $('.hamburger').click(function(){
+                            $('.overlay').show();
+                            $('.sidebar_nav').addClass('open');
+                        });
+        
+                        $('.overlay').click(function(){
+                            $('.overlay').hide();
+                            $('.sidebar_nav').removeClass('open');
+                        });
+        
+                        $('.close-menu').click(function(){
+                            $('.overlay').hide();
+                            $('.sidebar_nav').removeClass('open');
+                        });
+                    });
+                </script>
+    </head>
+    <body>
+        <div class="overlay"></div>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.svg" /></a>
+                    <a href="#" class="hamburger"><i class="fa fa-bars"></i></a>
+                </div>
+                <ul class="sidebar_nav">
+                    <li class="close-menu"><a href="#">&times;</a></li>
+                    <li class="visibility active completed"><a
+                            href="index.html">Visibility</a></li>
+                    <li class="reputation active completed"><a
+                            href="reputation.html">Reputation</a></li>
+                    <li class="experience active"><a href="#">Experience</a></li>
+                    <li class="security"><a href="#">Security</a></li>
+                    <li class="engagement"><a href="#">Re-Engagement</a></li>
+                    <li class="score"><a href="#">Your Score</a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div class="progress_header">
+                    <a href="#" class="back"><i class="fa fa-chevron-left"></i></a>
+                    <div class="progress-wrapper">
+                        <span>30% Completed</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar"
+                                style="width: 30%" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <a href="#" class="next"><i class="fa fa-chevron-right"></i></a>
+                </div>
+                <div class="content">
+                    <div class="page_header experience d-flex
+                        justify-content-between align-items-center">
+                        <div class="left d-flex align-items-center">
+                            <img src="icons/experience.svg" class="mr-right-s"
+                                style="width: 30px;" /><h1 class="page_title">Online
+                                Reputation</h1>
+                        </div>
+                        <div class="right">
+                            <h1 class="company_name">Golflogics - Local Survey</h1>
+                        </div>
+                    </div>
+                    <div class="page_content experience_content text-center">
+                        <h3 class="small-width">Are you currently using any of the following tools to collect 
+                                Ratings & Reviews from your customers? (select all that apply)
+                                </h3>
+                        <div class="separator"></div>
+                        <div class="select-options">
+                            <div class="row">
+                                <div class="col-lg-8 offset-lg-2">
+                                    <div class="row mr-bottom">
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check1" name="example1">
+                                                    <label class="custom-control-label" for="check1">Table tents with a review QR 
+                                                            code, URL, or short SMS code</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check2" name="example1">
+                                                    <label class="custom-control-label" for="check2">Review URL on receipts</label>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="row mr-bottom">
+                                        <div class="col-lg-6">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check3" name="example1">
+                                                <label class="custom-control-label" for="check3">Email review requests</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="check4" name="example1">
+                                                <label class="custom-control-label" for="check4">Text message review requests</label>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="row mr-bottom">
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check5" name="example1">
+                                                    <label class="custom-control-label" for="check5">Review invitations on 
+                                                            posters/banners</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input type="checkbox" class="custom-control-input" id="check6" name="example1">
+                                                    <label class="custom-control-label" for="check6">Review window stickers</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

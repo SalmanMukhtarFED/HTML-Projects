@@ -1,0 +1,76 @@
+.progress_header{
+    background: #efefef;
+    padding: 25px 30px;
+    border-bottom: 1px solid $gray; 
+    position: relative;
+    .back{
+        display: inline-block;
+        border: 3px solid $b_dark;
+        line-height: 25px;
+        width: 30px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 50%;
+        height: 30px;
+        text-indent: -1px;
+        position: absolute;
+        color: $b_dark;
+        &.disabled{
+            opacity: 0.35;
+        }
+    }
+    .next{
+        display: inline-block;
+        border: 3px solid #0a2238;
+        line-height: 25px;
+        width: 30px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 50%;
+        height: 30px;
+        text-indent: 0;
+        position: absolute;
+        color: #0a2238;
+        right: 30px;
+        top: 30px;
+    }
+    .progress-wrapper{
+        width: 60%;
+        margin: 0 auto;
+        span{
+            font-size: 18px;
+            color: $b_dark;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        .progress{
+            background: $gray;
+            height: 0.6rem;
+            .progress-bar{
+                background: $b_dark;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.page_header{
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    h1{
+        margin: 0;
+    }
+    &.visibility{color: $visibility;}
+    &.reputation{color: $reputation;}
+    &.experience{color: $experience;}
+    &.security{color: $security;}
+    &.engagement{color: $enagagment;}
+    .page_title{ 
+        font-family: psr;
+        font-size: 28px;
+    }
+    .company_name{
+        font-size: 28px;
+    }
+    
+}
