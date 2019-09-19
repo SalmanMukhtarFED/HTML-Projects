@@ -1,0 +1,143 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 25, 2019, 10:11:36 AM
+    Author     : Salman Mukhtar
+*/
+
+#addPeopleModal{
+    .upload-picture{
+        position: relative;
+        max-width: 150px;
+        margin: 0 auto 30px;
+        .user-image{
+            display: block;
+            background: #DCF0FF;
+            color: #92B5EC; 
+            text-align: center;
+            line-height: 150px;
+            font-size: 42px;
+            border-radius: 50%;
+            img{
+                border-radius: 50%;   
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .edit-pic{
+            background: #DCF0FF;
+            position: absolute;
+            width: 25px;
+            display: block;
+            height: 25px;
+            text-align: center;
+            font-size: 12px;
+            color: #2B61B4;
+            border-radius: 50%;
+            line-height: 25px;
+            right: 20px;
+            bottom: 0;
+            box-shadow: 0 0 30px 0 rgba(0,0,0,.10);
+        }
+    }
+}
+
+#editPeopleModal{
+    .upload-picture{
+        position: relative;
+        max-width: 150px;
+        margin: 0 auto 30px;
+        max-height: 150px;
+        .user-image{
+            display: block;
+            background: none;
+            color: #92B5EC; 
+            text-align: center;
+            line-height: 150px;
+            font-size: 42px;
+            border-radius: 50%;
+            img{
+                border-radius: 50%;  
+                width: 150px;
+                height: 150px;
+            }
+        }
+        .delete-pic {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            color: #FF6262;
+            margin-top: 10px;
+            .fa{
+                background: #fee;
+                color: #FF6262;
+                width: 25px;
+                height: 25px;
+                font-size: 12px;
+                line-height: 25px;
+                border-radius: 50%;
+                margin-right: 5px;
+            }
+        }
+        .edit-pic{
+            background: #DCF0FF;
+            position: absolute;
+            width: 25px;
+            display: block;
+            height: 25px;
+            text-align: center;
+            font-size: 12px;
+            color: #2B61B4;
+            border-radius: 50%;
+            line-height: 25px;
+            right: 20px;
+            bottom: 0;
+            box-shadow: 0 0 30px 0 rgba(0,0,0,.10);
+        }
+    }
+}
+
+#viewTeamMemberModal{
+    .modal-dialog{
+        max-width: 620px;
+    }
+    .modal-header{
+        padding: 0;
+        position: relative;
+        .close{
+            position: absolute;
+            right: 25px;
+            top: 20px;
+            z-index: 1;
+        }
+    }
+    .member{
+        img{
+            max-width: 150px;
+        }
+        .member-detail{
+            h5{
+                font-family: @body_font;
+                color: #555;
+            }
+            h4{
+                color: #979797;
+                font-family: @body_font;
+                font-size: 16px;
+                margin: 15px 0 30px;
+            }
+            p{
+                color: #555;
+                font-size: 14px;
+                line-height: 18px;
+            }
+        }
+    }
+    .modal-body{
+        padding: 1.5rem;
+        padding-bottom: 0;
+    }
+}
