@@ -1,0 +1,295 @@
+.crt-bulkbookstore-eb-form-clone {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore {
+    background: #000 url(//d37phj1nwbd0r1.cloudfront.net/assets/img/bg-BulkBookStore-eb-form-old.jpg) no-repeat;
+    min-height: 412px
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore.thankyou {
+    background: #000 url(//d37phj1nwbd0r1.cloudfront.net/assets/img/bg-BulkBookStore-eb-form-ty.jpg) no-repeat;
+    min-height: 412px
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .top-content {
+    padding: 0
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore.thankyou .bottom-content {
+    bottom: 106px
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content {
+    bottom: 22px;
+    position: absolute;
+    right: auto;
+    width: 48%;
+    left: 2%
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form {
+    float: left;
+    margin: 0 0 0 30px;
+    width: 350px
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form input[type="email"],
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form input[type="text"] {
+    background: #fff none repeat scroll 0 0;
+    border: none;
+    border-radius: 0;
+    color: #000;
+    display: block;
+    float: none;
+    font-family: 'Open Sans', serif!important;
+  
+    font-weight: 700;
+    line-height: 25px;
+    margin: 0 auto 8px;
+    padding: 10px 0;
+    text-indent: 15px;
+    text-align: left;
+    vertical-align: top;
+    width: 100%;
+    border-bottom: none;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .15)
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form select {
+    background: #fff none repeat scroll 0 0;
+    border: none;
+    border-radius: 0;
+    color: #666;
+    display: block;
+    float: none;
+    font-family: 'Open Sans', serif!important;
+    font-weight: 700;
+    line-height: 25px;
+    margin: 0 auto 8px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, .15)
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form input[type="submit"] {
+    
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    float: none;
+    font-family: 'Open Sans', serif!important;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0 auto;
+    padding: 8px 0;
+    text-transform: capitalize;
+    vertical-align: top;
+    width: 100%
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .coupon-code {
+    background: none;
+    border: medium none;
+    
+    float: none;
+    font-family: Arial;
+    
+    font-weight: 700;
+    line-height: 50px;
+    
+    max-width: 215px;
+    text-align: center
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content span.ao-form-error-message {
+    display: none
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .ao-form label.ao-form-label {
+    line-height: 1.5;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #555
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content button.ao-form-submit {
+   
+    border: none;
+    border-radius: 0!important;
+   
+    cursor: pointer;
+    display: block;
+    float: none;
+    font-family: 'Open Sans', serif!important;
+  
+    line-height: 30px;
+    margin: 0 auto;
+    padding: 5px 0!important;
+    text-transform: capitalize;
+    vertical-align: top;
+    width: 100%
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .ao-form select {
+    padding: 10px!important
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .ao-form .ao-block-wrapper {
+    margin-bottom: 5px
+}
+
+.crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content {
+    bottom: 10px
+}
+
+div.ao-richtext-block {
+    
+    text-align: center
+}
+
+.ao-richtext-block p:nth-child(1) span strong {
+    
+    display: block;
+    
+}
+
+@media screen and (min-width:320px) and (max-width:768px) {
+    .crt .crt-popup-modal-bg {
+        display: none!important
+    }
+    .crt .crt-popup-modal {
+        bottom: 0;
+        position: fixed;
+        top: auto
+    }
+    .crt .crtpc {
+        max-width: 300px
+    }
+    .crt-bulkbookstore-eb-form-clone {
+        max-width: 325px;
+        margin: 0 auto;
+        position: relative
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore {
+        background: #F1F1F1 url(//d37phj1nwbd0r1.cloudfront.net/assets/img/bg-BulkBookStore-eb-form-m.jpg) no-repeat;
+        min-height: 175px
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore.thankyou {
+        background: url(//d37phj1nwbd0r1.cloudfront.net/assets/img/bg-BulkBookStore-eb-form-m-ty.jpg) no-repeat;
+        min-height: 130px
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form {
+        float: none;
+        margin: 0 auto;
+        width: 90%
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form input[type="email"],
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form input[type="text"] {
+        float: left;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0 1% 3px;
+        padding: 3px 0;
+        text-indent: 15px;
+        width: 48%
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content {
+        bottom: 8px
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore.thankyou .bottom-content {
+        bottom: 24px
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form select {
+        width: 48%;
+        float: left;
+        padding: 3px;
+        font-size: 12px;
+        margin: 0 1%
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .discount-form input[type="submit"] {
+        float: left;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 18px;
+        width: 45%;
+        padding: 4px;
+        
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .coupon-code {
+        font-size: 14px;
+        line-height: 27px;
+        margin: 0 auto;
+        max-width: 157px
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content {
+        width: 96%
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .ao-form .ao-block-wrapper {
+        margin-bottom: 5px;
+        float: left;
+        width: 48%;
+        clear: initial;
+        margin: 0 1%
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content button.ao-form-submit {
+        padding: 5px 0!important;
+        margin-top: 20px
+    }
+    .crt .crt-popup-modal .close-crt-popup-modal {
+        top: 3px;
+        right: 3px
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .ao-form .ao-block-wrapper p:nth-child(3) {
+        display: none
+    }
+    div.ao-richtext-block {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: 30px;
+        text-align: center;
+        font-size: 12px
+    }
+    .ao-richtext-block p:nth-child(2) span {
+        display: none
+    }
+    .ao-richtext-block p:nth-child(1) span {
+       
+        font-size: 14px!important
+    }
+    div.ao-richtext-block {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        bottom: -9px;
+        text-align: center;
+        font-size: 12px;
+        background: #F0F0F0
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore {
+        background: #F1F1F1!important;
+        min-height: 175px
+    }
+    .ao-richtext-block p:nth-child(1) span strong {
+        
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content .ao-form select {
+        padding: 5px!important
+    }
+    .crt-bulkbookstore-eb-form-clone .crt-bulkbookstore .bottom-content button.ao-form-submit {
+        padding: 5px 0!important;
+       
+       
+    }
+    .ao-richtext-block p:nth-child(1) span strong {
+        margin: 0
+    }
+}

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" media="all" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>       
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/sidebar.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+    </head>
+    <body>
+        <div id="approveRejectPressReleaseModal" class="modal approve_reject_modals  fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="text-d-blue">Approve or Reject Press Release</h1>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4 col-xs-6">
+                                <a href="#" class="approve_btn">
+                                    Approve
+                                </a>
+                            </div>
+                            <div class="col-md-3 col-sm-4 col-xs-6">
+                                <a href="#" class="reject_btn">
+                                    Reject
+                                </a>
+                            </div>
+                            <div class="clearfix visible-xs"></div>
+                            <div class="col-md-2 col-sm-4 col-xs-12">
+                                <a href="#" class="inline-block edit  m-top-xs">
+                                    <svg version="1.1" id="edit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><path fill="#01669A" d="M3.28,17.86L14.078,7.061l2.862,2.862L6.14,20.722l-3.584,0.722L3.28,17.86z M1.438,16.872L0,24l7.127-1.437l12.642-12.64l-5.691-5.69L1.438,16.872z M18.309,0l-2.816,2.818l5.69,5.692l2.818-2.82L18.309,0z"/></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="block_heading text-d-blue m-top m-bottom">
+                            Press Release Title
+                        </div>
+                        <div class="m-left m-right m-bottom">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper" class="visible-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a class="logo" href="#">
+                            <img src="images/logo.svg" class="hidden-xs"/>
+                            <img src="images/logo-short.svg" class="visible-xs"/>
+                            
+                        </a>
+                         <a class="current" href="#">
+                            <img src="images/current.svg"/>
+                        </a>
+                        <a class="mobile_menu_icon" href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                       
+                    </li>
+                    <li class="mobile_menu">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing</a>
+                            </li>
+                            <li>
+                                <a href="#">Reporting</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Admin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="top-header">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 hidden-xs">
+                        <div class="quick_search_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <select class="selectpicker" data-title="Partners">
+                                <option>
+                                    Partners
+                                </option>
+                            </select>
+                            <a class="search_btn btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-5 ">
+                        <a class="btn btn-primary">Add Partner <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Add Merchant <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Manage</a>
+                    </div>
+                    <div class="col-md-2 col-md-offset-2 col-sm-1 text-right">
+                        <div class="dropdown user_dropdown inline-block">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            <img src="images/logo.svg"/>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">Partners</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Reporting</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="page marketing">
+                    <div class="main_header">
+                        <h3 class="text-orange">Strategic Partners</h3>
+                        <h1>Products</h1>
+                        <a href="#" class="visible-xs res_sub_menu">
+                            <span>Marketing</span>
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <ul class="m-top inline-nav p-top">
+                            <li class=""><a href="#">Social <span class="badge">4</span></a></li>
+                            <li class=""><a href="#">Guest Blog</a></li>
+                            <li class=""><a href="#">Marketing Email </a></li>
+                            <li ><a href="#">Case Study </a></li>
+                            <li class="active"><a href="#">Press Release <span class="badge">4</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="content marketing_email">
+                         <h3 class="border-heading">Pending Press Release Submissions</h3>
+                        <div class="row">
+                            <div class="marketing-products-header hidden-xs ">
+                                <div class="col-md-7 col-sm-5">
+                                    Domain
+                                </div>
+                                <div class="col-md-5 col-sm-4">
+                                    Date Created
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="marketing-products-row ">
+                                <div class="col-md-7 col-sm-5 col-xs-12">
+                                    <h4 class="visible-xs">Domain:</h4>
+                                    <span class="text-blue bold">Merchant Engine eCommerce Consulting</span>
+                                    <div class="m-top-xs m-bottom-xs visible-xs"></div>
+                                </div>
+                                <div class="clearfix visible-xs"></div>
+                                <div class="col-md-2 col-sm-4 col-xs-5">
+                                    <h4 class="visible-xs">Date Created</h4>
+                                    12/12/2017
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-7">
+                                   
+                                    <div class="text-right add_product">
+                                        
+                                        <a href="" data-toggle="modal" data-target="#approveRejectPressReleaseModal" class="btn btn-primary btn-sm m-top-xs">View Submissions</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="marketing-products-row ">
+                                <div class="col-md-7 col-sm-5 col-xs-12">
+                                    <h4 class="visible-xs">Domain:</h4>
+                                    <span class="text-blue bold">Merchant Engine eCommerce Consulting</span>
+                                    <div class="m-top-xs m-bottom-xs visible-xs"></div>
+                                </div>
+                                <div class="clearfix visible-xs"></div>
+                                <div class="col-md-2 col-sm-4 col-xs-5">
+                                    <h4 class="visible-xs">Date Created</h4>
+                                    12/12/2017
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-7">
+                                   
+                                    <div class="text-right add_product">
+                                        
+                                        <a href="" data-toggle="modal" data-target="#approveRejectPressReleaseModal" class="btn btn-primary btn-sm m-top-xs">View Submissions</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="marketing-products-row ">
+                                <div class="col-md-7 col-sm-5 col-xs-12">
+                                    <h4 class="visible-xs">Domain:</h4>
+                                    <span class="text-blue bold">Merchant Engine eCommerce Consulting</span>
+                                    <div class="m-top-xs m-bottom-xs visible-xs"></div>
+                                </div>
+                                <div class="clearfix visible-xs"></div>
+                                <div class="col-md-2 col-sm-4 col-xs-5">
+                                    <h4 class="visible-xs">Date Created</h4>
+                                    12/12/2017
+                                </div>
+                                <div class="col-md-3 col-sm-3 col-xs-7">
+                                   
+                                    <div class="text-right add_product">
+                                        
+                                        <a href="" data-toggle="modal" data-target="#approveRejectPressReleaseModal" class="btn btn-primary btn-sm m-top-xs">View Submissions</a>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+         <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+
+            });
+            $(document).ready(function () {
+                $('.selectpicker').selectpicker({
+                    style: 'btn-inverse'
+                });
+
+               
+
+                $('.mobile_menu_icon').on('click', function () {
+                    $('.mobile_menu').toggle();
+                });
+               $('.current').on('click', function () {
+                    $('.top-header').toggle();
+                });
+
+                $(window).resize(function () {
+                    var width = $(document).width();
+
+                    if (width >= 768) {
+                        console.log(width)
+                        console.log("in if");
+                        $('.top-header').css('display', 'block');
+                    }
+                });
+                $('.res_sub_menu').on('click', function () {
+                    $('.inline-nav').slideToggle();
+                });
+            });
+        </script>
+
+    </body>
+</html>

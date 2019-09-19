@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" media="all" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>       
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/sidebar.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+    </head>
+    <body>
+        <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper" class="visible-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a class="logo" href="#">
+                            <img src="images/logo.svg" class="hidden-xs"/>
+                            <img src="images/logo-short.svg" class="visible-xs"/>
+                            
+                        </a>
+                         <a class="current" href="#">
+                            <img src="images/current.svg"/>
+                        </a>
+                        <a class="mobile_menu_icon" href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                       
+                    </li>
+                    <li class="mobile_menu">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing</a>
+                            </li>
+                            <li>
+                                <a href="#">Reporting</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Admin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="top-header">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 hidden-xs">
+                        <div class="quick_search_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <select class="selectpicker" data-title="Partners">
+                                <option>
+                                    Partners
+                                </option>
+                            </select>
+                            <a class="search_btn btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-5 ">
+                        <a class="btn btn-primary">Add Partner <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Add Merchant <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Manage</a>
+                    </div>
+                    <div class="col-md-2 col-md-offset-2 col-sm-1 text-right">
+                        <div class="dropdown user_dropdown inline-block">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            <img src="images/logo.svg"/>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Reporting</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="page">
+                    <div class="main_header">
+                        <h3 class="text-orange">Strategic Partners</h3>
+                        <h1>Partners</h1>
+                    </div>
+                    <div class="sub_header">
+                        <h2>Search Domain Name</h2>
+                        <div class="quick_search_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <select class="selectpicker" data-title="Partners">
+                                <option>
+                                    Partners
+                                </option>
+                            </select>
+                            <a class="search_btn btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row top_content_header m-bottom">
+                            <div class="col-md-4 col-sm-6">
+                                <select class="selectpicker" data-width="100%" data-title="Newest - Oldest">
+                                    <option>A - Z</option>
+                                    <option>Newest - Oldest</option>
+                                </select>
+                            </div>
+                            <div class="col-md-8 col-sm-6 text-right expand_all">
+                                <a href="#">Expand All <i class="fa fa-chevron-down"></i></a>
+                            </div>
+                            <div class="clearfix visible-sm"></div>
+                        </div>
+                        <div class="panel-group panel_accordions" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading trigger">
+                                    <div class="panel-title">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                Merchant Engine eCommerce Consulting
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 text-right">
+                                                <div class="icons_bar">
+                                                    
+                                                    <a id="delete" href="javascript:void(0)" class="">
+                                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon id="x-mark-2" fill="#9E0B0F" points="20.596,18.49 13.982,11.94 20.529,5.334 18.49,3.313 11.944,9.922 5.336,3.378 3.313,5.402 9.928,11.959 3.378,18.572 5.402,20.596 11.963,13.976 18.574,20.529 "/></svg>
+
+                                                    </a>
+                                                    <a  class="collapse_icon" href="javascript:void(0);">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="partner_detail">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Contact Name</div>
+                                                    <div class="detial">DiPietro Marketing Group LLCM</div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Email Address</div>
+                                                    <div class="detial">daniel.rosenfeld@roseknowsmarketing.com</div>
+                                                </div>
+                                                <div class="clearfix visible-sm"></div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Phone</div>
+                                                    <div class="detial">123456789</div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Sales Rep</div>
+                                                    <div class="detial">DiPietro Marketing Group LLC</div>
+                                                </div>
+                                                 <div class="clearfix visible-sm"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Date Createde</div>
+                                                    <div class="detial">2/10/2017</div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title"># of Active Accounts</div>
+                                                    <div class="detial">daniel.rosenfeld@roseknowsmarketing.com</div>
+                                                </div>
+                                                <div class="clearfix visible-sm"></div>
+                                                <div class="col-md-3 col-md-one-third">
+                                                    <div class="title">Code</div>
+                                                    <div class="detial">123456789</div>
+                                                </div>
+                                                <div class="col-md-3 col-md-two-third">
+                                                    <div class="title">Referring Partner</div>
+                                                    <div class="detial">So and So Company</div>
+                                                </div>
+                                                <div class="clearfix-large-mobile"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading trigger">
+                                    <div class="panel-title">
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6">
+                                                Merchant Engine eCommerce Consulting
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 text-right">
+                                                <div class="icons_bar">
+                                                    
+                                                    <a href="#" class="">
+                                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon id="x-mark-2" fill="#9E0B0F" points="20.596,18.49 13.982,11.94 20.529,5.334 18.49,3.313 11.944,9.922 5.336,3.378 3.313,5.402 9.928,11.959 3.378,18.572 5.402,20.596 11.963,13.976 18.574,20.529 "/></svg>
+
+                                                    </a>
+                                                    <a  class="collapse_icon" href="javascript:void(0);">
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="partner_detail">
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Contact Name</div>
+                                                    <div class="detial">DiPietro Marketing Group LLCM</div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Email Address</div>
+                                                    <div class="detial">daniel.rosenfeld@roseknowsmarketing.com</div>
+                                                </div>
+                                                <div class="clearfix visible-sm"></div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Phone</div>
+                                                    <div class="detial">123456789</div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Sales Rep</div>
+                                                    <div class="detial">DiPietro Marketing Group LLC</div>
+                                                </div>
+                                                 <div class="clearfix visible-sm"></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title">Date Createde</div>
+                                                    <div class="detial">2/10/2017</div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6">
+                                                    <div class="title"># of Active Accounts</div>
+                                                    <div class="detial">daniel.rosenfeld@roseknowsmarketing.com</div>
+                                                </div>
+                                                <div class="clearfix visible-sm"></div>
+                                                <div class="col-md-3 col-md-one-third">
+                                                    <div class="title">Code</div>
+                                                    <div class="detial">123456789</div>
+                                                </div>
+                                                <div class="col-md-3 col-md-two-third">
+                                                    <div class="title">Referring Partner</div>
+                                                    <div class="detial">So and So Company</div>
+                                                </div>
+                                                <div class="clearfix-large-mobile"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+
+            });
+            $(document).ready(function () {
+                $('.selectpicker').selectpicker({
+                    style: 'btn-inverse'
+                });
+
+                $('.panel', this).on('click', function (e) {
+                    $(this).find(".panel-heading").toggleClass('trigger');
+                    $(this).find(".panel-collapse").toggleClass('in');
+                });
+
+                $('.mobile_menu_icon').on('click', function () {
+                    $('.mobile_menu').toggle();
+                });
+                $('.current').on('click', function () {
+                    $('.top-header').toggle();
+                });
+              
+                $(window).resize(function () {
+                    var width = $(document).width();
+
+                    if (width >= 768) {
+                        console.log(width)
+                        console.log("in if");
+                        $('.top-header').css('display', 'block');
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>

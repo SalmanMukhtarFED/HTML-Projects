@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" media="all" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>       
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/build.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/sidebar.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+    </head>
+    <body>
+        <div id="toDoModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="text-d-blue">Admin Marketing Checklist</h1>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-info" type="button">
+                                            <i class="glyphicon glyphicon-search"></i>
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block_heading m-top m-bottom">
+                            To DO
+                        </div>
+                        <div class="m-left m-right">
+                            <div class="b-bottom p-bottom-s m-bottom-s small">
+                                <h4 class="text-blue">Merchant Engine eCommerce Consulting</h4>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inline-block v-middle">
+                                            <label class="no-margin">Press Release</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary inline-block v-middle m-left">
+                                            <input id="checkbox1" class="styled" type="checkbox">
+                                            <label for="checkbox1">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inline-block v-middle">
+                                            <label class="no-margin">Blog Post</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary inline-block v-middle m-left">
+                                            <input id="checkbox2" class="styled" type="checkbox">
+                                            <label for="checkbox2">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-xs-12">
+                                        <div class="inline-block v-middle">
+                                            <label class="no-margin">Email</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary inline-block v-middle m-left">
+                                            <input id="checkbox3" class="styled" type="checkbox">
+                                            <label for="checkbox3">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="b-bottom p-bottom-s small">
+                                <h4 class="text-blue">Merchant Engine eCommerce Consulting</h4>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inline-block v-middle">
+                                            <label class="no-margin">Press Release</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary inline-block v-middle m-left">
+                                            <input id="checkbox4" class="styled" type="checkbox">
+                                            <label for="checkbox4">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inline-block v-middle">
+                                            <label class="no-margin">Blog Post</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary inline-block v-middle m-left">
+                                            <input id="checkbox5" class="styled" type="checkbox">
+                                            <label for="checkbox5">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-4 col-xs-12">
+                                        <div class="inline-block v-middle">
+                                            <label class="no-margin">Email</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary inline-block v-middle m-left">
+                                            <input id="checkbox6" class="styled" type="checkbox">
+                                            <label for="checkbox6">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="block_heading m-top m-bottom">
+                            Done
+                        </div>
+                        <div class="m-left m-right">
+                            <div class="b-bottom p-bottom-s m-bottom-s small">
+                                <h4 class="text-blue">Merchant Engine eCommerce Consulting</h4>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inline-block v-middle">
+                                            <label class="no-margin">Press Release</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary inline-block v-middle m-left">
+                                            <input id="checkbox7" class="styled" type="checkbox" checked="">
+                                            <label for="checkbox7">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="b-bottom p-bottom-s m-bottom-s small">
+                                <h4 class="text-blue">Merchant Engine eCommerce Consulting</h4>
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="inline-block v-middle">
+                                            <label class="no-margin">Social</label>
+                                        </div>
+                                        <div class="checkbox checkbox-primary inline-block v-middle m-left">
+                                            <input id="checkbox7" class="styled" type="checkbox" checked="">
+                                            <label for="checkbox7">
+                                                &nbsp;
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper" class="visible-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a class="logo" href="#">
+                            <img src="images/logo.svg" class="hidden-xs"/>
+                            <img src="images/logo-short.svg" class="visible-xs"/>
+
+                        </a>
+                        <a class="current" href="#">
+                            <img src="images/current.svg"/>
+                        </a>
+                        <a class="mobile_menu_icon" href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+
+                    </li>
+                    <li class="mobile_menu">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing</a>
+                            </li>
+                            <li>
+                                <a href="#">Reporting</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Admin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="top-header">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="quick_search_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <select class="selectpicker" data-title="Partners">
+                                <option>
+                                    Partners
+                                </option>
+                            </select>
+                            <a class="search_btn btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-5 ">
+                        <a class="btn btn-primary">Add Partner <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Add Merchant <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Manage</a>
+                    </div>
+                    <div class="col-md-1 col-md-offset-2 col-sm-1 text-right hidden-xs">
+                        <div class="dropdown user_dropdown inline-block">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            <img src="images/logo.svg"/>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Reporting</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="page">
+                    <div class="main_header">
+                        <h3 class="text-orange">Strategic Partners</h3>
+                        <a class="todo_link" data-toggle="modal" data-target="#toDoModal" href=""><svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+                                                                                                       xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+                                                                                                       x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24; fill: #fff;" xml:space="preserve">
+
+
+                            <g i:extraneous="self">
+                            <path d="M12,18h8v-1h-8V18z M6.221,17.607l-1.539-1.451l-0.698,0.709L6.234,19l3.25-3.303L8.774,15L6.221,17.607z M12,13h8v-1h-8
+                                  V13z M6.221,12.608l-1.539-1.453l-0.698,0.709L6.234,14l3.25-3.304L8.774,10L6.221,12.608z M12,8h8V7h-8V8z M6.221,7.607
+                                  L4.682,6.156L3.984,6.865L6.234,9l3.25-3.303L8.774,5L6.221,7.607z M2,2h20v20H2V2z M0,24h24V0H0V24z"/>
+                            </g>
+                            </svg></a>
+                        <h1>Partners</h1>
+                        <a href="#" class="visible-xs res_sub_menu">
+                            <span>Marketing</span>
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <ul class="m-top inline-nav p-top">
+                            <li class="active"><a href="#">Social <span class="badge">4</span></a></li>
+                            <li class=""><a href="#">Guest Blog</a></li>
+                            <li class=""><a href="#">Marketing Email</a></li>
+                            <li class=""><a href="#">Case Study</a></li>
+                            <li><a href="#">Press Release</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content marketing">
+                        <h3 class="border-heading">Pending Soical Actions</h3>
+                        <div class="block_heading">
+                            <div class="pull-left">
+                                Domain
+                            </div>
+                            <div class="pull-right">
+                                <a href="#">
+                                    Expand All <i class="fa fa-chevron-down"></i>
+                                </a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="accordion panel-group panel_accordions social_panels" id="accordion2">
+                            <div class="accordion-group panel">
+                                <div class="accordion-heading panel-heading">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <a class="panel-title" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                                Merchant Engine eCommerce Consulting
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 text-right">
+                                            <div class="icons_bar">
+
+                                                <a  data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" href="javascript:void(0);"  class="collapse_icon" >
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne" class="accordion-body collapse">
+                                    <div class="panel-body">
+                                        <div class="partner_detail">
+                                            <div class="social_btns">
+                                                <a class="socialbox facebook" href="#">
+                                                    <div class="social-icon">
+                                                        <i class="fa fa-facebook-square"></i>
+                                                    </div>
+                                                    <div class="description">
+                                                        <span>Like</span>
+                                                    </div>
+                                                </a>
+
+                                                <a class="socialbox twitter" href="#">
+                                                    <div class="social-icon">
+                                                        <i class="fa fa-fw fa-twitter"></i>
+                                                    </div>
+                                                    <div class="description">
+
+                                                        <span>Follow</span>
+                                                    </div>
+                                                </a>
+
+                                                <a class="socialbox pinterest" href="#">
+                                                    <div class="social-icon">
+                                                        <i class="fa fa-fw fa-pinterest"></i>
+                                                    </div>
+                                                    <div class="description">
+
+                                                        <span>Follow</span>
+                                                    </div>
+                                                </a>
+
+                                                <a class="socialbox linkedin" href="#">
+                                                    <div class="social-icon">
+                                                        <i class="fa fa-fw fa-linkedin"></i>
+                                                    </div>
+                                                    <div class="description">
+
+                                                        <span>Follow</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group panel">
+                                <div class="accordion-heading panel-heading">
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-6">
+                                            <a class="panel-title" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                                Merchant Engine eCommerce Consulting
+                                            </a>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6 text-right">
+                                            <div class="icons_bar">
+
+                                                <a  data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" href="javascript:void(0);"  class="collapse_icon" >
+
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseTwo" class="accordion-body collapse">
+                                    <div class="panel-body">
+                                        <div class="partner_detail">
+                                            <div class="social_btns">
+                                                <a class="socialbox facebook" href="#">
+                                                    <div class="social-icon">
+                                                        <i class="fa fa-facebook-square"></i>
+                                                    </div>
+                                                    <div class="description">
+                                                        <span>Like</span>
+                                                    </div>
+                                                </a>
+
+                                                <a class="socialbox twitter" href="#">
+                                                    <div class="social-icon">
+                                                        <i class="fa fa-fw fa-twitter"></i>
+                                                    </div>
+                                                    <div class="description">
+
+                                                        <span>Follow</span>
+                                                    </div>
+                                                </a>
+
+                                                <a class="socialbox pinterest" href="#">
+                                                    <div class="social-icon">
+                                                        <i class="fa fa-fw fa-pinterest"></i>
+                                                    </div>
+                                                    <div class="description">
+
+                                                        <span>Follow</span>
+                                                    </div>
+                                                </a>
+
+                                                <a class="socialbox linkedin" href="#">
+                                                    <div class="social-icon">
+                                                        <i class="fa fa-fw fa-linkedin"></i>
+                                                    </div>
+                                                    <div class="description">
+
+                                                        <span>Follow</span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+
+            });
+            $(document).ready(function () {
+                $('.selectpicker').selectpicker({
+                    style: 'btn-inverse'
+                });
+
+
+                $('.mobile_menu_icon').on('click', function () {
+                    $('.mobile_menu').toggle();
+                });
+
+
+                $('.current').on('click', function () {
+                    $('.top-header').toggle();
+                });
+
+                $(window).resize(function () {
+                    var width = $(document).width();
+
+                    if (width >= 768) {
+                        console.log(width)
+                        console.log("in if");
+                        $('.top-header').css('display', 'block');
+                    }
+                });
+                $('.res_sub_menu').on('click', function () {
+                    $('.inline-nav').slideToggle();
+                });
+
+            });
+
+        </script>
+
+    </body>
+</html>

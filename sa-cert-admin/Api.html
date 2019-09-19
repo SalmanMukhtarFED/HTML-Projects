@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" media="all" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>       
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/sidebar.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/build.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+
+    </head>
+    <body>
+        <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper" class="visible-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a class="logo" href="#">
+                            <img src="images/logo.svg" class="hidden-xs"/>
+                            <img src="images/logo-short.svg" class="visible-xs"/>
+
+                        </a>
+                        <a class="current" href="#">
+                            <img src="images/current.svg"/>
+                        </a>
+                        <a class="mobile_menu_icon" href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+
+                    </li>
+                    <li class="mobile_menu">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing</a>
+                            </li>
+                            <li>
+                                <a href="#">Reporting</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Admin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="top-header">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="quick_search_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <select class="selectpicker" data-title="Partners">
+                                <option>
+                                    Partners
+                                </option>
+                            </select>
+                            <a class="search_btn btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-5 ">
+                        <a class="btn btn-primary">Add Partner <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Add Merchant <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Manage</a>
+                    </div>
+                    <div class="col-md-1 col-md-offset-2 col-sm-1 text-right hidden-xs">
+                        <div class="dropdown user_dropdown inline-block">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            <img src="images/logo.svg"/>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Reporting</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="page marketing">
+                    <div class="main_header">
+                        <h3 class="text-orange">Strategic Partners</h3>
+                        <h1>API</h1>
+                        
+                    </div>
+                    <div class="content api-page ">
+                       <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <h3 class="text-d-blue">Add a Site - POST</h3>
+                                <p class="m-bottom">https://www.shopperapproved.com/api/sites.php?key=[api_key]</p>
+                                <h4 class="square-heading">
+                                    QUERYSTRING
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>key:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        provided in email
+                                    </div>
+                                </div>
+                                <div class="m-top-s m-bottom-s"></div>
+                                <h4 class="square-heading">
+                                    PARAMETERS
+                                </h4>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        partnerapi@shopperapproved.com
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>foreign_id:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        myID
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>label:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        partnerapi.shopperapproved.com
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>name:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        Bob
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>phone:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        888-888-8888
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>send_email:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="gray_box m-top m-bottom">
+                                    <img src="images/json-1.png"/>
+                                </div>
+                                <h3 class="text-d-blue">Edit a Site - PUT</h3>
+                                <p>https://www.shopperapproved.com/api/sites.php?key=[api_key]</p>
+                                
+                                <h4 class="square-heading">
+                                    QUERYSTRING
+                                </h4>
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>key:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        provided in email
+                                    </div>
+                                </div>
+                                <h4 class="square-heading">
+                                    PARAMETERS
+                                </h4>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>date_format:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        jMy
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>default_delivery_days:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        13
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>default_delivery_days:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        13
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>label:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        partnerapi-edit.shopperapproved.com
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>siteid:</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-6">
+                                        24371
+                                    </div>
+                                </div>
+                                <div class="gray_box m-top m-bottom">
+                                    <img src="images/json-2.png"/>
+                                </div>
+                                 <h3 class="text-d-blue">View Sites - GET</h3>
+                                <p>https://www.shopperapproved.com/api/sites.php?key=[api_key]</p>
+                                <div class="gray_box">
+                                    <img src="images/json-3.jpg"/>
+                                </div>
+                            </div>
+                           <div class="col-md-6 col-sm-6">
+                               <h3 class="text-d-blue">Edit Variables: </h3>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>active- </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        1 active, 0 inactive
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>label - </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                      The domain or company name of a merchant.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>domain -  </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                      The domain of the merchant. Required if the company name is used for label.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>require_orderid -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Only accept full reviews if the order id was assigned in the link.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>foreign_id -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        The ID your site uses for the account.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>seal_header -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        The header text on the seal.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>date_format -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        The date format on the seal. This is in php date format.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>seal_color -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        The seal color (blue, black, gold, green, red)
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>is_service -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                       (0 or 1) If set then the review will have service oriented questions.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>widget_type -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                       The reviews on the widgets (5, 4-5, picked)
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>featured_days -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        The life span of hand picked reviews.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>hide_links -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        The number of days that links on the certificates will be hidden for new reviews.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>hide_reviews -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        The number of days a review is private.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>certificate_link -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Include a link to write a review on the certificate.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>reviews_on_certificate -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        The number of reviews on each certificate page.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>default_delivery_days -   </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        The default days between initial survey and follow up email.
+                                    </div>
+                                </div>
+                               <h3 class="text-d-blue">Email Alerts:</h3>
+                               
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email_all -  </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Email all full survey reviews.
+
+                                    </div>
+                                </div>
+                                 <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email_low -  </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Email 1-2 star full survey reviews.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email_medium - </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Email 3 star full survey reviews.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email_high - </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Email 4-5 star full survey reviews
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email_initial_all - </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Email all initial survey reviews.
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email_initial_low -</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Email 1-2 star initial survey reviews.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email_initial_medium -</strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Email 3 star initial survey reviews.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email_initial_high - </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        Email 4-5 star initial survey reviews.
+                                    </div>
+                                </div>
+                               <div class="row m-bottom-s">
+                                    <div class="col-md-6 col-lg-4">
+                                        <strong>email_video - </strong>
+                                    </div>
+                                    <div class="col-md-6 col-lg-8">
+                                        
+Email after a video has been submitted.
+                                    </div>
+                                </div>
+                               
+                           </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+
+            });
+            $(document).ready(function () {
+                $('.selectpicker').selectpicker({
+                    style: 'btn-inverse'
+                });
+
+
+                $('.mobile_menu_icon').on('click', function () {
+                    $('.mobile_menu').toggle();
+                });
+
+
+                $('.current').on('click', function () {
+                    $('.top-header').toggle();
+                });
+
+                $(window).resize(function () {
+                    var width = $(document).width();
+
+                    if (width >= 768) {
+                        console.log(width)
+                        console.log("in if");
+                        $('.top-header').css('display', 'block');
+                    }
+                });
+                $('.res_sub_menu').on('click', function () {
+                    $('.inline-nav').slideToggle();
+                });
+
+
+            });
+
+        </script>
+
+    </body>
+</html>

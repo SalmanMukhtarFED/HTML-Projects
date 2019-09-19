@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" media="all" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>       
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/sidebar.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+    </head>
+    <body>
+        <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper" class="visible-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a class="logo" href="#">
+                            <img src="images/logo.svg" class="hidden-xs"/>
+                            <img src="images/logo-short.svg" class="visible-xs"/>
+
+                        </a>
+                        <a class="current" href="#">
+                            <img src="images/current.svg"/>
+                        </a>
+                        <a class="mobile_menu_icon" href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+
+                    </li>
+                    <li class="mobile_menu">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing</a>
+                            </li>
+                            <li>
+                                <a href="#">Reporting</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Admin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="top-header">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="quick_search_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <select class="selectpicker" data-title="Partners">
+                                <option>
+                                    Partners
+                                </option>
+                            </select>
+                            <a class="search_btn btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-5 ">
+                        <a class="btn btn-primary">Add Partner <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Add Merchant <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Manage</a>
+                    </div>
+                    <div class="col-md-1 col-md-offset-2 col-sm-1 text-right hidden-xs">
+                        <div class="dropdown user_dropdown inline-block">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            <img src="images/logo.svg"/>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Reporting</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="page marketing">
+                    <div class="main_header">
+                        <h3 class="text-orange">Strategic Partners</h3>
+                        <h1>Partners</h1>
+                         <a href="#" class="visible-xs res_sub_menu">
+                            <span>Marketing</span>
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <ul class="m-top inline-nav p-top">
+                            <li class="active"><a href="#">Social <span class="badge">4</span></a></li>
+                            <li class=""><a href="#">Guest Blog</a></li>
+                            <li class=""><a href="#">Marketing Email</a></li>
+                            <li class=""><a href="#">Case Study</a></li>
+                            <li><a href="#">Press Release</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content social_data ">
+                        <div class="row">
+                            <div class="col-md-4">
+                                Follow Shopper Approved on social media by clicking on the links below. We update our social media accounts with new blog posts, industry news, and more! Finish filling out the URL in the right column and Shopper Approved will follow you back
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <h3 class="border-heading p-top">Follow Shopper Approved</h3>
+                            </div>
+                            <div class="col-md-8 col-sm-8">
+                                <h3 class="border-heading m-left p-top">We want to follow you</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="b-bottom p-bottom">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="social_btns ">
+                                            <a class="socialbox facebook" href="#">
+                                                <div class="social-icon">
+                                                    <i class="fa fa-facebook-square"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <span>Like</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="row">
+                                            <div class="social_url">
+                                                <div class="col-md-4 col-sm-6">
+                                                    <label>https://www.facebook.com/</label>
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="b-bottom p-bottom p-top">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="social_btns ">
+                                            <a class="socialbox twitter" href="#">
+                                                <div class="social-icon">
+                                                    <i class="fa fa-twitter"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <span>Follow</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="row">
+                                            <div class="social_url">
+                                                <div class="col-md-4 col-sm-6">
+                                                    <label>https://www.twitter.com/</label>
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="b-bottom p-bottom p-top">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="social_btns ">
+                                            <a class="socialbox linkedin" href="#">
+                                                <div class="social-icon">
+                                                    <i class="fa fa-linkedin"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <span>Follow</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="row">
+                                            <div class="social_url">
+                                                <div class="col-md-4 col-sm-6">
+                                                    <label>https://www.linkedin.com/</label>
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="b-bottom p-bottom p-top">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="social_btns ">
+                                            <a class="socialbox gplus" href="#">
+                                                <div class="social-icon">
+                                                    <i class="fa fa-google-plus"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <span>Follow</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="row">
+                                            <div class="social_url">
+                                                <div class="col-md-4 col-sm-6">
+                                                    <label>https://www.linkedin.com/</label>
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="b-bottom p-bottom p-top">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="social_btns ">
+                                            <a class="socialbox insta" href="#">
+                                                <div class="social-icon">
+                                                    <i class="fa fa-instagram"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <span>Follow</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="row">
+                                            <div class="social_url">
+                                                <div class="col-md-4 col-sm-6">
+                                                    <label>https://www.instagram.com/</label>
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="p-bottom p-top">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="social_btns ">
+                                            <a class="socialbox pinterest" href="#">
+                                                <div class="social-icon">
+                                                    <i class="fa fa-pinterest"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <span>Follow</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 col-sm-8">
+                                        <div class="row">
+                                            <div class="social_url">
+                                                <div class="col-md-4 col-sm-6">
+                                                    <label>https://www.pinterest.com/</label>
+                                                </div>
+                                                <div class="col-md-8 col-sm-6">
+                                                    <div class="form-group">
+                                                        <input class="form-control" type="text"/>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gray_box m-top m-bottom">
+                            <a href="#" class="btn btn-primary">Save Changes</a>
+                        </div>
+
+                        <div class="sample_texts p-top-s p-bottom">
+                            <h3 class="border-heading">Sample Twitter Text</h3>
+
+                            <div class="sample-text">
+                                
+                                    <div class="col-xs-2 col-md-1">
+                                        <span class="text-blue inline-block m-top-s"><i class="fa fa-twitter fa-3x"></i></span>
+                                    </div>
+                                    <div class="col-xs-6 col-md-3">
+                                        <textarea rows="3" class="form-control"></textarea>
+                                    </div>
+                                    <div class="col-xs-4 col-md-1">
+                                        <a href="#" class="btn btn-primary m-top-s">Copy</a>
+                                    </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+
+            });
+            $(document).ready(function () {
+                $('.selectpicker').selectpicker({
+                    style: 'btn-inverse'
+                });
+
+
+                $('.mobile_menu_icon').on('click', function () {
+                    $('.mobile_menu').toggle();
+                });
+
+
+                $('.current').on('click', function () {
+                    $('.top-header').toggle();
+                });
+
+                $(window).resize(function () {
+                    var width = $(document).width();
+
+                    if (width >= 768) {
+                        console.log(width)
+                        console.log("in if");
+                        $('.top-header').css('display', 'block');
+                    }
+                });
+                $('.res_sub_menu').on('click', function () {
+                    $('.inline-nav').slideToggle();
+                });
+
+            });
+
+        </script>
+
+    </body>
+</html>

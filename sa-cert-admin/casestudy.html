@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" media="all" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>       
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/sidebar.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/build.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+
+    </head>
+    <body>
+        <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper" class="visible-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a class="logo" href="#">
+                            <img src="images/logo.svg" class="hidden-xs"/>
+                            <img src="images/logo-short.svg" class="visible-xs"/>
+
+                        </a>
+                        <a class="current" href="#">
+                            <img src="images/current.svg"/>
+                        </a>
+                        <a class="mobile_menu_icon" href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+
+                    </li>
+                    <li class="mobile_menu">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing</a>
+                            </li>
+                            <li>
+                                <a href="#">Reporting</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Admin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="top-header">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="quick_search_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <select class="selectpicker" data-title="Partners">
+                                <option>
+                                    Partners
+                                </option>
+                            </select>
+                            <a class="search_btn btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 col-sm-5 ">
+                        <a class="btn btn-primary">Add Partner <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Add Merchant <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Manage</a>
+                    </div>
+                    <div class="col-md-1 col-md-offset-2 col-sm-1 text-right hidden-xs">
+                        <div class="dropdown user_dropdown inline-block">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            <img src="images/logo.svg"/>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Reporting</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="page marketing">
+                    <div class="main_header">
+                        <h3 class="text-orange">Strategic Partners</h3>
+                        <h1>Partners</h1>
+                        <a href="#" class="visible-xs res_sub_menu">
+                            <span>Marketing</span>
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <ul class="m-top inline-nav p-top">
+                            <li class=""><a href="#">Social <span class="badge">4</span></a></li>
+                            <li class=""><a href="#">Guest Blog</a></li>
+                            <li class=""><a href="#">Marketing Email</a></li>
+                            <li class="active"><a href="#">Case Study</a></li>
+                            <li><a href="#">Press Release</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="content casestudy ">
+                        <div class="row">
+                            <div class="col-md-4">
+                                Submit answers to the following questions to create a case study with Shopper Approved. You must answer at least 8 of the following questions, including the required questions marked with an asterisk, to complete a case study. You may answer more htan 8 questions, and can provide additional information and supporting documents at the bottom of the page. The more information you provide, the longer, more in-depth your case study will be. Case studies may be selected to post to the Shopper Approved blog and may also be chosen for Shopper Approved press releases.
+                            </div>
+                        </div>
+
+                        <h3 class="border-heading p-top">Submit Case Study</h3>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="p-bottom-s">
+
+                                    <label>What industry does your company compete in?</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+
+                                </div>
+                                <div class="p-bottom-s">
+
+                                    <label>How many years has your company been in business?</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                                <div class="p-bottom-s">
+
+                                    <label>Describe your target customer (age, gender, etc.)</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="p-bottom-s">
+                                    <label>How were you collecting reviews before you came to Shopper Approved?)</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="p-bottom-s">
+                                    <label>About how many reviews had you collected before working with Shopper Approved? <br/>
+If possible provide rough estimates for reviews you had with Google, Yelp, TrustPilot, and other specific sites.</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="p-bottom-s">
+                                    <label>What was your star-rating for each place you collected reviews prior to working with Shopper Approved?</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="p-bottom-s">
+                                    <label>What kind of reviews are you collecting with Shopper Approved?</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                 <div class="p-bottom-s">
+                                    <label>How many reviews have you collected with Shopper Approved? And how many reviews do you now have with Google, Yelp, nad other specific sites?</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="p-bottom-s">
+                                    <label>What is your star-rating for each place you have reviews now that you have been working with Shopper Approved?</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="p-bottom-s">
+                                    <label>
+Describe the process of integrating with Shopper Approved software. Was it easy? Difficult? What challenges did you face?<br/>
+What was easier than you thought it would be about the set up process?</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="p-bottom-s">
+                                    <label>After set up, has it been easy to work with Shopper Approved? What have you liked? What have you disliked?</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="p-bottom-s">
+                                    <label>How are reviews impacting your business? Have you noticed an increase in traffic? Increase in revenue? Other changes? <br/>
+Provide as many details as you are comfortable sharing.</label>
+                                    <div class="form-group">
+                                        <input class="form-control" type="text"/>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <hr/>
+                                <a href="" class="btn btn-primary">Submit</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+
+            });
+            $(document).ready(function () {
+                $('.selectpicker').selectpicker({
+                    style: 'btn-inverse'
+                });
+
+
+                $('.mobile_menu_icon').on('click', function () {
+                    $('.mobile_menu').toggle();
+                });
+
+
+                $('.current').on('click', function () {
+                    $('.top-header').toggle();
+                });
+
+                $(window).resize(function () {
+                    var width = $(document).width();
+
+                    if (width >= 768) {
+                        console.log(width)
+                        console.log("in if");
+                        $('.top-header').css('display', 'block');
+                    }
+                });
+                $('.res_sub_menu').on('click', function () {
+                    $('.inline-nav').slideToggle();
+                });
+
+
+            });
+
+        </script>
+
+    </body>
+</html>

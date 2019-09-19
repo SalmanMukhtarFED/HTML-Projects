@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" media="all" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>       
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/build.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/sidebar.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+    </head>
+    <body>
+        <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper" class="visible-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a class="logo" href="#">
+                            <img src="images/logo.svg" class="hidden-xs"/>
+                            <img src="images/logo-short.svg" class="visible-xs"/>
+
+                        </a>
+                        <a class="current" href="#">
+                            <img src="images/current.svg"/>
+                        </a>
+                        <a class="mobile_menu_icon" href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+
+                    </li>
+                    <li class="mobile_menu">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing</a>
+                            </li>
+                            <li>
+                                <a href="#">Reporting</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Admin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="top-header">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 hidden-xs">
+                        <div class="quick_search_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+                            <select class="selectpicker" data-title="Partners">
+                                <option>
+                                    Partners
+                                </option>
+                            </select>
+                            <a class="search_btn btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-5 ">
+                        <a class="btn btn-primary">Add Partner <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Add Merchant <span class="glyphicon glyphicon-plus"></span></a>
+                        <a class="btn btn-primary">Manage</a>
+                    </div>
+                    <div class="col-md-2 col-md-offset-2 col-sm-1 text-right">
+                        <div class="dropdown user_dropdown inline-block">
+                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+                                <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">HTML</a></li>
+                                <li><a href="#">CSS</a></li>
+                                <li><a href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            <img src="images/logo.svg"/>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">Partners</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Reporting</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="page admin-products">
+                    <div class="main_header">
+                        <h3 class="text-orange">Strategic Partners</h3>
+                        <h1>Billing</h1>
+                    </div>
+
+
+                    <div class="content billing-module payables">
+                        <ul class="nav nav-tabs styled-tabs">
+                            <li class="active"><a data-toggle="tab" href="#payables">Payables</a></li>
+                            <li><a data-toggle="tab" href="#recievables">Recievables</a></li>
+                            <li><a data-toggle="tab" href="#all">All</a></li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="payables" class="tab-pane fade in active">
+                                <div class="row m-bottom-s filters-row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-sm-6 col-md-6 m-bottom-xs">
+                                                <select class="selectpicker" data-width="100%" data-title="January">
+                                                    <option>January</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 m-bottom-xs">
+                                                <select class="selectpicker" data-width="100%" data-title="2018">
+                                                    <option>2017</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-12 col-md-12 m-bottom-xs submit">
+                                                <div class="row no-margin-xs no-margin-sm no-margin-md">
+                                                    <a href="#" class="btn btn-primary btn-block">Submit</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-4 m-bottom-xs start-date">
+                                                <input type="text" class="form-control" placeholder="4/12/2017"/>
+                                            </div>
+                                            <div class="col-lg-1 text-center to">
+                                                <div class="row no-margin-xs no-margin-sm no-margin-md">
+                                                    <span class="text-muted hidden-xs hidden-sm">To</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 m-bottom-xs end-date">
+
+                                                <input type="text" class="form-control" placeholder="4/12/2017"/>
+
+                                            </div>
+                                            <div class="col-lg-3 m-bottom-xs submit">
+                                                <div class="row no-margin-xs no-margin-sm no-margin-md">
+                                                    <a href="#" class="btn btn-primary btn-block">Submit</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group ">
+                                            <div class="search-panel">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center hidden-xs m-top">
+                                    <span class="inline-block v-middle text-blue" style="width: 20px; height: 20px; line-height: 20px; border: 1px solid #01669a; border-radius: 50%;"><i class="fa fa-info"></i></span>
+                                    <span class="inline-block v-middle ">This page will display all payments due for period searched. </span>
+                                </div>
+                                <div class="totals visible-xs m-top">
+
+                                    <div class="gray_box text-center">
+                                        <p>Total August 2017</p>
+                                        <p class="bold">Partner Payments: $100,000.00</p>
+                                    </div>
+                                    <div class="gray_box" style="background: none;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                                Paid:                               
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+                                                $180,000.00
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                                Pending Payment:                                   
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+                                                $0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-success">
+                                        All Payments Processed
+                                        
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="m-top m-bottom">
+                                    <div class="gray_header hidden-xs">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                Partner
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                Amount Due
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                Payment Type
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="billing-row">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                <div class="bold">Partner</div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">Amt Due:</div>
+                                                        <div class="col-xs-7">$2,000.00</div>
+                                                    </div>
+                                                </div>
+                                                <!---------------------->
+                                                <div class="amount hidden-xs">$2,000.00</div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">Pay Type:</div>
+                                                        <div class="col-xs-7">
+                                                            <div class="type">PayPal:</div>
+                                                            <div>  nameandname@emial.com</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---------------------->
+                                                <div class="paypal_email hidden-xs">PayPal:nameandname@emial.com</div>
+                                            </div>
+                                            <div class="clearfix visible-md visible-sm m-top-s m-bottom-s"></div>
+                                            <div class="col-lg-1 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="checkbox2" class="styled" type="checkbox" checked>
+                                                                <label for="checkbox2">
+                                                                    Paid
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-7">
+                                                            <div>  nameandname@emial.com</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox checkbox-primary hidden-xs">
+                                                    <input id="checkbox2" class="styled" type="checkbox" checked>
+                                                    <label for="checkbox2">
+                                                        Paid
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                <div class="paypal_email hidden-xs">nameandname@emial.com</div>
+                                            </div>
+                                            <div class="col-lg-1 col-md-4 col-sm-4 text-right">
+                                                <p>4/12/2017</p>
+                                            </div>
+
+                                        </div>
+
+                                        <p class="m-left">
+                                            <a href="#demo" class="text-blue accordion_toggle bold" data-toggle="collapse">Merchants</a>
+                                        </p>
+                                        <div class="row collapse" id="demo">
+                                            <div class="m-bottom-s">
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            8/31/2017
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            Merchant 1
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="amount">$2,000.00</div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4">
+                                                    <div class="paypal_email">Merchant’s 1 contact email</div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="m-bottom-s">
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            8/31/2017
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            Merchant 1
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="amount">$2,000.00</div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4">
+                                                    <div class="paypal_email">Merchant’s 1 contact email</div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="m-bottom-s">
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="row"> 
+                                                        <div class="col-lg-6 col-md-6">
+                                                            8/31/2017
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            Merchant 1
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="amount">$2,000.00</div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4">
+                                                    <div class="paypal_email">Merchant’s 1 contact email</div>
+                                                </div>
+                                                <div class="col-lg-1 col-md-12 col-lg-offset-4 text-right">
+
+                                                    <p class="no-margin"><a href="#" class="text-blue text-underline bold">Export</a></p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="billing-row">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                <div class="bold">Partner</div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">Amt Due:</div>
+                                                        <div class="col-xs-7">$2,000.00</div>
+                                                    </div>
+                                                </div>
+                                                <!---------------------->
+                                                <div class="amount hidden-xs">$2,000.00</div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">Pay Type:</div>
+                                                        <div class="col-xs-7">
+                                                            <div class="type">PayPal:</div>
+                                                            <div>  nameandname@emial.com</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---------------------->
+                                                <div class="paypal_email hidden-xs">PayPal:  nameandname@emial.com</div>
+                                            </div>
+                                            <div class="clearfix visible-md m-top-s m-bottom-s"></div>
+                                            <div class="col-lg-1 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="checkbox2" class="styled" type="checkbox" checked>
+                                                                <label for="checkbox2">
+                                                                    Paid
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-7">
+                                                            <div>  nameandname@emial.com</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox checkbox-primary hidden-xs">
+                                                    <input id="checkbox2" class="styled" type="checkbox" checked>
+                                                    <label for="checkbox2">
+                                                        Paid
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                <div class="paypal_email hidden-xs">nameandname@emial.com</div>
+                                            </div>
+                                            <div class="col-lg-1 col-md-4 text-right">
+                                                <p>4/12/2017</p>
+                                                <p class="no-margin"><a href="#" class="text-blue text-underline bold">Export</a></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                                <div class="totals hidden-xs m-top m-bottom">
+
+                                    <div class="gray_box text-center">
+                                        <p>Total August 2017</p>
+                                        <p class="bold">Partner Payments: $100,000.00</p>
+                                    </div>
+                                    <div class="gray_box" style="background: none;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                                Paid:                               
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+                                                $180,000.00
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                                Pending Payment:                                   
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+                                                $0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-success">
+                                        All Payments Processed
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="recievables" class="tab-pane fade">
+                                <div class="row m-bottom-s filters-row">
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-4 col-sm-6 col-md-6 m-bottom-xs">
+                                                <select class="selectpicker" data-width="100%" data-title="January">
+                                                    <option>January</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-md-6 m-bottom-xs">
+                                                <select class="selectpicker" data-width="100%" data-title="2018">
+                                                    <option>2017</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-lg-3 col-sm-12 col-md-12 m-bottom-xs submit">
+                                                <div class="row no-margin-xs no-margin-sm no-margin-md">
+                                                    <a href="#" class="btn btn-primary btn-block">Submit</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="row">
+                                            <div class="col-lg-4 m-bottom-xs start-date">
+                                                <input type="text" class="form-control" placeholder="4/12/2017"/>
+                                            </div>
+                                            <div class="col-lg-1 text-center to">
+                                                <div class="row no-margin-xs no-margin-sm no-margin-md">
+                                                    <span class="text-muted hidden-xs hidden-sm">To</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 m-bottom-xs end-date">
+
+                                                <input type="text" class="form-control" placeholder="4/12/2017"/>
+
+                                            </div>
+                                            <div class="col-lg-3 m-bottom-xs submit">
+                                                <div class="row no-margin-xs no-margin-sm no-margin-md">
+                                                    <a href="#" class="btn btn-primary btn-block">Submit</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group ">
+                                            <div class="search-panel">
+                                                <input type="text" class="form-control" placeholder="Search">
+                                                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center hidden-xs m-top">
+                                    <span class="inline-block v-middle text-blue" style="width: 20px; height: 20px; line-height: 20px; border: 1px solid #01669a; border-radius: 50%;"><i class="fa fa-info"></i></span>
+                                    <span class="inline-block v-middle ">This page will display all payments due for period searched. </span>
+                                </div>
+                                <div class="totals visible-xs m-top">
+
+                                    <div class="gray_box text-center">
+                                        <p>Total August 2017</p>
+                                        <p class="bold">Partner Received: $100,000.00</p>
+                                    </div>
+                                    <div class="gray_box" style="background: none;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                                Verified                               
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+                                                $180,000.00
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                                Pending Verification:                                   
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+                                                $0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-success">
+                                        <span class="visible-xs">Settled</span>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="m-top m-bottom">
+                                    <div class="gray_header hidden-xs">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                Partner
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                Amount Due
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                Payment Type
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="billing-row">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                <div class="bold">Partner</div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">Amt Due:</div>
+                                                        <div class="col-xs-7">$2,000.00</div>
+                                                    </div>
+                                                </div>
+                                                <!---------------------->
+                                                <div class="amount hidden-xs">$2,000.00</div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">Pay Type:</div>
+                                                        <div class="col-xs-7">
+                                                            <div class="type">PayPal:</div>
+                                                            <div>  nameandname@emial.com</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---------------------->
+                                                <div class="paypal_email hidden-xs">PayPal:nameandname@emial.com</div>
+                                            </div>
+                                            <div class="clearfix visible-md visible-sm m-top-s m-bottom-s"></div>
+                                            <div class="col-lg-1 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="checkbox2" class="styled" type="checkbox" checked>
+                                                                <label for="checkbox2">
+                                                                    Received
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-7">
+                                                            <div>  nameandname@emial.com</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox checkbox-primary hidden-xs">
+                                                    <input id="checkbox2" class="styled" type="checkbox" checked>
+                                                    <label for="checkbox2">
+                                                        Received
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                <div class="paypal_email hidden-xs">nameandname@emial.com</div>
+                                            </div>
+                                            <div class="col-lg-1 col-md-4 col-sm-4 text-right">
+                                                <p>4/12/2017</p>
+                                            </div>
+
+                                        </div>
+
+                                        <p class="m-left">
+                                            <a href="#demo2" class="text-blue collapse_merchants bold" data-toggle="collapse">Merchants</a>
+                                        </p>
+                                        <div class="row collapse" id="demo2">
+                                            <div class="m-bottom-s">
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            8/31/2017
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            Merchant 1
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="amount">$2,000.00</div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4">
+                                                    <div class="paypal_email">Merchant’s 1 contact email</div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="m-bottom-s">
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6">
+                                                            8/31/2017
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            Merchant 1
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="amount">$2,000.00</div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4">
+                                                    <div class="paypal_email">Merchant’s 1 contact email</div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                            <div class="m-bottom-s">
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="row"> 
+                                                        <div class="col-lg-6 col-md-6">
+                                                            8/31/2017
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6">
+                                                            Merchant 1
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 col-md-4">
+                                                    <div class="amount">$2,000.00</div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-4">
+                                                    <div class="paypal_email">Merchant’s 1 contact email</div>
+                                                </div>
+                                                <div class="col-lg-1 col-md-12 col-lg-offset-4 text-right">
+
+                                                    <p class="no-margin"><a href="#" class="text-blue text-underline bold">Export</a></p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                    <div class="billing-row">
+                                        <div class="row">
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                <div class="bold">Partner</div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">Amt Due:</div>
+                                                        <div class="col-xs-7">$2,000.00</div>
+                                                    </div>
+                                                </div>
+                                                <!---------------------->
+                                                <div class="amount hidden-xs">$2,000.00</div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">Pay Type:</div>
+                                                        <div class="col-xs-7">
+                                                            <div class="type">PayPal:</div>
+                                                            <div>  nameandname@emial.com</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!---------------------->
+                                                <div class="paypal_email hidden-xs">PayPal:  nameandname@emial.com</div>
+                                            </div>
+                                            <div class="clearfix visible-md m-top-s m-bottom-s"></div>
+                                            <div class="col-lg-1 col-md-4 col-sm-4">
+                                                <!-- handling mobile -->
+                                                <div class="visible-xs">
+                                                    <div class="row">
+                                                        <div class="col-xs-5">
+                                                            <div class="checkbox checkbox-primary">
+                                                                <input id="checkbox2" class="styled" type="checkbox" checked>
+                                                                <label for="checkbox2">
+                                                                    Received
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-7">
+                                                            <div>  nameandname@emial.com</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="checkbox checkbox-primary hidden-xs">
+                                                    <input id="checkbox2" class="styled" type="checkbox" checked>
+                                                    <label for="checkbox2">
+                                                        Received
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-sm-4">
+                                                <div class="paypal_email hidden-xs">nameandname@emial.com</div>
+                                            </div>
+                                            <div class="col-lg-1 col-md-4 text-right">
+                                                <p>4/12/2017</p>
+                                                <p class="no-margin"><a href="#" class="text-blue text-underline bold">Export</a></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                                <div class="totals hidden-xs m-top">
+
+                                    <div class="gray_box text-center">
+                                        <p>Total August 2017</p>
+                                        <p class="bold">Payments Received: $100,000.00</p>
+                                    </div>
+                                    <div class="gray_box" style="background: none;">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                                Verified:                               
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+                                                $180,000.00
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-6">
+                                                Pending Verification:                                   
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-xs-6 text-right">
+                                                $0
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-success">
+                                        Settled
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="all" class="tab-pane fade">
+                                <h3>Menu 2</h3>
+                                <p>Some content in menu 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+
+            });
+            $(document).ready(function () {
+                $('.selectpicker').selectpicker({
+                    style: 'btn-inverse'
+                });
+
+                $('.panel', this).on('click', function (e) {
+                    $(this).find(".panel-heading").toggleClass('trigger');
+                    $(this).find(".panel-collapse").toggleClass('in');
+                });
+
+                $('.mobile_menu_icon').on('click', function () {
+                    $('.mobile_menu').toggle();
+                });
+                $('.current').on('click', function () {
+                    $('.top-header').toggle();
+                });
+                $(window).resize(function () {
+                    var width = $(document).width();
+
+                    if (width >= 768) {
+                        console.log(width)
+                        console.log("in if");
+                        $('.top-header').css('display', 'block');
+                    }
+                });
+            });
+        </script>
+
+    </body>
+</html>

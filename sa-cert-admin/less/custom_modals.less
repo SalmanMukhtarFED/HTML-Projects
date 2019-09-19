@@ -1,0 +1,620 @@
+#accountContactInfoModal{
+    .modal-header{
+        padding: 0;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+        }
+    }
+    .modal-body{
+        padding: 15px 30px 50px;
+        h1{
+            margin-top: 0;
+            font-weight: 600;
+        }
+        h3{
+            font-weight: normal;
+        }
+        .panel{
+            margin-top: 30px;
+            color: @b_dark;
+            border: none;
+            .panel-heading{
+                background: #e1e1e1;
+                padding: 15px 30px;
+                color: @b_dark;
+            }
+            .panel-body{
+                background: #ebebeb;
+                padding: 15px 30px;
+                h3{
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+#addPartner{
+    .modal-dialog{
+        margin-top: 75px;
+    }
+    .modal-header{
+        position: relative;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight:600;
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #f3f1f1;
+        padding: 30px;
+        margin: 0 20px 20px;
+    }
+}
+
+#notesModal{
+    .modal-dialog{
+        margin-top: 75px;
+        .modal-header{
+            padding: 0;
+            position: relative;
+            .close{
+                margin-top: 10px;
+                color: #555;
+                opacity: 1;
+                margin-right: 10px;
+                font-size: 36px;
+                font-weight: normal;
+                line-height: 20px;
+                position: absolute;
+                top: -30px;
+                right: -30px;
+            }
+        }
+
+        .modal-content{
+            background: #f6f4f4;
+            padding: 30px;
+        }
+        .modal-body{
+            padding: 0;
+            height: 80vh;
+            overflow-y: auto;
+            h1{
+                margin-top: 0;
+            }
+            .notes-tabs{
+                > ul{
+                    border-bottom: none;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                    li{
+                        margin-bottom: 0;
+                        margin-right: 30px;
+                        &.active{
+                            a{
+                                background: none;
+                                border: none !important;
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width: 100%;
+                                    height: 3px;
+                                    background: @orange;
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                        a{
+                            color: @b_dark;
+                            padding:0 0 5px;
+                            border: none !important;
+                            font-size: 18px;
+                            position: relative;
+                            margin: 0;
+                            &:hover,&:focus{
+                                background: none; 
+                                border: none !important;
+                                &::after{
+                                    content: '';
+                                    display: block;
+                                    width: 100%;
+                                    height: 3px;
+                                    background: @orange;
+                                    position: absolute;
+                                    bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .gray_box{
+                    background: #ebebeb;
+                    padding: 30px;
+                    margin-bottom: 30px;
+                    label{
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: @b_dark;
+                        font-weight: 600;
+                        line-height: 25px;
+                    }
+                    .form-control{
+                        box-shadow: none;
+                        border-radius: 2px;
+                    }
+                    .btn-primary{
+                        background: @b_dark;
+                    }
+                }
+                .note{
+                    padding: 15px;
+                    font-size: 14px;
+                    &.note-danger{
+                        background: #f8ead8;
+                    }
+                    .note-header{
+
+                        span{
+                            color: @orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#toDoModal{
+    top: 80px;
+    .modal-header{
+        padding-left: 30px;
+        padding-right: 30px;
+        h1{
+            margin-bottom: 0;
+        }
+        .close{
+            margin-top: -2px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            font-weight: 400;
+            opacity: 1;
+            color: #555;
+            outline: none;
+        }
+    }
+    .modal-body{
+        padding-left: 30px;
+        padding-right: 30px;
+        .btn-info{
+            background: none;
+            color: @b_light;
+            border-left: none;
+            border: none;
+            font-size: 20px;
+            padding: 0 10px;
+            box-shadow: none;
+            outline: none;
+        }
+        .checkbox label::before{
+            top: -2px;
+        }
+        h4{
+            font-size: 16px;
+        }
+    }
+    .modal-content{
+        background: #f6f4f4;
+    }
+}
+
+.approve_reject_modals{
+    top: 80px;
+    .modal-header{
+        padding-left: 30px;
+        padding-right: 30px;
+        h1{
+            margin-bottom: 0;
+        }
+        .close{
+            margin-top: -2px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            font-weight: 400;
+            opacity: 1;
+            color: #555;
+            outline: none;
+        }
+    }
+    .modal-body{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .modal-content{
+        background: #f6f4f4 !important;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .approve_btn{
+        background: #197b30;
+        padding: 10px 15px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        &.disabled{
+            background: #d7d7d7;
+            cursor: not-allowed;
+        }
+    }
+    .reject_btn{
+        background: #9e0b0f;
+        padding: 10px 15px;
+        color: #fff;
+        display: block;
+        text-align: center;
+        &.disabled{
+            background: #d7d7d7;
+            cursor: not-allowed;
+        }
+    }
+    .edit{
+       
+        line-height: 50px;
+        display: block;
+       
+        height: 40px;
+        &.active{
+            background: @b_light;
+            color: #fff;
+             text-align: center;
+            svg{
+                path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+    .gray_box{
+        padding: 15px 25px;
+    }
+}
+
+#toDoModal{
+    top: 80px;
+    .modal-header{
+        padding-left: 30px;
+        padding-right: 30px;
+        h1{
+            margin-bottom: 0;
+        }
+        .close{
+            margin-top: -2px;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 30px;
+            font-weight: 400;
+            opacity: 1;
+            color: #555;
+            outline: none;
+        }
+    }
+    .modal-body{
+        padding-left: 30px;
+        padding-right: 30px;
+        .btn-info{
+            background: none;
+            color: @b_light;
+            border-left: none;
+            border: none;
+            font-size: 20px;
+            padding: 0 10px;
+            box-shadow: none;
+            outline: none;
+        }
+        .checkbox label::before{
+            top: -2px;
+        }
+        h4{
+            font-size: 16px;
+        }
+    }
+    .modal-content{
+        background: #f6f4f4;
+    }
+}
+#approveRejectCaseStudyModal{
+    .modal-dialog{
+        max-width: 1000px;
+    }
+    label{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+#addProductModal{
+    .modal-dialog{
+        margin-top: 75px;
+    }
+    .modal-header{
+        position: relative;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight:600;
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #f3f1f1;
+        padding: 30px;
+        margin: 0 20px 20px;
+    }
+   
+}
+#createProductAddPartner{
+    .modal-dialog{
+        margin-top: 75px;
+    }
+    .modal-header{
+        position: relative;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight:600;
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #f3f1f1;
+        padding: 30px;
+        margin: 0 20px 20px;
+    }
+}
+#billingReferenceModal{
+    .modal-dialog{
+        margin-top: 75px;
+    }
+    .modal-header{
+        position: relative;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight:600;
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #f3f1f1;
+        padding: 30px;
+        margin: 0 20px 20px;
+    }
+   
+}
+#billingPreferenceModal{
+    
+    .modal-dialog{
+        margin-top: 75px;
+        max-width: 460px;
+    }
+    .modal-header{
+        position: relative;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight:600;
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #f3f1f1;
+        padding: 30px;
+        margin: 0 20px 20px;
+    }
+   
+}
+#managePartner{
+    .modal-dialog{
+        margin-top: 75px;
+    }
+    .modal-header{
+        position: relative;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight:600;
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #f3f1f1;
+        padding: 30px;
+        margin: 0 20px 50px;
+    } 
+}
+#manualPaymentsModal{
+    .required-ast{
+            font-size: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    }
+    .modal-dialog{
+        margin-top: 75px;
+    }
+    .modal-header{
+        position: relative;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight:600;
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #f3f1f1;
+        padding: 30px;
+        margin: 0 20px 50px;
+    }
+}
+#merchantAccountModal{
+    .required-ast{
+            font-size: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    }
+    .modal-dialog{
+        margin-top: 75px;
+    }
+    .modal-header{
+        position: relative;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight:600;
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #f3f1f1;
+        padding: 30px;
+        margin: 0 20px 20px;
+    }
+    .remove_sidebar .remove_content{
+            position: relative;
+    top: 20%;
+    }
+   
+}
+#taxIdModal{
+   
+    .modal-dialog{
+        margin-top: 75px;
+        max-width: 460px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .modal-header{
+        position: relative;
+        .close{
+            margin-top: 10px;
+            color: #555;
+            opacity: 1;
+            margin-right: 10px;
+            font-size: 36px;
+            font-weight: normal;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        h1{
+            font-size: 24px;
+            font-weight:600;
+            text-align: center;
+        }
+    }
+    .modal-body{
+        background: #f3f1f1;
+        padding: 30px;
+        margin: 0 20px 30px;
+    }
+}

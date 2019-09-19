@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> 
+        <link rel="stylesheet" media="all" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>       
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" media="all" type="text/css" href="css/sidebar.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script src="js/jquery.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
+    </head>
+    <body>
+        <div id="wrapper" class="toggled no-top-bar">
+            <div id="sidebar-wrapper" class="visible-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a class="logo" href="#">
+                            <img src="images/logo.svg"/>
+                        </a>
+                        <a class="mobile_menu_icon" href="#">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                    <li class="mobile_menu">
+                        <ul>
+                            <li class="active">
+                                <a href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a href="#">Products</a>
+                            </li>
+                            <li>
+                                <a href="#">Marketing</a>
+                            </li>
+                            <li>
+                                <a href="#">Billing</a>
+                            </li>
+                            <li>
+                                <a href="#">Reporting</a>
+                            </li>
+                            <li>
+                                <a href="#">API</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Admin</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper" class="hidden-xs">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            <img src="images/logo.svg"/>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Partners</a>
+                    </li>
+                    <li>
+                        <a href="#">Products</a>
+                    </li>
+                    <li>
+                        <a href="#">Marketing</a>
+                    </li>
+                    <li>
+                        <a href="#">Billing</a>
+                    </li>
+                    <li>
+                        <a href="#">Reporting</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Admin</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /#sidebar-wrapper -->
+
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="page">
+                    <div class="main_header">
+                        <div>
+                            <h3 class="text-orange inline-block">Strategic Partners</h3>
+                            <div class="dropdown profile_dropdown inline-block">
+                                <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>
+                                    <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Account Contact Info</a></li>
+                                    <li><a href="#">Log Out</a></li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+
+                        <h1>Merchants</h1>
+                    </div>
+                    <div class="sub_header">
+                        <h2>Search Domain Name</h2>
+                        <div class="quick_search_form">
+                            <div class="form-group">
+                                <input type="text" class="form-control"/>
+                            </div>
+
+                            <a class="search_btn btn" href="#"><span class="glyphicon glyphicon-search"></span></a>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="row top_content_header m-bottom">
+                            <div class="col-md-4 col-sm-12">
+                                <select class="selectpicker" data-width="100%" data-title="Filter Reviews">
+                                    <option>A - Z</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div id="no-more-tables" >
+                            <table class="table  merchants-list">
+                                <thead class="">
+                                    <tr>
+                                        <th>Domain</th>
+                                        <th>Code</th>
+                                        <th class="numeric">Status <span class="triff">&dtrif;</span></th>
+                                        <th class="numeric">#of Reviews</th>
+                                        <th class="numeric">Date Created</th>
+                                        <th class="numeric">&nbsp;</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-title="Domain">Merchant Engine eCommerce Consulting</td>
+                                        <td data-title="Code">MerchEnginer</td>
+                                        <td data-title="Status" class="numeric status text-success bold text-uppercase">Active</td>
+                                        <td data-title="# of Reviews" class="numeric">12345</td>
+                                        <td data-title="Date Created" class="numeric">4/12/2017</td>
+                                        <td data-title="Actions" class="numeric text-right">
+                                            <a href="#" class="inline-block v-middle btn btn-primary">Access Control Panel</a>
+                                            <span class="inline-block v-middle">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon id="x-mark-2" fill="#9E0B0F" points="20.596,18.49 13.982,11.94 20.529,5.334 18.49,3.313 11.944,9.922 5.336,3.378 3.313,5.402 9.928,11.959 3.378,18.572 5.402,20.596 11.963,13.976 18.574,20.529 "/></svg>
+                                            </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Domain">Merchant Engine eCommerce Consulting</td>
+                                        <td data-title="Code">MerchEnginer</td>
+                                        <td data-title="Status" class="numeric status text-success bold text-uppercase">Active</td>
+                                        <td data-title="# of Reviews" class="numeric">12345</td>
+                                        <td data-title="Date Created" class="numeric">4/12/2017</td>
+                                        <td data-title="Actions" class="numeric text-right">
+                                            <a href="#" class="inline-block v-middle btn btn-primary">Access Control Panel</a>
+                                            <span class="inline-block v-middle">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon id="x-mark-2" fill="#9E0B0F" points="20.596,18.49 13.982,11.94 20.529,5.334 18.49,3.313 11.944,9.922 5.336,3.378 3.313,5.402 9.928,11.959 3.378,18.572 5.402,20.596 11.963,13.976 18.574,20.529 "/></svg>
+                                            </span></td>
+                                    </tr>
+                                    <tr>
+                                        <td data-title="Domain">Merchant Engine eCommerce Consulting</td>
+                                        <td data-title="Code">MerchEnginer</td>
+                                        <td data-title="Status" class="numeric status text-success bold text-uppercase">Active</td>
+                                        <td data-title="# of Reviews" class="numeric">12345</td>
+                                        <td data-title="Date Created" class="numeric">4/12/2017</td>
+                                        <td data-title="Actions" class="numeric text-right">
+                                            <a href="#" class="inline-block v-middle btn btn-primary">Access Control Panel</a>
+                                            <span class="inline-block v-middle">
+                                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve"><polygon id="x-mark-2" fill="#9E0B0F" points="20.596,18.49 13.982,11.94 20.529,5.334 18.49,3.313 11.944,9.922 5.336,3.378 3.313,5.402 9.928,11.959 3.378,18.572 5.402,20.596 11.963,13.976 18.574,20.529 "/></svg>
+                                            </span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /#page-content-wrapper -->
+
+        </div>
+        <!-- /#wrapper -->
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Menu Toggle Script -->
+        <script>
+            $("#menu-toggle").click(function (e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled");
+
+            });
+            $(document).ready(function () {
+                $('.selectpicker').selectpicker({
+                    style: 'btn-inverse'
+                });
+
+                $('.panel', this).on('click', function (e) {
+                    $(this).find(".panel-heading").toggleClass('trigger');
+                    $(this).find(".panel-collapse").toggleClass('in');
+                });
+
+                $('.mobile_menu_icon').on('click', function () {
+                    $('.mobile_menu').slideToggle();
+                });
+            });
+        </script>
+
+    </body>
+</html>
