@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+<!--        <link rel="stylesheet" media="all" type="text/css" href="css/non-responsive.css"/>-->
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+             $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class=""> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                
+                    <div class="header ">
+                        <div class="container">
+                            <div class="flex">
+                                <div class="left">
+                                    <h1 class="header-title">Dashboard</h1>
+                                </div>
+                                <div class="right">
+                                    <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                    <div class="dropdown support-dropdown inline-block">
+                                        <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                        <ul class="dropdown-menu animated fadeIn">
+                                            <li class="dropdown-title bold text-orange text-18">Support Information</li>
+                                            <li><a href="#">FAQ</a></li>
+                                            <li class="dropdown-title bold text-orange text-18">Shopper Approved Admin</li>
+                                            <li><a href="#">Site ID</a></li>
+                                            <li><a href="#">API Token</a></li>
+                                            <li><a href="#">Domain</a></li>
+                                            <li><a href="#">Initial Survey Token</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="content home">
+                            <div class="intro-video flex align-center">
+                                <a class="video-image" href="#">
+                                    <i class="fa fa-play"></i>
+                                </a>
+                                <div class="video-text text-d-blue medium text-18">
+                                    How to Get the Most Out of Your Shopper Approved Account
+                                </div>
+                            </div>
+                            <hr/>
+                            <h2 class="text-d-blue m-bottom"><span class="glyphicon glyphicon-star text-d-blue m-right-s inline-block"></span><span class="inline-block">Merchant Review Overall Summary</span></h2>
+                            <div class="row m-bottom">
+                                <div class="col-xs-12 col-sm-12 col-md-6 m-bottom-xs">
+                                    <div class="box overall-rating text-center">
+                                        <div class="m-bottom">
+                                            <div class="rating-point m-right-s">4.8</div>
+                                            <div class="text-orange rating-stars">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </div>
+                                        </div>
+                                        <h2 class="text-d-blue">Overall Rating</h2>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <div class="box overall-rating text-center">
+                                        <div class="m-bottom">
+                                            <div class="rating-point m-right-s">2,245,456</div>
+
+                                        </div>
+                                        <h2 class="text-d-blue">Total Reviews</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6 m-bottom-xs">
+                                    <div class="box overall-rating text-center">
+                                        <div class="m-bottom">
+                                            <h2 class="text-orange p-bottom-s">Overall</h2>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>5</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                        <span class="sr-only">90% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    27K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>4</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    12K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>3</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>2</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2610
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>1</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="20"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    90
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bold text-d-blue">
+                                            <p>4.6 Average</p>
+                                            <p>(978,272 Total Reviews)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <div class="box overall-rating text-center">
+                                        <div class="m-bottom">
+                                            <h2 class="text-orange p-bottom-s">Overall in the Last Week</h2>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>5</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                        <span class="sr-only">90% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    27K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>4</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    12K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>3</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>2</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2610
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper">
+                                                <div class="progress-star">
+                                                    <span>1</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="20"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    90
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bold text-d-blue">
+                                            <p>4.6 Average</p>
+                                            <p>(978,272 Total Reviews)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="text-d-blue m-bottom p-top-s"><span class="glyphicon glyphicon-star text-d-blue m-right-s inline-block"></span><span class="inline-block">Detailed Review Summary</span></h2>
+                            <div class="detaild-summary">
+                                <div class="box">
+                                    <div class="row m-bottom">
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                            <h4 class="text-d-blue bold">Would Buy Again</h4>
+                                            <div class="m-bottom-s">
+                                                <div class="text-orange rating-stars inline-block">
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="rating-point m-right-s inline-block">Average</div>
+
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>5</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                        <span class="sr-only">90% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    27K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>4</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    12K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>3</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>2</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2610
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>1</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="20"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    90
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                            <h4 class="text-d-blue bold">Would Buy Again</h4>
+                                            <div class="m-bottom-s">
+                                                <div class="text-orange rating-stars inline-block">
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="rating-point m-right-s inline-block">Average</div>
+
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>5</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                        <span class="sr-only">90% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    27K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>4</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    12K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>3</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>2</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2610
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>1</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="20"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    90
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-4">
+                                            <h4 class="text-d-blue bold">Would Buy Again</h4>
+                                            <div class="m-bottom-s">
+                                                <div class="text-orange rating-stars inline-block">
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="rating-point m-right-s inline-block">Average</div>
+
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>5</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                        <span class="sr-only">90% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    27K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>4</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    12K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>3</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>2</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2610
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>1</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="20"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    90
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row m-bottom">
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                            <h4 class="text-d-blue bold">Would Buy Again</h4>
+                                            <div class="m-bottom-s">
+                                                <div class="text-orange rating-stars inline-block">
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="rating-point m-right-s inline-block">Average</div>
+
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>5</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                        <span class="sr-only">90% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    27K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>4</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    12K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>3</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>2</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2610
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>1</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="20"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    90
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                            <h4 class="text-d-blue bold">Would Buy Again</h4>
+                                            <div class="m-bottom-s">
+                                                <div class="text-orange rating-stars inline-block">
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="rating-point m-right-s inline-block">Average</div>
+
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>5</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                        <span class="sr-only">90% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    27K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>4</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    12K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>3</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>2</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2610
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>1</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="20"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    90
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-4">
+                                            <h4 class="text-d-blue bold">Would Buy Again</h4>
+                                            <div class="m-bottom-s">
+                                                <div class="text-orange rating-stars inline-block">
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="rating-point m-right-s inline-block">Average</div>
+
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>5</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                                        <span class="sr-only">90% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    27K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>4</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="80"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                                        <span class="sr-only">80% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    12K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>3</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="60"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                                        <span class="sr-only">60% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2K
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>2</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="40"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                                                        <span class="sr-only">40% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    2610
+                                                </div>
+                                            </div>
+                                            <div class="progress-wrapper small">
+                                                <div class="progress-star">
+                                                    <span>1</span>
+                                                    <span class="glyphicon glyphicon-star"></span>
+                                                </div>
+                                                <div class="progress">
+                                                    <div class="progress-bar" role="progressbar" aria-valuenow="20"
+                                                        aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                                                        <span class="sr-only">20% Complete</span>
+                                                    </div>
+                                                </div>
+                                                <div class="count">
+                                                    90
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </body>
+</html>

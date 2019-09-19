@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-controls.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+                $('input[name="daterange"]').daterangepicker({
+                    opens: 'left'
+                });
+            });
+            $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class=""> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="header">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="left">
+                                <h1 class="header-title">Video Testimonials</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                <div class="dropdown support-dropdown inline-block">
+                                    <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                    <ul class="dropdown-menu animated fadeIn">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <ul class="sub-nav">
+                            <li class=""><a href="#">Video Testimonials</a></li>
+                            <li class="active"><a href="#">YouTube Authorization</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content my-reviews video-testimonials">
+                        <div class="intro-video flex align-center m-bottom">
+                            <a class="video-image" href="#">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <div class="video-text text-d-blue medium text-18">
+                                How to Authorize Your YouTube Account
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="m-bottom">
+                                <img src="images/logo-youtube.png"/>
+                            </div>
+                            <h3 class="text-d-blue m-bottom">Authorize Shopper Approved to post your video testimonials to your
+    YouTube account.</h3>
+                            <a href="#" class="btn btn_primary">Click Here to Enable YouTube (Optional)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

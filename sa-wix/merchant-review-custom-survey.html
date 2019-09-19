@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-controls.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class="active"> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="header">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="left">
+                                <h1 class="header-title">Merchant Review Survey Options</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                <div class="dropdown support-dropdown inline-block">
+                                    <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                    <ul class="dropdown-menu animated fadeIn">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="sub-nav">
+                            <li class=""><a href="#">Survey Options</a></li>
+                            <li class="active"><a href="#">Custom Survey</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="container">
+                    <div class="content custom-survey">
+                        <div class="intro-video flex align-center">
+                            <a class="video-image" href="#">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <div class="video-text text-d-blue medium text-18">
+                                Custom Survey
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="m-bottom">
+                            <div class="flex align-center">
+                                <div class="left">
+                                    <a href="#" class="text-d-blue medium bold">Preview</a>
+                                </div>
+                                <div class="right">
+                                    <a href="#" class="btn btn_primary"><i class="fa fa-plus m-right"></i>Add a Survey Question</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="survey">
+                            <div class="survey-body">
+                                <h3 class="text-d-blue text-center">Rate Your Overal Experience with <br/>
+                                    BHPhotoVideo.com</h3>
+                                <p class="text-center m-bottom">Your feedback will be used to better inform and assist future customers.</p>
+
+                                <div class="box">
+                                    <div class="question lock">
+                                        <div class="icon">
+                                            <img src="images/icon-lock.svg"/>
+                                        </div>
+                                        <div class="question-text">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <select class="form-control">
+                                                        <option>How would you rate your overall shopping experience?</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="question">
+                                        <div class="icon">
+                                            <img src="images/icon-drag.svg"/>
+                                        </div>
+                                        <div class="question-text">
+                                            <p>How likely are you to recommend our site to others?</p>
+                                            <div class="star">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="icon">
+                                            <img src="images/icon-drag.svg"/>
+                                        </div>
+                                        <div class="question-text">
+                                            <p>How likely are you to buy from us again if you ever need a similar product?</p>
+                                            <div class="star">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="icon">
+                                            <img src="images/icon-drag.svg"/>
+                                        </div>
+                                        <div class="question-text">
+                                            <p>How satisfied were you with your order delivery time?</p>
+                                            <div class="star">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="icon">
+                                            <img src="images/icon-drag.svg"/>
+                                        </div>
+                                        <div class="question-text">
+                                            <p>How satisfied were you with the overall price that you paid?</p>
+                                            <div class="star">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="icon">
+                                            <img src="images/icon-drag.svg"/>
+                                        </div>
+                                        <div class="question-text">
+                                            <p>How satisfied were you with the product(s) that you received?</p>
+                                            <div class="star">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="icon">
+                                            <img src="images/icon-drag.svg"/>
+                                        </div>
+                                        <div class="question-text">
+                                            <h4 class="text-orange bold no-margin p-bottom-s">Qualifying Question A - The associated question below will only display if the customer responds ‘Yes’ </h4>
+                                            <p>Did you contact katetest2018.com for any customer service issues?  </p>
+                                            <div class="form-check m-bottom-s">
+                                                <label>
+                                                    <input type="radio" name="radio" checked> <span class="label-text">Yes</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-check m-bottom-s">
+                                                <label>
+                                                    <input type="radio" name="radio"> <span class="label-text">No</span>
+                                                </label>
+                                            </div>
+                                            <h4 class="text-orange bold no-margin p-bottom-s">Qualifying Question B </h4>
+                                            <p>How satisfied were you with the customer service you received when you contacted katetest2018.com? </p>
+                                            <div class="star">
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                                <span class="glyphicon glyphicon-star"></span>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="question">
+                                        <div class="icon">
+                                            &nbsp;
+                                        </div>
+                                        <div class="question-text">
+                                            <h4 class="text-orange bold no-margin">You’re just about done!</h4>
+                                            <h3>Please tell us about your overall experience with katetest2018.com: </h3>
+                                            <p class="text-muted text-normal m-top-s m-bottom-s">Note - This information will be added to katetest2018.com's Shopper Approved certificate for future customers to read, therefore, we ask that you please keep your comments professional and courteous. </p>
+                                            <p>For comment guidelines, <a href="#" class="text-blue"> click here. </a></p>
+
+                                            <hr/>
+
+                                            <p>Please type a quick message about your shopping experience so far.</p>
+                                            <textarea class="form-control" rows="8"></textarea>
+                                            <div class="type_progress">
+                                                <div class="progress" style="width: 40%"></div>
+                                            </div>
+                                            <p class="text-normal p-top-s text-center">Only <span class="text-orange">50</span> characters left to become a <span class="bold">Promoter!</span> Or 149 characters left to become an <span class="bold">Influencer!</span> <a href="#" class="text-underline text-blue">What's This?</a> </p>
+                                            <hr/>
+                                            <p>Customers like to read reviews that have a personal touch, which is why we add a display name to each review that we post.</p>
+                                            <div class="row m-bottom-s">
+                                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                                    <label class="text-normal">Display Name</label>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-8 col-md-6">
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                            </div>
+                                            <div class="row m-bottom-s">
+                                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                                    <label class="text-normal">Country</label>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-8 col-md-6">
+                                                    <select class="form-control"></select>
+                                                </div>
+                                            </div>
+                                            <div class="row m-bottom-s">
+                                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                                    <label class="text-normal">State/Province</label>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-8 col-md-6">
+                                                    <select class="form-control"></select>
+                                                </div>
+                                            </div>
+                                            <div class="row m-bottom-s">
+                                                <div class="col-xs-12 col-sm-4 col-md-3">
+                                                    <label class="text-normal">Email</label>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-8 col-md-6">
+                                                    <input type="email" class="form-control">
+                                                    <p class="text-danger m-top-s">Please enter an email and confirm that you are an actual customer.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="icon">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+                                    <div class="question">
+                                        <div class="icon">
+                                            &nbsp;
+                                        </div>
+                                        <div class="form-check question-text no-border" style="padding: 0 0 15px; margin: 0;">
+                                            <label >
+                                                <input type="checkbox" name="check" checked=""> <span class="label-text text-blue">I am an active paying customer of katetest2018.com and this review is an accurate account of my shopping experience.</span>
+                                            </label>
+
+                                        </div>
+                                        <div class="icon">
+                                            &nbsp;
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <a href="#" class="btn btn_primary btn-lg m-left">Submit Feedback</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

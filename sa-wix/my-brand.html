@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+        
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class="active"> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="header ">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="left">
+                                <h1 class="header-title">My Brand</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                <div class="dropdown support-dropdown inline-block">
+                                    <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                    <ul class="dropdown-menu animated fadeIn">
+                                        <li class="dropdown-title bold text-orange text-18">Support Information</li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li class="dropdown-title bold text-orange text-18">Shopper Approved Admin</li>
+                                        <li><a href="#">Site ID</a></li>
+                                        <li><a href="#">API Token</a></li>
+                                        <li><a href="#">Domain</a></li>
+                                        <li><a href="#">Initial Survey Token</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content mybrand-page">
+                        <div class="box m-bottom">
+                            <h2 class="text-orange m-bottom">‘About Us’ Content</h2>
+                            <p>The About Us feature gives you an opportunity to tell customers that visit our Featured Directory and/or view your individual review pages who you are and why they should buy from you. You can also add one contextual anchor text link in the content. This will help you with SEO (Search Engine Optimization), and give your customers a way to visit your website directly. </p>
+                            <p>This is a great way to put your best foot forward, so take some time to make your about us content as positive, inviting and professional as possible. </p>
+                            <h4 class="text-d-blue m-top m-bottom">Instructions </h4>
+                            <p>Enter your About Us text in the text box below (200 word limit). To add your contextual anchor text link, highlight the word or phrase that you want to turn into a link and then click on the chain link image in the menu above the text box. This will open a new window. Simply enter your URL (be sure to include http:// in your URL) then click on the Insert button and your link will be added. Once your write up is complete, click on the "Commit About Us" link below the text box to submit your about us text. (If you don't see the "chain link" image, try refreshing the page and/or try a different internet browser).</p>
+
+                            <p>NOTE: It is not recommended to copy and paste from any word processing program.</p>
+
+                            <h4 class="text-d-blue m-top m-bottom">Example ‘About Us’ Content</h4>
+                            <div class="well">
+                                <p>Welcome to ACME Bow Ties. ACME is a family-owned business, that opened its doors back in 1984 with it's first line of bow ties. Now, over 18 years later, we are one of the largest bow tie suppliers in the US, with over 2,000 different premium bow ties to choose from. </p>
+
+                                <p>Here at ACME Bow Ties, we pride ourselves on two things; quality and customer service. When it comes to quality our bow ties are 'best in class', with only the highest, most durable materials used. Customer Service is also very important, which is why our friendly, helpful staff are ready to help you 24 hours a day. </p>
+
+                                <p>If you're looking for a bow tie for that special someone, then you've definitely come to the right place.</p>
+                            </div>
+                            
+                            <hr class="stretched"/>
+                            
+                            <h2 class="text-orange p-top m-bottom">Customize Your ‘About Us’ Information </h2>
+                            <h4 class="text-d-blue">Create Your Custom About Us Content</h4>
+                            <textarea class="form-control m-top m-bottom" rows="5"></textarea>
+                            <p><a href="#" class="btn btn_primary">Save</a></p>
+                        </div>
+                        <div class="box m-bottom">
+                            <h2 class="text-orange m-bottom">Branding </h2>
+                            <p>Give your surveys a personal touch by uploading your company logo.  Your logo will appear on your Initial and Full Surveys.</p>
+                            <div class="m-top">
+                                <a href="#" class="btn btn_primary">Upload Logo</a>
+                                <span class="text-danger inline-block m-left">Note: Uploading a new image will replace your current logo file.</span>
+                            </div>
+                            <hr/>
+                            <h4 class="text-d-blue">Current Logo Uploaded</h4>
+                            <div class="uploaded-logo">
+                                <img src="images/trust.png"/>
+                                <a href="#" class="text-danger"><span class="glyphicon glyphicon-remove"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

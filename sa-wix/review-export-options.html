@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap-datepicker.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-controls.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+                $('input[name="daterange"]').daterangepicker({
+                    opens: 'left'
+                });
+
+                $('.datepicker').datepicker({
+                    setDate: 'date'
+                });
+            });
+            $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li class="active"> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class=""> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="header">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="left">
+                                <h1 class="header-title">Review Export Options</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                <div class="dropdown support-dropdown inline-block">
+                                    <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                    <ul class="dropdown-menu animated fadeIn">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content my-reviews review-export-options">
+                        <h4 class="text-d-blue m-bottom">Download review data and create spreadsheets that help you analyze your feedback.</h4>
+                        <div class="box">
+                            <h3 class="text-orange m-bottom">In this section, you can download CSV files of your review data.</h3>
+                            <div class="m-bottom flex d-block align-center">
+                                <div class="export medium">Export Range:</div>
+                                <div class="input-group input-daterange">
+                                    <input type="text" class="form-control datepicker" value="2019-04-05">
+                                    <div class="input-group-addon">to</div>
+                                    <input type="text" class="form-control datepicker" value="2019-04-19">
+                                </div>
+                                <a href="#" class="text-underline text-blue m-left no-margin-xs small medium">Change Range</a>
+                            </div>
+                            <div class="border-bottom p-bottom-s m-bottom">
+                                <p><a href="#" class="btn btn_primary export-btn">Completed Initial Survey <img class="inline-block m-left-s" src="images/icon-upload.png"/></a></p>
+                                <p class="no-margin">Summary of reviews that completed the initial survey.
+                                </p>
+                            </div>
+                            <div class="border-bottom p-bottom-s m-bottom">
+                                <p><a href="#" class="btn btn_primary export-btn">Completed Full Survey <img class="inline-block m-left-s" src="images/icon-upload.png"/></a></p>
+                                <p class="no-margin">Summary of reviews that completed the full survey.
+
+
+                                </p>
+                            </div>
+                            <div class="border-bottom p-bottom-s m-bottom">
+                                <p><a href="#" class="btn btn_primary export-btn">Unconfirmed Full Survey<img class="inline-block m-left-s" src="images/icon-upload.png"/></a></p>
+                                <p class="no-margin">Reviews that completed the full survey but have not confirmed their review.</p>
+                            </div>
+                            <div class="border-bottom p-bottom-s m-bottom">
+                                <p><a href="#" class="btn btn_primary export-btn">Individual Reviews<img class="inline-block m-left-s" src="images/icon-upload.png"/></a></p>
+                                <p class="no-margin">All individual reviews. It will not include the custom questions.</p>
+                            </div>
+                            <div class="p-bottom-s m-bottom">
+                                <p><a href="#" class="btn btn_primary export-btn">Individual Custom Reviews<img class="inline-block m-left-s" src="images/icon-upload.png"/></a></p>
+                                <p class="no-margin">All reviews with custom questions and answers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

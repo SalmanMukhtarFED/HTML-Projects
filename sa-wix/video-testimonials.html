@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-controls.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+                $('input[name="daterange"]').daterangepicker({
+                    opens: 'left'
+                });
+            });
+            $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class=""> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="header">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="left">
+                                <h1 class="header-title">Video Testimonials</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                <div class="dropdown support-dropdown inline-block">
+                                    <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                    <ul class="dropdown-menu animated fadeIn">
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="sub-nav">
+                            <li class="active"><a href="#">Video Testimonials</a></li>
+                            <li class=""><a href="#">YouTube Authorization</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content my-reviews video-testimonials">
+                        <div class="intro-video flex align-center">
+                            <a class="video-image" href="#">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <div class="video-text text-d-blue medium text-18">
+                                How To Manage Video Testimonials
+                            </div>
+                        </div>
+                        <hr/>
+
+                        <div class="reviews-filter">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-3">
+                                    <div class="form-group">
+                                        <label>
+                                            Search
+                                        </label>
+                                        <input type="text" class="form-control"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex pagination-wrapper">
+                            <div class="left">
+                                <ul class="list-controls">
+                                    <li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                    <li>Page</li>
+                                    <li>
+                                        <input type="text" class="pagenumber" placeholder="1"/>
+                                    </li>
+                                    <li>of 67</li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <span>SHOW:</span>
+                                <span>
+                                    <select class="small-select">
+                                        <option>10</option>
+                                    </select>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="box less-padding pending-approval">
+                            <div class="customer-row">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-1 col-md-1 m-bottom-xs">
+                                        <div class="review-selection text-center">
+                                            <img src="images/star-empty.png"/>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-3 col-md-2 m-bottom-xs">
+                                        <div class="video-info">
+                                            <div class="video-placeholder">
+                                                <img src="images/video-review.jpg" alt="">
+                                                <a href="#" class="play">
+                                                    <i class="fa fa-play"></i>
+                                                </a>
+                                            </div>
+                                            <p class="video-status">Video Pending Approval</p>
+                                            <div class="approve-reject">
+                                                <a href="#" class="approve"><i class="fa fa-thumbs-up"></i></a>
+                                                <a href="#" class="reject"><i class="fa fa-thumbs-down"></i></a>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-7 m-bottom-xs">
+                                        <div class="customer-reviews">
+                                            <h4 class="text-blue no-margin">Joe D.</h4>
+                                            <p class="small bold">Atlanta, GA United States<br>
+                                                30 Oct 2015</p>
+                                            <p class="m-bottom">“Shopper Approved Seals give you the opportunity to actively display your customer ratings and reveiews and can be placed anywhere on your site. You can customize the style, color, size, and header text of your seal here.”</p>
+                                            <div class="row">
+                                                <div class="col-md-6 small">
+                                                    <div class="row m-bottom-s">
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            Recommend this Company
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            <div class="rating-bars">
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-2 col-sm-12">
+                                                            5.0
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="row m-bottom-s">
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            Would Buy Again
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            <div class="rating-bars">
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar "></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-2 col-sm-12">
+                                                            4.0
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="row m-bottom-s">
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            Price
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            <div class="rating-bars">
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar "></span>
+                                                                <span class="bar"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-2 col-sm-12">
+                                                            3.0
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 small">
+                                                    <div class="row m-bottom-s">
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            Product Satisfaction
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            <div class="rating-bars">
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-2 col-sm-12">
+                                                            5.0
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="row m-bottom-s">
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            Delivery Time
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            <div class="rating-bars">
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar "></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-2 col-sm-12">
+                                                            4.0
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                    <div class="row m-bottom-s">
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            Customer Service
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-5 col-sm-12">
+                                                            <div class="rating-bars">
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar filled"></span>
+                                                                <span class="bar "></span>
+                                                                <span class="bar"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-2 col-sm-12">
+                                                            5.0
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-2 col-md-2 m-bottom-xs">
+                                        <div class="dispute-info text-center">
+                                            <div class="inline-block">
+                                                <img src="images/customercare-text-icon.png">
+                                            </div>
+                                            <p class="ip">68.188.72.134</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="box less-padding selected-review">
+                            <div class="row customer-row">
+                                <div class="col-xs-12 col-sm-1 col-md-1 m-bottom-xs">
+                                    <div class="review-selection text-center">
+                                        <img src="images/star-empty.png">
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-2 m-bottom-xs">
+                                    <div class="video-info">
+                                        <div class="video-placeholder">
+                                            <img src="images/video-review.jpg" alt="">
+                                            <a href="#" class="play">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="approve-reject">
+                                            <a class="approve">This video has
+                                                been approved</a>
+                                            <a href="#" class="reject"><i class="fa fa-thumbs-down"></i></a>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-7 m-bottom-xs">
+                                    <div class="customer-reviews">
+                                        <h4 class="text-blue no-margin">Joe D.</h4>
+                                        <p class="small bold">Atlanta, GA United States<br>
+                                            30 Oct 2015</p>
+                                        <p class="m-bottom">“Shopper Approved Seals give you the opportunity to actively display your customer ratings and reveiews and can be placed anywhere on your site. You can customize the style, color, size, and header text of your seal here.”</p>
+                                        <div class="row">
+                                            <div class="col-md-6 small">
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Recommend this Company
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        5.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Would Buy Again
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        4.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Price
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                            <span class="bar"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        3.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 small">
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Product Satisfaction
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        5.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Delivery Time
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        4.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Customer Service
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                            <span class="bar"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        5.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 m-bottom-xs">
+                                    <div class="dispute-info text-center">
+                                        <div class="inline-block dispute-open">
+                                            <img src="images/customercare-text-icon.png">
+                                        </div>
+                                        <p class="ip">68.188.72.134</p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="box less-padding selected-review approved-review featured">
+                            <div class="row customer-row">
+                                <div class="col-xs-12 col-sm-1 col-md-1 m-bottom-xs">
+                                    <div class="review-selection text-center">
+                                        <img src="images/feature-star.png"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-2 m-bottom-xs">
+                                    <div class="video-info">
+                                        <div class="video-placeholder">
+                                            <img src="images/video-review.jpg" alt="">
+                                            <a href="#" class="play">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                        </div>
+                                    
+                                        <div class="approve-reject">
+                                            <a class="approve">This video has
+                                                been approved</a>
+                                            <a href="#" class="reject"><i class="fa fa-thumbs-down"></i></a>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-7 m-bottom-xs">
+                                    <div class="customer-reviews">
+                                        <h4 class="text-blue no-margin">Joe D.</h4>
+                                        <p class="small bold">Atlanta, GA United States<br>
+                                            30 Oct 2015</p>
+                                        <p class="m-bottom">“Shopper Approved Seals give you the opportunity to actively display your customer ratings and reveiews and can be placed anywhere on your site. You can customize the style, color, size, and header text of your seal here.”</p>
+                                        <div class="row">
+                                            <div class="col-md-6 small">
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Recommend this Company
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        5.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Would Buy Again
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        4.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Price
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                            <span class="bar"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        3.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 small">
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Product Satisfaction
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        5.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Delivery Time
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        4.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Customer Service
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                            <span class="bar"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        5.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 m-bottom-xs">
+                                    <div class="dispute-info text-center">
+                                        <div class="inline-block dispute-open">
+                                            <img src="images/customercare-text-icon.png">
+                                        </div>
+                                        <p class="ip">68.188.72.134</p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="box less-padding rejected-review">
+                            <div class="row customer-row">
+                                <div class="col-xs-12 col-sm-1 col-md-1 m-bottom-xs">
+                                    <div class="review-selection text-center">
+                                        <img src="images/star-empty.png"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-3 col-md-2 m-bottom-xs">
+                                    <div class="video-info">
+                                        <div class="video-placeholder">
+                                            <img src="images/video-review.jpg" alt="">
+                                            <a href="#" class="play">
+                                                <i class="fa fa-play"></i>
+                                            </a>
+                                        </div>
+                                        
+                                        <div class="approve-reject">
+                                            <a href="#" class="reject">This video has been rejected</a>
+                                            <a class="approve"><i class="fa fa-thumbs-up"></i></a>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-7 m-bottom-xs">
+                                    <div class="customer-reviews">
+                                        <h4 class="text-blue no-margin">Joe D.</h4>
+                                        <p class="small bold">Atlanta, GA United States<br>
+                                            30 Oct 2015</p>
+                                        <p class="m-bottom">“Shopper Approved Seals give you the opportunity to actively display your customer ratings and reveiews and can be placed anywhere on your site. You can customize the style, color, size, and header text of your seal here.”</p>
+                                        <div class="row">
+                                            <div class="col-md-6 small">
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Recommend this Company
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        5.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Would Buy Again
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        4.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Price
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                            <span class="bar"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        3.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 small">
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Product Satisfaction
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        5.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Delivery Time
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        4.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="row m-bottom-s">
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        Customer Service
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-5 col-sm-12">
+                                                        <div class="rating-bars">
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar filled"></span>
+                                                            <span class="bar "></span>
+                                                            <span class="bar"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 col-lg-2 col-sm-12">
+                                                        5.0
+                                                    </div>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-2 col-md-2 m-bottom-xs">
+                                    <div class="dispute-info text-center">
+                                        <div class="inline-block dispute-open">
+                                            <img src="images/customercare-text-icon.png">
+                                        </div>
+                                        <p class="ip">68.188.72.134</p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                        </div>
+                        <div class="flex m-top">
+                            <div class="left">
+                                <ul class="list-controls">
+                                    <li><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                    <li>Page</li>
+                                    <li>
+                                        <input type="text" class="pagenumber" placeholder="1"/>
+                                    </li>
+                                    <li>of 67</li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-controls.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class=""> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="header">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="left">
+                                <h1 class="header-title">Local Marketing Tools</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                <div class="dropdown support-dropdown inline-block">
+                                    <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                    <ul class="dropdown-menu animated fadeIn">
+                                        <h4 class="text-orange bold">Support Information</h4>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content local-marketing-tools">
+                        <div class="box m-bottom">
+                            <h2 class="text-orange m-bottom">Email Survey  </h2>
+                            <p class="m-bottom">Use this to link to email to your customers directly.</p>
+                            <p class="medium bold text-d-blue text-18">Send your customers to your Shopper Approved Local Survey with the URL below:</p>
+                            <div class="input-group m-top m-bottom">
+                                <input type="text" class="form-control" placeholder="http://www.shopperapproved.com/surveys/full.php?id=10213&code=">
+                                <span class="input-group-addon">Copy Link</span>
+                            </div>
+                            
+                            <p class="text-muted">Example Customer Email (Feel free to copy this template)</p>
+                            <div>
+                                <img src="images/template-image.png"/>
+                            </div>
+                            <div class="m-top">
+                                <a href="#" class="btn btn_primary mw-260">Save Changes</a>
+                            </div>
+                        </div>
+                        <div class="box m-bottom">
+                            <h2 class="text-orange m-bottom">Tablet Survey  </h2>
+                            <p class="m-bottom">Use this link on a tablet or computer in your office for your customers to use in store.</p>
+                            <p class="text-muted">Note: When a customer fills out this survey the review will be marked pending and a confirmation email will be sent to the customer. Once the link in that email is clicked or a full survey is completed, the review will be activated.</p>
+                            <p class="text-danger bold">Do not give this link to your customers or you could receive spam attempts that would flood your review page. Any attempt to use this feature to generate fraudulent reviews will be cause for immediate account cancellation.</p>
+                            <div class="input-group m-top m-bottom">
+                                <input type="text" class="form-control" placeholder="http://www.shopperapproved.com/surveys/full.php?id=10213&code=">
+                                <span class="input-group-addon">Copy Link</span>
+                            </div>
+                        </div>
+                        <div class="box m-bottom">
+                            <h2 class="text-orange m-bottom">QR Code Images </h2>
+                            <p class="m-bottom text-18 text-d-blue medium">Want to insert a QR Code into your own pamphlet, flyer, or receipt?</p>
+                            <p class="m-bottom">(Click on an image below to download it to your computer)</p>
+                            <div class="flex align-center">
+                                <div class="qr-code large">
+                                    <img src="images/img-qr.png"/>
+                                    <a href="" class="download-icon m-left-s"><img src="images/icon-download.svg"/></a>
+                                </div>
+                                <div class="qr-code medium">
+                                    <img src="images/img-qr.png"/>
+                                    <a href="" class="download-icon m-left-s"><img src="images/icon-download.svg"/></a>
+                                </div>
+                                <div class="qr-code small">
+                                    <img src="images/img-qr.png"/>
+                                    <a href="" class="download-icon m-left-s"><img src="images/icon-download.svg"/></a>
+                                </div>
+                                <div class="qr-code x-small">
+                                    <img src="images/img-qr.png"/>
+                                    <a href="" class="download-icon m-left-s"><img src="images/icon-download.svg"/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box m-bottom">
+                            <h2 class="text-orange m-bottom">Printed Documents </h2>
+                            <p class="m-bottom">In order to get the best feedback from your customers we now have two versions of the surveys. Please choose the version that best suits your site. Once an option is selected the code below will update automatically.</p>
+                            <div class="row">
+                                <div class="col-xs-6 col-sm-6 col-md-3">
+                                    <div class="form-check m-bottom">
+                                        <label>
+                                            <input type="radio" name="radio" checked> <span class="label-text text-blue">Single Page Flyer</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check m-bottom">
+                                        <label>
+                                            <input type="radio" name="radio"> <span class="label-text text-blue">(4) Mini Flyer Page</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check m-bottom">
+                                        <label>
+                                            <input type="radio" name="radio"> <span class="label-text text-blue">(2) Table Tent</span>
+                                        </label>
+                                    </div>
+                                    <div class="form-check m-bottom">
+                                        <label>
+                                            <input type="radio" name="radio"> <span class="label-text text-blue">(4) Sticker Sheet</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6 col-sm-6 col-md-9">
+                                    <div class="flyer m-bottom">
+                                        <img src="images/flyer.png"/>
+                                    </div>
+                                    <p class="text-d-blue bold no-margin">Single Page Flyer</p>
+                                    <p class="no-margin text-d-blue bold">(Click the image above to view / download)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

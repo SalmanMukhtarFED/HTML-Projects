@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+        
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-controls.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class="active"> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="header ">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="left">
+                                <h1 class="header-title">Social Media Feed Authorization</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                <div class="dropdown support-dropdown inline-block">
+                                    <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                    <ul class="dropdown-menu animated fadeIn">
+                                        <li class="dropdown-title bold text-orange text-18">Support Information</li>
+                                        <li><a href="#">FAQ</a></li>
+                                        <li class="dropdown-title bold text-orange text-18">Shopper Approved Admin</li>
+                                        <li><a href="#">Site ID</a></li>
+                                        <li><a href="#">API Token</a></li>
+                                        <li><a href="#">Domain</a></li>
+                                        <li><a href="#">Initial Survey Token</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="sub-nav">
+                            <li class="active"><a href="#">Facebook</a></li>
+                            <li class=""><a href="#">Twitter</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content syndication-page">
+                        <p class="m-top-s m-bottom">Shopper Approved Facebook Syndication allows you to automatically post 5-Star Shopper Approved reviews directly into your Facebook account. 
+                            </p>
+                            <p>(Please note that we publish the reviews directly to your facebook page as it is not possible to syndicate directly as a Facebook review).</p>
+                        <p class="text-d-blue bold m-bottom">Please select your syndication preferences below and then click on the Authorize link to set up the permissions.</p>
+                        <div class="box m-bottom">
+                            <h2 class="text-orange">Syndication Preferences</h2>
+                            <h3 class="text-d-blue m-bottom">I would like to:</h3>
+                            <div class="form-check m-bottom">
+                                <label>
+                                    <input type="radio" name="radio" checked> <span class="label-text">Syndicate up to a maximum of <select class="inline-block small-select"><option>3</option></select> reviews per day if I have that many available.</span>
+                                </label>
+                            </div>
+                            <div class="form-check m-bottom">
+                                <label>
+                                    <input type="radio" name="radio"> <span class="label-text">Syndicate up to a maximum of  <select class="inline-block small-select"><option>3</option></select> reviews per week, randomly spread out, if I have that many available.</span>
+                                </label>
+                            </div>
+                            <div class="m-bottom">
+                                <a href="#" class="btn btn_primary">Save Changes</a>
+                            </div>
+                            <h3 class="text-danger">Please Note:</h3>
+                            <p class="text-danger">Your reviews will be randomly distributed. It is not unusual for days to pass without a post or for reviews to bunch up occasionally. In order for a review to qualify for posting it must be a 5 star review and contain at least 4 characters.</p>
+                        </div>
+                        <div class="box">
+                            <h2 class="text-orange">Authorization</h2>
+                            <p class="m-top m-bottom">Note: In order to allow us to post to your Facebook feed, you have to give us permission. When you click on the Authorization link below, a Facebook authorization window pops up. </p>
+                            <div class="m-bottom">
+                                <a href="#" class="btn btn_primary">Authorize Shopper Approved to post to your Facebook Account</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

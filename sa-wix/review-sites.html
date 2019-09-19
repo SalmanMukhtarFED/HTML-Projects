@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-controls.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class=""> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown ">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="header">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="left">
+                                <h1 class="header-title">Review Sites</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                <div class="dropdown support-dropdown inline-block">
+                                    <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                    <ul class="dropdown-menu animated fadeIn">
+                                        <h4 class="text-orange bold">Support Information</h4>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content review-sites">
+                        <div class="intro-video flex align-center m-bottom">
+                            <a class="video-image" href="#">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <div class="video-text text-d-blue medium text-18">
+                                How to Manage Review Sites
+                            </div>
+                        </div>
+                        <p class="text-18 bold text-d-blue">Manage your online reputation by using this tool to collect reviews on Shopper Approved, Facebook, and Google My Business.</p>
+                        <p>Direct a percentage of your review traffic to the sites that matter most.  Authorize your Facebook and Google pages.</p>
+                        <ul>
+                            <li>- Add the percentage of reviews you'd like to direct to each review site.</li>
+                            <li>- Change it any time to focus traffic on increasing your star rating or number of reviews</li>
+                            <li>- Set to 0% to pause traffic from being sent to Facebook or Google.</li>
+                        </ul>
+                        <div class="sites-list">
+                            <div class="sites-list-header">
+                                <div class="first title">
+                                    %
+                                </div>
+                                <div class="second title">
+                                    Collect Review on these sites:
+                                </div>
+                                <div class="last title">
+                                    Overall Rating
+                                </div>
+                            </div>
+                            <div class="site">
+                                <div class="first percent">
+                                    <span>40</span>
+                                </div>
+                                <div class="second site-logo">
+                                    <div class="flex align-center">
+                                        <div class="left">
+                                            <img src="images/sa-dark.svg"/>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" data-toggle="tooltip" title="Info text goes here!" class="info"><i class="glyphicon glyphicon-info-sign"></i></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="last">
+                                    <div class="rating text-orange">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
+                                    <a href="#">Activate</a>
+                                    <span>/</span>
+                                    <a href="#">Deactivate</a>
+                                </div>
+                            </div>
+                            <div class="site">
+                                <div class="first percent">
+                                    <span>30</span>
+                                </div>
+                                <div class="second site-logo">
+                                    <div class="flex align-center">
+                                        <div class="left">
+                                            <img src="images/logo-fb.svg"/>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" data-toggle="tooltip" title="Info text goes here!" class="info"><i class="glyphicon glyphicon-info-sign"></i></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="last">
+                                    <div class="rating text-orange">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
+                                    <a href="#">Activate</a>
+                                    <span>/</span>
+                                    <a href="#">Deactivate</a>
+                                </div>
+                            </div>
+                            <div class="site">
+                                <div class="first percent">
+                                    <span>20</span>
+                                </div>
+                                <div class="second site-logo">
+                                    <div class="flex align-center">
+                                        <div class="left">
+                                            <img src="images/logo-google.png"/>
+                                        </div>
+                                        <div class="right">
+                                            <a href="#" data-toggle="tooltip" title="Info text goes here!" class="info"><i class="glyphicon glyphicon-info-sign"></i></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="last">
+                                    <div class="rating text-orange">
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                        <span class="glyphicon glyphicon-star"></span>
+                                    </div>
+                                    <a href="#">Activate</a>
+                                    <span>/</span>
+                                    <a href="#">Deactivate</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-top p-bottom">
+                            <a href="#" class="btn btn_primary mw-260">Save Changes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

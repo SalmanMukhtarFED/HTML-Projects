@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700" rel="stylesheet">
+        <link rel="stylesheet" media="all" type="text/css" href="css/bootstrap.css"/>
+        
+        <link rel="stylesheet" media="all" type="text/css" href="css/animate.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/custom-controls.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+        <script
+            src="https://code.jquery.com/jquery-1.12.4.min.js"
+            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+        crossorigin="anonymous"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            $(document).on('click', '#page-content-wrapper', '.dropdown-menu', function (e) {
+                e.stopPropagation();
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="javascript:void(0);"><img src="images/logo.svg"/></a>
+                    </div>
+                    <ul>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="active">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-home.svg"/></span>
+                                        <span>Home</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-brand.svg"/></span>
+                                        <span>My Brand</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-syndication.svg"/></span>
+                                        <span>Syndication</span>
+                                    </a>
+                                </li>
+                                <li> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-export.svg"/></span>
+                                        <span>Export</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Manage
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-myreviews.svg"/></span>
+                                        <span>My Reviews</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-videotestimonials.svg"/></span>
+                                        <span>Video Testimonials</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-awards.svg"/></span>
+                                        <span>Awards</span>
+                                    </a>
+                                </li>
+                                <li class="active"> 
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-surveys.svg"/></span>
+                                        <span>Surveys</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-reviewsites.svg"/></span>
+                                        <span>Review Sites</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+
+                            <a class="dropdown-toggle" href="javascript:void(0);" data-toggle="dropdown">
+                                Local Tools
+                            </a>
+                            <ul class="dropdown-menu animated fadeIn">
+                                <li class="">
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-certficateprofile.svg"/></span>
+                                        <span>Certificate Profile</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-profilemanager.svg"/></span>
+                                        <span>Profile Manager</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <span class="icon"><img src="images/icon-marketingtools.svg"/></span>
+                                        <span>Marketing Tools</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="header">
+                    <div class="container">
+                        <div class="flex">
+                            <div class="left">
+                                <h1 class="header-title">Merchant Review Survey Options</h1>
+                            </div>
+                            <div class="right">
+                                <a href="javascript:void(0);" class="btn btn_primary go-to">Go To My Reviews</a>
+                                <div class="dropdown support-dropdown inline-block">
+                                    <a href="javascript:void(0);" class="btn btn_border m-left-s dropdown-toggle" data-toggle="dropdown">Support</a>
+                                    <ul class="dropdown-menu animated fadeIn">
+                                        <h4 class="text-orange bold">Support Information</h4>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="sub-nav">
+                            <li class="active"><a href="#">Survey Options</a></li>
+                            <li class=""><a href="#">Custom Survey</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="content merchant-review">
+                        <div class="intro-video flex align-center">
+                            <a class="video-image" href="#">
+                                <i class="fa fa-play"></i>
+                            </a>
+                            <div class="video-text text-d-blue medium text-18">
+                                Survey Options Overview
+                            </div>
+                        </div>
+                        <hr/>
+                        <div class="box m-bottom">
+                            <h2 class="text-orange m-bottom">Set Your Reviews Email Notifications </h2>
+                            <p class="m-bottom">Make the most of your positive reviews and stay on top of potential weaknesses in your ratings.</p>
+                            <p class="medium bold text-d-blue text-18">Tell us how often to email you about your reviews</p>
+                            <div class="m-top">
+                                <div class="row m-bottom-s">
+                                    <div class="col-xs-3 col-sm-1 col-md-1 text-center">
+                                        Initial
+                                        Survey
+                                    </div>
+                                    <div class="col-xs-3 col-sm-1 col-md-1 text-center">
+                                        Full
+                                        Survey
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-xs-3 col-sm-1 col-md-1">
+                                        <div class="form-check text-center">
+                                            <label >
+                                                <input type="checkbox" name="check" checked=""> <span class="label-text"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xs-3 col-sm-1 col-md-1">
+                                        <div class="form-check text-center">
+                                            <label >
+                                                <input type="checkbox" name="check" checked=""> <span class="label-text"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-10 col-md-10">
+                                        <p class="text-blue bold">Always</p>
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-xs-3 col-sm-1 col-md-1">
+                                        <div class="form-check text-center">
+                                            <label >
+                                                <input type="checkbox" name="check" > <span class="label-text"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xs-3 col-sm-1 col-md-1">
+                                        <div class="form-check text-center">
+                                            <label >
+                                                <input type="checkbox" name="check"> <span class="label-text"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-10 col-md-10">
+                                        <p class="text-blue bold">When all ratings are 4 or 5 stars and the customer left feedback</p>
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-xs-3 col-sm-1 col-md-1">
+                                        <div class="form-check text-center">
+                                            <label >
+                                                <input type="checkbox" name="check" checked="" > <span class="label-text"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xs-3 col-sm-1 col-md-1">
+                                        <div class="form-check text-center">
+                                            <label >
+                                                <input type="checkbox" name="check" checked=""> <span class="label-text"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-10 col-md-10">
+                                        <p class="text-blue bold">When any rating is 3 stars</p>
+                                    </div>
+                                </div>
+                                <div class="row m-bottom-s">
+                                    <div class="col-xs-3 col-sm-1 col-md-1">
+                                        <div class="form-check text-center">
+                                            <label >
+                                                <input type="checkbox" name="check" > <span class="label-text"></span>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-xs-3 col-sm-1 col-md-1">
+                                        <div class="form-check text-center">
+                                            <label >
+                                                <input type="checkbox" name="check"> <span class="label-text"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-10 col-md-10">
+                                        <p class="text-blue bold">When any rating is 1 or 2 stars.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="m-top">
+                                <a href="#" class="btn btn_primary mw-260">Save Changes</a>
+                            </div>
+                        </div>
+                        <div class="box m-bottom">
+                            <h2 class="text-orange m-bottom">Link to Full Survey </h2>
+                            <p class="medium bold text-d-blue text-18">This link can be emailed to your active clients to give them an opportunity to rate your site.
+    </p>
+                            <div class="input-group m-top m-bottom">
+                                <input type="text" class="form-control" placeholder="http://www.shopperapproved.com/surveys/full.php?id=10213&code=">
+                                <span class="input-group-addon">Copy Link</span>
+                            </div>
+                            <div class="flex m-bottom">
+                                <div class="form-check inline-block v-top">
+                                    <label>
+                                        <input type="checkbox" name="check" > <span class="label-text"></span>
+                                    </label>
+                                </div>
+                                <div class="inline-block text-blue v-top">
+                                    <p class="text-18 bold no-margin">Populate Order ID </p>
+                                    <p class="small text-underline">Recreate this link. Use this link if you want to change your full survey URL above. (Note: this will disable all your current links.)</p>
+                                </div>
+                            </div>
+                            <div class="flex m-bottom">
+                                <div class="form-check inline-block v-top">
+                                    <label>
+                                        <input type="checkbox" name="check" > <span class="label-text"></span>
+                                    </label>
+                                </div>
+                                <div class="inline-block text-blue v-top">
+                                    <p class="text-18 bold no-margin">Require the Order ID for new reviews. </p>
+                                    <p class="small text-underline text-italic">(Only use this if you can populate each link you send out with a unique Order ID. The link will not work without <br/>
+                                        a unique Order ID in the link.You will need to check the 'Populate Order Id' box and add the unique Order ID to the link.)</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="box m-bottom">
+                            <h2 class="text-orange m-bottom">Link to Phone Order / Physical Store Survey</h2>
+                            <p class="medium bold text-d-blue text-18">This link can be used to collect multiple reviews from the same IP for use in phone orders </p>
+                            <p class="text-danger m-top m-bottom text-italic">Note: When a customer fills out this survey the review will be marked pending and a confirmation email will be sent to the customer. Once the link in that email is clicked or a full survey is completed, the review will be activated.</p>
+                            <p class="text-danger medium"><span class="bold text-underline">Do not give this link to your customers</span> or you could receive spam attempts that would flood your review page. Any attempt to use this feature to generate fraudulent reviews will be cause for immediate account cancellation.</p>
+                            <div class="input-group m-top m-bottom">
+                                <input type="text" class="form-control" placeholder="http://www.shopperapproved.com/surveys/full.php?id=10213&code=">
+                                <span class="input-group-addon">Copy Link</span>
+                            </div>
+                            <hr class=""/>
+                            <h2 class="text-orange m-bottom">Send a reminder email if your customer does not confirm their review in the
+                                first email.</h2>
+                            <div class="row m-bottom">
+                                <div class="col-xs-3">
+                                    <select class="form-control">
+                                        <option>Do not send additional email</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                            <a href="#" class="btn btn_primary mw-260">Save Changes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
